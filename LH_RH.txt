@@ -42,707 +42,2105 @@ Ad_Ply1Serve_2nd = pcase {                 //1st serve is out
      		 
 Ply1_ForeHandR = ifa (turn == n_de_ct) {    // Player2 forehand return to Player1 serve from the deuce court side
 		 pcase {
-			p20: FH_InsideOut{ball=6} -> Ply2_de_stroke
-			p21: FH_InsideIn{ball=4} -> Ply2_ad_stroke
-			p22: FH_CrossCourt{ball=4} -> Ply2_ad_stroke
-			p23: FH_DownMid{ball=5} -> Ply2_mid_stroke
-			p24: FH_Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p20: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+			p21: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+			p22: FH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+			p23: FH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+			p24: FH_CrossCourt{ball=4} -> Ply2_ad_stroke_shallow
+			p25: FH_CrossCourt{ball=4} -> Ply2_ad_stroke_deep
+			p26: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p27: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+			p28: FH_Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p25: FH_Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p29: FH_Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt
       		 }}
       		 else {
       		pcase {
-			p26: FH_CrossCourt{ball=4} -> Ply2_ad_stroke
-			p27: FH_DownLine{ball=6} -> Ply2_de_stroke
-			p28: FH_DownMid{ball=5} -> Ply2_mid_stroke
-			p29: FH_Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p30: FH_CrossCourt{ball=4} -> Ply2_ad_stroke_shallow
+			p31: FH_CrossCourt{ball=4} -> Ply2_ad_stroke_deep
+			p32: FH_DownLine{ball=6} -> Ply2_de_stroke_shallow
+			p33: FH_DownLine{ball=6} -> Ply2_de_stroke_deep
+			p34: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p35: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+			p36: FH_Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p30: FH_Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p37: FH_Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt
       		 }};
 
 Ply1_BackHandR = ifa (turn == n_de_ct) {    // Player2 backhand return to Player1 serve from the deuce court side
 		 pcase {
-			p31: BH_CrossCourt{ball=6} -> Ply2_de_stroke
-			p32: BH_DownLine{ball=4} -> Ply2_ad_stroke
-			p33: BH_DownMid{ball=5} -> Ply2_mid_stroke
-			p34: BH_Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p38: BH_CrossCourt{ball=6} -> Ply2_de_stroke_shallow
+			p39: BH_CrossCourt{ball=6} -> Ply2_de_stroke_deep
+			p40: BH_DownLine{ball=4} -> Ply2_ad_stroke_shallow
+			p41: BH_DownLine{ball=4} -> Ply2_ad_stroke_deep
+			p42: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p43: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+			p44: BH_Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p35: BH_Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p45: BH_Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt
       		 }}
       		 else {
       		pcase {
-			p36: BH_CrossCourt{ball=6} -> Ply2_de_stroke
-			p37: BH_InsideIn{ball=6} -> Ply2_de_stroke
-			p38: BH_InsideOut{ball=4} -> Ply2_ad_stroke
-			p39: BH_DownMid{ball=5} -> Ply2_mid_stroke
-			p40: BH_Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p46: BH_CrossCourt{ball=6} -> Ply2_de_stroke_shallow
+			p47: BH_CrossCourt{ball=6} -> Ply2_de_stroke_deep
+			p48: BH_InsideIn{ball=6} -> Ply2_de_stroke_shallow
+			p49: BH_InsideIn{ball=6} -> Ply2_de_stroke_deep
+			p50: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+			p51: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+			p52: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p53: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+			p54: BH_Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p41: BH_Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p55: BH_Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt
       		 }};
 
+
 // deuce stroke is when player1 hit position is 1
-Ply1_de_stroke = pcase{
-			p42: FH_InsideOut{ball=6} -> Ply2_de_smash
-			p43: FH_InsideOut{ball=6} -> Ply2_de_lob
-			p44: FH_InsideOut{ball=6} -> Ply2_de_stroke
-			p45: FH_InsideOut{ball=6} -> Ply2_de_slice
-			p46: FH_InsideIn{ball=4} -> Ply2_ad_smash
-			p47: FH_InsideIn{ball=4} -> Ply2_ad_lob
-			p48: FH_InsideIn{ball=4} -> Ply2_ad_stroke
-			p49: FH_InsideIn{ball=4} -> Ply2_ad_slice
-			p50: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p51: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p52: FH_DownMid{ball=5} -> Ply2_mid_stroke
-			p53: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p54: BH_Crosscourt{ball=6} -> Ply2_de_smash
-			p55: BH_Crosscourt{ball=6} -> Ply2_de_lob
-			p56: BH_Crosscourt{ball=6} -> Ply2_de_stroke
-			p57: BH_Crosscourt{ball=6} -> Ply2_de_slice
-			p58: BH_Downline{ball=4} -> Ply2_ad_smash
-			p59: BH_Downline{ball=4} -> Ply2_ad_lob
-			p60: BH_Downline{ball=4} -> Ply2_ad_stroke
-			p61: BH_Downline{ball=4} -> Ply2_ad_slice
-			p62: BH_DownMid{ball=5} -> Ply2_mid_smash
-			p63: BH_DownMid{ball=5} -> Ply2_mid_lob
-			p64: BH_DownMid{ball=5} -> Ply2_mid_stroke			
-			p65: BH_DownMid{ball=5} -> Ply2_mid_slice
-			p66: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+Ply1_de_stroke_shallow = pcase{
+			p56: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+			p57: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+			p58: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+			p59: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+			p60: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+			p61: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+			p62: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+			p63: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+			p64: FH_InsideIn{ball=4} -> Ply2_ad_smash_shallow
+			p65: FH_InsideIn{ball=4} -> Ply2_ad_smash_deep
+			p66: FH_InsideIn{ball=4} -> Ply2_ad_lob_shallow
+			p67: FH_InsideIn{ball=4} -> Ply2_ad_lob_deep
+			p68: FH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+			p69: FH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+			p70: FH_InsideIn{ball=4} -> Ply2_ad_slice_shallow
+			p71: FH_InsideIn{ball=4} -> Ply2_ad_slice_deep
+			p72: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+			p73: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+			p74: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+			p75: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+			p76: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p77: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+			p78: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+			p79: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+			p80: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+			p81: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+			p82: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+			p83: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+			p84: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+			p85: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+			p86: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+			p87: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+			p88: BH_Downline{ball=4} -> Ply2_ad_smash_shallow
+			p89: BH_Downline{ball=4} -> Ply2_ad_smash_deep
+			p90: BH_Downline{ball=4} -> Ply2_ad_lob_shallow
+			p91: BH_Downline{ball=4} -> Ply2_ad_lob_deep
+			p92: BH_Downline{ball=4} -> Ply2_ad_stroke_shallow
+			p93: BH_Downline{ball=4} -> Ply2_ad_stroke_deep
+			p94: BH_Downline{ball=4} -> Ply2_ad_slice_shallow
+			p95: BH_Downline{ball=4} -> Ply2_ad_slice_deep
+			p96: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+			p97: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+			p98: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+			p99: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+			p100: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p101: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep		
+			p102: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+			p103: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+			p104: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p67: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p105: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+      		                                                     else { turn = (turn+1)%4} }-> NextPt  
+	};
+
+Ply1_de_stroke_deep = pcase{
+			p106: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+			p107: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+			p108: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+			p109: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+			p110: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+			p111: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+			p112: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+			p113: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+			p114: FH_InsideIn{ball=4} -> Ply2_ad_smash_shallow
+			p115: FH_InsideIn{ball=4} -> Ply2_ad_smash_deep
+			p116: FH_InsideIn{ball=4} -> Ply2_ad_lob_shallow
+			p117: FH_InsideIn{ball=4} -> Ply2_ad_lob_deep
+			p118: FH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+			p119: FH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+			p120: FH_InsideIn{ball=4} -> Ply2_ad_slice_shallow
+			p121: FH_InsideIn{ball=4} -> Ply2_ad_slice_deep
+			p122: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+			p123: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+			p124: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+			p125: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+			p126: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p127: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+			p128: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+			p129: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+			p130: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+			p131: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+			p132: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+			p133: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+			p134: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+			p135: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+			p136: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+			p137: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+			p138: BH_Downline{ball=4} -> Ply2_ad_smash_shallow
+			p139: BH_Downline{ball=4} -> Ply2_ad_smash_deep
+			p140: BH_Downline{ball=4} -> Ply2_ad_lob_shallow
+			p141: BH_Downline{ball=4} -> Ply2_ad_lob_deep
+			p142: BH_Downline{ball=4} -> Ply2_ad_stroke_shallow
+			p143: BH_Downline{ball=4} -> Ply2_ad_stroke_deep
+			p144: BH_Downline{ball=4} -> Ply2_ad_slice_shallow
+			p145: BH_Downline{ball=4} -> Ply2_ad_slice_deep
+			p146: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+			p147: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+			p148: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+			p149: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+			p150: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p151: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep		
+			p152: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+			p153: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+			p154: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+      		                                                     else { turn = (turn+1)%4} }-> NextPt
+			p155: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 	
 // mid stroke is when player1 hit position is 2
-Ply1_mid_stroke = pcase{
-            p68: FH_InsideOut{ball=6} -> Ply2_de_smash
-            p69: FH_InsideOut{ball=6} -> Ply2_de_lob
-            p70: FH_InsideOut{ball=6} -> Ply2_de_stroke
-            p71: FH_InsideOut{ball=6} -> Ply2_de_slice
-            p72: FH_Crosscourt{ball=4} -> Ply2_ad_smash
-            p73: FH_Crosscourt{ball=4} -> Ply2_ad_lob
-            p74: FH_Crosscourt{ball=4} -> Ply2_ad_stroke
-            p75: FH_Crosscourt{ball=4} -> Ply2_ad_slice
-            p76: FH_DownMid{ball=5} -> Ply2_mid_smash
-            p77: FH_DownMid{ball=5} -> Ply2_mid_lob
-            p78: FH_DownMid{ball=5} -> Ply2_mid_stroke
-            p79: FH_DownMid{ball=5} -> Ply2_mid_slice
-            p80: BH_InsideOut{ball=4} -> Ply2_ad_smash
-            p81: BH_InsideOut{ball=4} -> Ply2_ad_lob
-            p82: BH_InsideOut{ball=4} -> Ply2_ad_stroke
-            p83: BH_InsideOut{ball=4} -> Ply2_ad_slice
-            p84: BH_Crosscourt{ball=6} -> Ply2_de_smash
-            p85: BH_Crosscourt{ball=6} -> Ply2_de_lob
-            p86: BH_Crosscourt{ball=6} -> Ply2_de_stroke
-            p87: BH_Crosscourt{ball=6} -> Ply2_de_slice
-            p88: BH_DownMid{ball=5} -> Ply2_mid_smash
-            p89: BH_DownMid{ball=5} -> Ply2_mid_lob
-            p90: BH_DownMid{ball=5} -> Ply2_mid_stroke
-            p91: BH_DownMid{ball=5} -> Ply2_mid_slice
-            p92: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+Ply1_mid_stroke_shallow = pcase{
+            p156: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p157: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p158: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p159: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p160: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p161: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p162: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p163: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p164: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p165: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p166: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p167: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p168: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p169: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p170: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p171: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p172: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p173: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p174: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p175: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p176: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p177: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p178: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p179: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p180: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow
+            p181: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep
+            p182: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow
+            p183: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep
+            p184: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+            p185: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+            p186: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow
+            p187: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep
+            p188: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p189: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p190: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p191: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p192: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p193: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p194: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p195: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p196: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p197: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p198: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p199: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p200: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p201: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p202: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p203: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p204: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
                                                                    else { turn = (turn+1)%4} }-> NextPt
-            p93: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+            p205: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
                                                                    else { turn = (turn+1)%4} }-> NextPt    
-	};
+};
+
+Ply1_mid_stroke_deep = pcase{
+            p206: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p207: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p208: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p209: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p210: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p211: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p212: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p213: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p214: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p215: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p216: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p217: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p218: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p219: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p220: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p221: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p222: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p223: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p224: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p225: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p226: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p227: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p228: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p229: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p230: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow
+            p231: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep
+            p232: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow
+            p233: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep
+            p234: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+            p235: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+            p236: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow
+            p237: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep
+            p238: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p239: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p240: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p241: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p242: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p243: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p244: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p245: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p246: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p247: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p248: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p249: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p250: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p251: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p252: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p253: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p254: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                                   else { turn = (turn+1)%4} }-> NextPt
+            p255: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                   else { turn = (turn+1)%4} }-> NextPt   
+};
 
 
 // ad stroke is when player1 hit position is 3
-Ply1_ad_stroke = pcase{
-            p94: FH_Crosscourt{ball=4} -> Ply2_ad_smash
-            p95: FH_Crosscourt{ball=4} -> Ply2_ad_lob
-            p96: FH_Crosscourt{ball=4} -> Ply2_ad_stroke
-            p97: FH_Crosscourt{ball=4} -> Ply2_ad_slice
-            p98: FH_Downline{ball=6} -> Ply2_de_smash
-            p99: FH_Downline{ball=6} -> Ply2_de_lob
-            p100: FH_Downline{ball=6} -> Ply2_de_stroke
-            p101: FH_Downline{ball=6} -> Ply2_de_slice
-            p102: FH_DownMid{ball=5} -> Ply2_mid_smash
-            p103: FH_DownMid{ball=5} -> Ply2_mid_lob
-            p104: FH_DownMid{ball=5} -> Ply2_mid_stroke
-            p105: FH_DownMid{ball=5} -> Ply2_mid_slice
-            p106: BH_InsideIn{ball=6} -> Ply2_de_smash
-            p107: BH_InsideIn{ball=6} -> Ply2_de_lob
-            p108: BH_InsideIn{ball=6} -> Ply2_de_stroke
-            p109: BH_InsideIn{ball=6} -> Ply2_de_slice
-            p110: BH_InsideOut{ball=4} -> Ply2_ad_smash
-            p111: BH_InsideOut{ball=4} -> Ply2_ad_lob
-            p112: BH_InsideOut{ball=4} -> Ply2_ad_stroke
-            p113: BH_InsideOut{ball=4} -> Ply2_ad_slice
-            p114: BH_DownMid{ball=5} -> Ply2_mid_smash
-            p115: BH_DownMid{ball=5} -> Ply2_mid_lob
-            p116: BH_DownMid{ball=5} -> Ply2_mid_stroke
-            p117: BH_DownMid{ball=5} -> Ply2_mid_slice
-            p118: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+Ply1_ad_stroke_shallow = pcase{
+            p256: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p257: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p258: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p259: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p260: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p261: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p262: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p263: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p264: FH_Downline{ball=6} -> Ply2_de_smash_shallow
+            p265: FH_Downline{ball=6} -> Ply2_de_smash_deep
+            p266: FH_Downline{ball=6} -> Ply2_de_lob_shallow
+            p267: FH_Downline{ball=6} -> Ply2_de_lob_deep
+            p268: FH_Downline{ball=6} -> Ply2_de_stroke_shallow
+            p269: FH_Downline{ball=6} -> Ply2_de_stroke_deep
+            p270: FH_Downline{ball=6} -> Ply2_de_slice_shallow
+            p271: FH_Downline{ball=6} -> Ply2_de_slice_deep
+            p272: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p273: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p274: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p275: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p276: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p277: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p278: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p279: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p280: BH_InsideIn{ball=6} -> Ply2_de_smash_shallow
+            p281: BH_InsideIn{ball=6} -> Ply2_de_smash_deep
+            p282: BH_InsideIn{ball=6} -> Ply2_de_lob_shallow
+            p283: BH_InsideIn{ball=6} -> Ply2_de_lob_deep
+            p284: BH_InsideIn{ball=6} -> Ply2_de_stroke_shallow
+            p285: BH_InsideIn{ball=6} -> Ply2_de_stroke_deep
+            p286: BH_InsideIn{ball=6} -> Ply2_de_slice_shallow
+            p287: BH_InsideIn{ball=6} -> Ply2_de_slice_deep
+            p288: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow
+            p289: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep
+            p290: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow
+            p291: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep
+            p292: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+            p293: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+            p294: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow
+            p295: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep
+            p296: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p297: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p298: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p299: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p300: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p301: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p302: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p303: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p304: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1}
                                                                       else { turn = (turn+1)%4} }-> NextPt
-            p119: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+            p305: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
                                                                       else { turn = (turn+1)%4} }-> NextPt  
-	};
+};
+
+Ply1_ad_stroke_deep = pcase{
+            p306: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p307: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p308: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p309: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p310: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p311: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p312: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p313: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p314: FH_Downline{ball=6} -> Ply2_de_smash_shallow
+            p315: FH_Downline{ball=6} -> Ply2_de_smash_deep
+            p316: FH_Downline{ball=6} -> Ply2_de_lob_shallow
+            p317: FH_Downline{ball=6} -> Ply2_de_lob_deep
+            p318: FH_Downline{ball=6} -> Ply2_de_stroke_shallow
+            p319: FH_Downline{ball=6} -> Ply2_de_stroke_deep
+            p320: FH_Downline{ball=6} -> Ply2_de_slice_shallow
+            p321: FH_Downline{ball=6} -> Ply2_de_slice_deep
+            p322: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p323: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p324: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p325: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p326: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p327: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p328: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p329: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p330: BH_InsideIn{ball=6} -> Ply2_de_smash_shallow
+            p331: BH_InsideIn{ball=6} -> Ply2_de_smash_deep
+            p332: BH_InsideIn{ball=6} -> Ply2_de_lob_shallow
+            p333: BH_InsideIn{ball=6} -> Ply2_de_lob_deep
+            p334: BH_InsideIn{ball=6} -> Ply2_de_stroke_shallow
+            p335: BH_InsideIn{ball=6} -> Ply2_de_stroke_deep
+            p336: BH_InsideIn{ball=6} -> Ply2_de_slice_shallow
+            p337: BH_InsideIn{ball=6} -> Ply2_de_slice_deep
+            p338: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow
+            p339: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep
+            p340: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow
+            p341: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep
+            p342: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+            p343: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+            p344: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow
+            p345: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep
+            p346: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p347: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p348: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p349: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p350: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p351: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p352: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p353: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p354: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1}
+                                                                         else { turn = (turn+1)%4} }-> NextPt
+            p355: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                         else { turn = (turn+1)%4} }-> NextPt  
+};
+
 
 // deuce smash is when player1 hit position is 1
-Ply1_de_smash = pcase{
-			p120: FH_InsideOut{ball=6} -> Ply2_de_smash
-			p121: FH_InsideOut{ball=6} -> Ply2_de_lob
-			p122: FH_InsideOut{ball=6} -> Ply2_de_stroke
-			p123: FH_InsideOut{ball=6} -> Ply2_de_slice
-			p124: FH_InsideIn{ball=4} -> Ply2_ad_smash
-			p125: FH_InsideIn{ball=4} -> Ply2_ad_lob
-			p126: FH_InsideIn{ball=4} -> Ply2_ad_stroke
-			p127: FH_InsideIn{ball=4} -> Ply2_ad_slice
-			p128: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p129: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p130: FH_DownMid{ball=5} -> Ply2_mid_stroke
-			p131: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p132: BH_Crosscourt{ball=6} -> Ply2_de_smash
-			p133: BH_Crosscourt{ball=6} -> Ply2_de_lob
-			p134: BH_Crosscourt{ball=6} -> Ply2_de_stroke
-			p135: BH_Crosscourt{ball=6} -> Ply2_de_slice
-			p136: BH_Downline{ball=4} -> Ply2_ad_smash
-			p137: BH_Downline{ball=4} -> Ply2_ad_lob
-			p138: BH_Downline{ball=4} -> Ply2_ad_stroke
-			p139: BH_Downline{ball=4} -> Ply2_ad_slice
-			p140: BH_DownMid{ball=5} -> Ply2_mid_smash
-			p141: BH_DownMid{ball=5} -> Ply2_mid_lob
-			p142: BH_DownMid{ball=5} -> Ply2_mid_stroke
-			p143: BH_DownMid{ball=5} -> Ply2_mid_slice			
-			p144: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+Ply1_de_smash_shallow = pcase{
+            p356: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p357: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p358: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p359: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p360: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p361: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p362: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p363: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p364: FH_InsideIn{ball=4} -> Ply2_ad_smash_shallow
+            p365: FH_InsideIn{ball=4} -> Ply2_ad_smash_deep
+            p366: FH_InsideIn{ball=4} -> Ply2_ad_lob_shallow
+            p367: FH_InsideIn{ball=4} -> Ply2_ad_lob_deep
+            p368: FH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+            p369: FH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+            p370: FH_InsideIn{ball=4} -> Ply2_ad_slice_shallow
+            p371: FH_InsideIn{ball=4} -> Ply2_ad_slice_deep
+            p372: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p373: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p374: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p375: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p376: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p377: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p378: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p379: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p380: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p381: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p382: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p383: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p384: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p385: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p386: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p387: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p388: BH_Downline{ball=4} -> Ply2_ad_smash_shallow
+            p389: BH_Downline{ball=4} -> Ply2_ad_smash_deep
+            p390: BH_Downline{ball=4} -> Ply2_ad_lob_shallow
+            p391: BH_Downline{ball=4} -> Ply2_ad_lob_deep
+            p392: BH_Downline{ball=4} -> Ply2_ad_stroke_shallow
+            p393: BH_Downline{ball=4} -> Ply2_ad_stroke_deep
+            p394: BH_Downline{ball=4} -> Ply2_ad_slice_shallow
+            p395: BH_Downline{ball=4} -> Ply2_ad_slice_deep
+            p396: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p397: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p398: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p399: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p400: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p401: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p402: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p403: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p404: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1}
+                                                                   else { turn = (turn+1)%4} }-> NextPt
+            p405: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                   else { turn = (turn+1)%4} }-> NextPt    
+};
+
+Ply1_de_smash_deep = pcase{
+			p406: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+			p407: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+			p408: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+			p409: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+			p410: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+			p411: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+			p412: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+			p413: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+			p414: FH_InsideIn{ball=4} -> Ply2_ad_smash_shallow
+			p415: FH_InsideIn{ball=4} -> Ply2_ad_smash_deep
+			p416: FH_InsideIn{ball=4} -> Ply2_ad_lob_shallow
+			p417: FH_InsideIn{ball=4} -> Ply2_ad_lob_deep
+			p418: FH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+			p419: FH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+			p420: FH_InsideIn{ball=4} -> Ply2_ad_slice_shallow
+			p421: FH_InsideIn{ball=4} -> Ply2_ad_slice_deep
+			p422: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+			p423: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+			p424: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+			p425: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+			p426: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p427: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+			p428: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+			p429: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+			p430: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+			p431: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+			p432: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+			p433: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+			p434: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+			p435: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+			p436: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+			p437: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+			p438: BH_Downline{ball=4} -> Ply2_ad_smash_shallow
+			p439: BH_Downline{ball=4} -> Ply2_ad_smash_deep
+			p440: BH_Downline{ball=4} -> Ply2_ad_lob_shallow
+			p441: BH_Downline{ball=4} -> Ply2_ad_lob_deep
+			p442: BH_Downline{ball=4} -> Ply2_ad_stroke_shallow
+			p443: BH_Downline{ball=4} -> Ply2_ad_stroke_deep
+			p444: BH_Downline{ball=4} -> Ply2_ad_slice_shallow
+			p445: BH_Downline{ball=4} -> Ply2_ad_slice_deep
+			p446: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+			p447: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+			p448: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+			p449: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+			p450: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p451: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+			p452: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+			p453: BH_DownMid{ball=5} -> Ply2_mid_slice_deep			
+			p454: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p145: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p455: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 
 // mid smash is when player1 hit position is 2
-Ply1_mid_smash = pcase{
-			p146: FH_InsideOut{ball=6} -> Ply2_de_smash
-			p147: FH_InsideOut{ball=6} -> Ply2_de_lob
-			p148: FH_InsideOut{ball=6} -> Ply2_de_stroke
-			p149: FH_InsideOut{ball=6} -> Ply2_de_slice
-			p150: FH_Crosscourt{ball=4} -> Ply2_ad_smash
-			p151: FH_Crosscourt{ball=4} -> Ply2_ad_lob
-			p152: FH_Crosscourt{ball=4} -> Ply2_ad_stroke
-			p153: FH_Crosscourt{ball=4} -> Ply2_ad_slice
-			p154: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p155: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p156: FH_DownMid{ball=5} -> Ply2_mid_stroke
-			p157: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p158: BH_InsideOut{ball=4} -> Ply2_ad_smash
-			p159: BH_InsideOut{ball=4} -> Ply2_ad_lob
-			p160: BH_InsideOut{ball=4} -> Ply2_ad_stroke
-			p161: BH_InsideOut{ball=4} -> Ply2_ad_slice
-			p162: BH_Crosscourt{ball=6} -> Ply2_de_smash
-			p163: BH_Crosscourt{ball=6} -> Ply2_de_lob
-			p164: BH_Crosscourt{ball=6} -> Ply2_de_stroke
-			p165: BH_Crosscourt{ball=6} -> Ply2_de_slice
-			p166: BH_DownMid{ball=5} -> Ply2_mid_smash
-			p167: BH_DownMid{ball=5} -> Ply2_mid_lob
-			p168: BH_DownMid{ball_5} -> Ply2_mid_stroke
-			p169: BH_DownMid{ball=5} -> Ply2_mid_slice
-			p170: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p171: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
-      		                                                     else { turn = (turn+1)%4} }-> NextPt    
-	};
+Ply1_mid_smash_shallow = pcase{
+            p456: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p457: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p458: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p459: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p460: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p461: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p462: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p463: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p464: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p465: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p466: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p467: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p468: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p469: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p470: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p471: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p472: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p473: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p474: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p475: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p476: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p477: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p478: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p479: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p480: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow
+            p481: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep
+            p482: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow
+            p483: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep
+            p484: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+            p485: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+            p486: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow
+            p487: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep
+            p488: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p489: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p490: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p491: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p492: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p493: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p494: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p495: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p496: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p497: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p498: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p499: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p500: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p501: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p502: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p503: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p504: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                         else { turn = (turn+1)%4} }-> NextPt
+            p505: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                         else { turn = (turn+1)%4} }-> NextPt    
+};
+
+Ply1_mid_smash_deep = pcase{
+            p506: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p507: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p508: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p509: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p510: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p511: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p512: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p513: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p514: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p515: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p516: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p517: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p518: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p519: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p520: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p521: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p522: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p523: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p524: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p525: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p526: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p527: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p528: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p529: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p530: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow
+            p531: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep
+            p532: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow
+            p533: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep
+            p534: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+            p535: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+            p536: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow
+            p537: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep
+            p538: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p539: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p540: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p541: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p542: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p543: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p544: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p545: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p546: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p547: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p548: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p549: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p550: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p551: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p552: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p553: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p554: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                                    else { turn = (turn+1)%4} }-> NextPt
+            p555: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                    else { turn = (turn+1)%4} }-> NextPt    
+};
 
 // ad smash is when player1 hit position is 3
-Ply1_ad_smash = pcase{
-			p162: FH_Crosscourt{ball=4} -> Ply2_ad_smash
-			p163: FH_Crosscourt{ball=4} -> Ply2_ad_lob
-			p164: FH_Crosscourt{ball=4} -> Ply2_ad_stroke
-			p165: FH_Crosscourt{ball=4} -> Ply2_ad_slice
-			p166: FH_Downline{ball=6} -> Ply2_de_smash
-			p167: FH_Downline{ball=6} -> Ply2_de_lob
-			p168: FH_Downline{ball=6} -> Ply2_de_stroke
-			p169: FH_Downline{ball=6} -> Ply2_de_slice
-			p170: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p171: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p172: FH_DownMid{ball=5} -> Ply2_mid_stroke
-			p173: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p174: BH_InsideIn{ball=6} -> Ply2_de_smash
-			p175: BH_InsideIn{ball=6} -> Ply2_de_lob
-			p176: BH_InsideIn{ball=6} -> Ply2_de_stroke
-			p177: BH_InsideIn{ball=6} -> Ply2_de_slice
-			p178: BH_InsideOut{ball=4} -> Ply2_ad_smash
-			p179: BH_InsideOut{ball=4} -> Ply2_ad_lob
-			p180: BH_InsideOut{ball=4} -> Ply2_ad_stroke
-			p181: BH_InsideOut{ball=4} -> Ply2_ad_slice
-			p182: BH_DownMid{ball=5} -> Ply2_mid_smash
-			p183: BH_DownMid{ball=5} -> Ply2_mid_lob
-			p184: BH_DownMid{ball=5} -> Ply2_mid_stroke
-			p185: BH_DownMid{ball=5} -> Ply2_mid_slice			
-			p186: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p187: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
-      		                                                     else { turn = (turn+1)%4} }-> NextPt  
-	};
+Ply1_ad_smash_shallow = pcase{
+            p556: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p557: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p558: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p559: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p560: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p561: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p562: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p563: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p564: FH_Downline{ball=6} -> Ply2_de_smash_shallow
+            p565: FH_Downline{ball=6} -> Ply2_de_smash_deep
+            p566: FH_Downline{ball=6} -> Ply2_de_lob_shallow
+            p567: FH_Downline{ball=6} -> Ply2_de_lob_deep
+            p568: FH_Downline{ball=6} -> Ply2_de_stroke_shallow
+            p569: FH_Downline{ball=6} -> Ply2_de_stroke_deep
+            p570: FH_Downline{ball=6} -> Ply2_de_slice_shallow
+            p571: FH_Downline{ball=6} -> Ply2_de_slice_deep
+            p572: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p573: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p574: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p575: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p576: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p577: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p578: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p579: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p580: BH_InsideIn{ball=6} -> Ply2_de_smash_shallow
+            p581: BH_InsideIn{ball=6} -> Ply2_de_smash_deep
+            p582: BH_InsideIn{ball=6} -> Ply2_de_lob_shallow
+            p583: BH_InsideIn{ball=6} -> Ply2_de_lob_deep
+            p584: BH_InsideIn{ball=6} -> Ply2_de_stroke_shallow
+            p585: BH_InsideIn{ball=6} -> Ply2_de_stroke_deep
+            p586: BH_InsideIn{ball=6} -> Ply2_de_slice_shallow
+            p587: BH_InsideIn{ball=6} -> Ply2_de_slice_deep
+            p588: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow
+            p589: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep
+            p590: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow
+            p591: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep
+            p592: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+            p593: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+            p594: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow
+            p595: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep
+            p596: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p597: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p598: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p599: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p600: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p601: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p602: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p603: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p604: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                    else { turn = (turn+1)%4} }-> NextPt
+            p605: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                    else { turn = (turn+1)%4} }-> NextPt    
+};
+
+Ply1_ad_smash_deep = pcase{
+            p606: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p607: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p608: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p609: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p610: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p611: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p612: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p613: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p614: FH_Downline{ball=6} -> Ply2_de_smash_shallow
+            p615: FH_Downline{ball=6} -> Ply2_de_smash_deep
+            p616: FH_Downline{ball=6} -> Ply2_de_lob_shallow
+            p617: FH_Downline{ball=6} -> Ply2_de_lob_deep
+            p618: FH_Downline{ball=6} -> Ply2_de_stroke_shallow
+            p619: FH_Downline{ball=6} -> Ply2_de_stroke_deep
+            p620: FH_Downline{ball=6} -> Ply2_de_slice_shallow
+            p621: FH_Downline{ball=6} -> Ply2_de_slice_deep
+            p622: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p623: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p624: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p625: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p626: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p627: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p628: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p629: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p630: BH_InsideIn{ball=6} -> Ply2_de_smash_shallow
+            p631: BH_InsideIn{ball=6} -> Ply2_de_smash_deep
+            p632: BH_InsideIn{ball=6} -> Ply2_de_lob_shallow
+            p633: BH_InsideIn{ball=6} -> Ply2_de_lob_deep
+            p634: BH_InsideIn{ball=6} -> Ply2_de_stroke_shallow
+            p635: BH_InsideIn{ball=6} -> Ply2_de_stroke_deep
+            p636: BH_InsideIn{ball=6} -> Ply2_de_slice_shallow
+            p637: BH_InsideIn{ball=6} -> Ply2_de_slice_deep
+            p638: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow
+            p639: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep
+            p640: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow
+            p641: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep
+            p642: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+            p643: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+            p644: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow
+            p645: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep
+            p646: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p647: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p648: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p649: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p650: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p651: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p652: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p653: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p654: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                                   else { turn = (turn+1)%4} }-> NextPt
+            p655: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                   else { turn = (turn+1)%4} }-> NextPt    
+};
 
 // deuce lob is when player1 hit position is 1
-Ply1_de_lob = pcase{
-			p188: FH_InsideOut{ball=6} -> Ply2_de_smash
-			p189: FH_InsideOut{ball=6} -> Ply2_de_lob
-			p190: FH_InsideOut{ball=6} -> Ply2_de_stroke
-			p191: FH_InsideOut{ball=6} -> Ply2_de_slice
-			p192: FH_InsideIn{ball=4} -> Ply2_ad_smash
-			p193: FH_InsideIn{ball=4} -> Ply2_ad_lob
-			p194: FH_InsideIn{ball=4} -> Ply2_ad_stroke
-			p195: FH_InsideIn{ball=4} -> Ply2_ad_slice
-			p196: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p197: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p198: FH_DownMid{ball=5} -> Ply2_mid_stroke
-			p199: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p200: BH_Crosscourt{ball=6} -> Ply2_de_smash
-			p201: BH_Crosscourt{ball=6} -> Ply2_de_lob
-			p202: BH_Crosscourt{ball=6} -> Ply2_de_stroke
-			p203: BH_Crosscourt{ball=6} -> Ply2_de_slice
-			p204: BH_Downline{ball=4} -> Ply2_ad_smash
-			p205: BH_Downline{ball=4} -> Ply2_ad_lob
-			p206: BH_Downline{ball=4} -> Ply2_ad_stroke
-			p207: BH_Downline{ball=4} -> Ply2_ad_slice
-			p208: BH_DownMid{ball=5} -> Ply2_mid_smash
-			p209: BH_DownMid{ball=5} -> Ply2_mid_lob
-			p210: BH_DownMid{ball=5} -> Ply2_mid_stroke
-			p211: BH_DownMid{ball=5} -> Ply2_mid_slice			
-			p212: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p213: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
-      		                                                     else { turn = (turn+1)%4} }-> NextPt  
-	};
+Ply1_de_lob_shallow = pcase{
+            p656: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p657: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p658: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p659: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p660: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p661: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p662: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p663: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p664: FH_InsideIn{ball=4} -> Ply2_ad_smash_shallow
+            p665: FH_InsideIn{ball=4} -> Ply2_ad_smash_deep
+            p666: FH_InsideIn{ball=4} -> Ply2_ad_lob_shallow
+            p667: FH_InsideIn{ball=4} -> Ply2_ad_lob_deep
+            p668: FH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+            p669: FH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+            p670: FH_InsideIn{ball=4} -> Ply2_ad_slice_shallow
+            p671: FH_InsideIn{ball=4} -> Ply2_ad_slice_deep
+            p672: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p673: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p674: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p675: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p676: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p677: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p678: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p679: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p680: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p681: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p682: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p683: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p684: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p685: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p686: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p687: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p688: BH_Downline{ball=4} -> Ply2_ad_smash_shallow
+            p689: BH_Downline{ball=4} -> Ply2_ad_smash_deep
+            p690: BH_Downline{ball=4} -> Ply2_ad_lob_shallow
+            p691: BH_Downline{ball=4} -> Ply2_ad_lob_deep
+            p692: BH_Downline{ball=4} -> Ply2_ad_stroke_shallow
+            p693: BH_Downline{ball=4} -> Ply2_ad_stroke_deep
+            p694: BH_Downline{ball=4} -> Ply2_ad_slice_shallow
+            p695: BH_Downline{ball=4} -> Ply2_ad_slice_deep
+            p696: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p697: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p698: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p699: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p700: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p701: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p702: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p703: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p704: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                                       else { turn = (turn+1)%4} }-> NextPt
+            p705: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                       else { turn = (turn+1)%4} }-> NextPt    
+};
+
+Ply1_de_lob_deep = pcase{
+            p706: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p707: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p708: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p709: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p710: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p711: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p712: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p713: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p714: FH_InsideIn{ball=4} -> Ply2_ad_smash_shallow
+            p715: FH_InsideIn{ball=4} -> Ply2_ad_smash_deep
+            p716: FH_InsideIn{ball=4} -> Ply2_ad_lob_shallow
+            p717: FH_InsideIn{ball=4} -> Ply2_ad_lob_deep
+            p718: FH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+            p719: FH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+            p720: FH_InsideIn{ball=4} -> Ply2_ad_slice_shallow
+            p721: FH_InsideIn{ball=4} -> Ply2_ad_slice_deep
+            p722: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p723: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p724: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p725: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p726: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p727: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p728: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p729: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p730: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p731: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p732: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p733: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p734: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p735: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p736: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p737: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p738: BH_Downline{ball=4} -> Ply2_ad_smash_shallow
+            p739: BH_Downline{ball=4} -> Ply2_ad_smash_deep
+            p740: BH_Downline{ball=4} -> Ply2_ad_lob_shallow
+            p741: BH_Downline{ball=4} -> Ply2_ad_lob_deep
+            p742: BH_Downline{ball=4} -> Ply2_ad_stroke_shallow
+            p743: BH_Downline{ball=4} -> Ply2_ad_stroke_deep
+            p744: BH_Downline{ball=4} -> Ply2_ad_slice_shallow
+            p745: BH_Downline{ball=4} -> Ply2_ad_slice_deep
+            p746: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p747: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p748: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p749: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p750: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p751: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p752: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p753: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p754: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                 else { turn = (turn+1)%4} }-> NextPt
+            p755: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                 else { turn = (turn+1)%4} }-> NextPt    
+};
 	
 // mid lob is when player1 hit position is 2
-Ply1_mid_lob = pcase{
-			p214: FH_InsideOut{ball=6} -> Ply2_de_smash
-			p215: FH_InsideOut{ball=6} -> Ply2_de_lob
-			p216: FH_InsideOut{ball=6} -> Ply2_de_stroke
-			p217: FH_InsideOut{ball=6} -> Ply2_de_slice
-			p218: FH_Crosscourt{ball=4} -> Ply2_ad_smash
-			p219: FH_Crosscourt{ball=4} -> Ply2_ad_lob
-			p220: FH_Crosscourt{ball=4} -> Ply2_ad_stroke
-			p221: FH_Crosscourt{ball=4} -> Ply2_ad_slice
-			p222: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p223: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p224: FH_DownMid{ball=5} -> Ply2_mid_stroke
-			p225: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p226: BH_InsideOut{ball=4} -> Ply2_ad_smash
-			p227: BH_InsideOut{ball=4} -> Ply2_ad_lob
-			p228: BH_InsideOut{ball=4} -> Ply2_ad_stroke
-			p229: BH_InsideOut{ball=4} -> Ply2_ad_slice
-			p230: BH_Crosscourt{ball=6} -> Ply2_de_smash
-			p231: BH_Crosscourt{ball=6} -> Ply2_de_lob
-			p232: BH_Crosscourt{ball=6} -> Ply2_de_stroke
-			p233: BH_Crosscourt{ball=6} -> Ply2_de_slice
-			p234: BH_DownMid{ball=5} -> Ply2_mid_smash
-			p235: BH_DownMid{ball=5} -> Ply2_mid_lob
-			p236: BH_DownMid{ball=5} -> Ply2_mid_stroke
-			p237: BH_DownMid{ball=5} -> Ply2_mid_slice			
-			p238: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+Ply1_mid_lob_shallow = pcase{
+            p756: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p757: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p758: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p759: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p760: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p761: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p762: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p763: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p764: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p765: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p766: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p767: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p768: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p769: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p770: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p771: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p772: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p773: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p774: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p775: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p776: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p777: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p778: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p779: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p780: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow
+            p781: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep
+            p782: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow
+            p783: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep
+            p784: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+            p785: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+            p786: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow
+            p787: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep
+            p788: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p789: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p790: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p791: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p792: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p793: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p794: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p795: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p796: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p797: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p798: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p799: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p800: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p801: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p802: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p803: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p804: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1}
+                                                                   else { turn = (turn+1)%4} }-> NextPt
+            p805: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                   else { turn = (turn+1)%4} }-> NextPt    
+};
+
+Ply1_mid_lob_deep = pcase{
+            p806: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p807: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p808: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p809: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p810: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p811: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p812: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p813: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p814: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p815: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p816: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p817: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p818: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p819: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p820: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p821: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p822: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p823: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p824: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p825: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p826: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p827: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p828: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p829: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p830: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow
+            p831: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep
+            p832: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow
+            p833: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep
+            p834: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+            p835: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+            p836: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow
+            p837: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep
+            p838: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p839: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p840: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p841: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p842: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p843: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p844: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p845: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p846: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p847: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p848: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p849: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p850: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p851: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p852: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p853: BH_DownMid{ball=5} -> Ply2_mid_slice_deep			
+            p854: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p239: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+            p855: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt    
-	};
+};
 
 // ad lob is when player1 hit position is 3
-Ply1_ad_lob = pcase{
-			p240: FH_InsideOut{ball=6} -> Ply2_de_smash
-			p241: FH_InsideOut{ball=6} -> Ply2_de_lob
-			p242: FH_InsideOut{ball=6} -> Ply2_de_stroke
-			p243: FH_InsideOut{ball=6} -> Ply2_de_slice
-			p244: FH_Crosscourt{ball=4} -> Ply2_ad_smash
-			p245: FH_Crosscourt{ball=4} -> Ply2_ad_lob
-			p246: FH_Crosscourt{ball=4} -> Ply2_ad_stroke
-			p247: FH_Crosscourt{ball=4} -> Ply2_ad_slice
-			p248: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p249: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p250: FH_DownMid{ball=5} -> Ply2_mid_stroke
-			p251: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p252: BH_InsideIn{ball=4} -> Ply2_ad_smash
-			p253: BH_InsideIn{ball=4} -> Ply2_ad_lob
-			p254: BH_InsideIn{ball=4} -> Ply2_ad_stroke
-			p255: BH_InsideIn{ball=4} -> Ply2_ad_slice
-			p256: BH_Crosscourt{ball=6} -> Ply2_de_smash
-			p257: BH_Crosscourt{ball=6} -> Ply2_de_lob
-			p258: BH_Crosscourt{ball=6} -> Ply2_de_stroke
-			p259: BH_Crosscourt{ball=6} -> Ply2_de_slice
-			p260: BH_DownMid{ball=5} -> Ply2_mid_smash
-			p261: BH_DownMid{ball=5} -> Ply2_mid_lob
-			p262: BH_DownMid{ball=5} -> Ply2_mid_stroke
-			p263: BH_DownMid{ball=5} -> Ply2_mid_slice
-			p264: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p265: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
-      		                                                     else { turn = (turn+1)%4} }-> NextPt  
-	};
+Ply1_ad_lob_shallow = pcase{
+            p856: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p857: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p858: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p859: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p860: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p861: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p862: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p863: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p864: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p865: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p866: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p867: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p868: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p869: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p870: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p871: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p872: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p873: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p874: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p875: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p876: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p877: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p878: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p879: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p880: BH_InsideIn{ball=4} -> Ply2_ad_smash_shallow
+            p881: BH_InsideIn{ball=4} -> Ply2_ad_smash_deep
+            p882: BH_InsideIn{ball=4} -> Ply2_ad_lob_shallow
+            p883: BH_InsideIn{ball=4} -> Ply2_ad_lob_deep
+            p884: BH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+            p885: BH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+            p886: BH_InsideIn{ball=4} -> Ply2_ad_slice_shallow
+            p887: BH_InsideIn{ball=4} -> Ply2_ad_slice_deep
+            p888: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p889: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p890: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p891: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p892: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p893: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p894: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p895: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p896: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p897: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p898: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p899: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p900: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p901: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p902: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p903: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p904: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                                   else { turn = (turn+1)%4} }-> NextPt
+            p905: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                   else { turn = (turn+1)%4} }-> NextPt    
+};
+
+Ply1_ad_lob_deep = pcase{
+            p906: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p907: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p908: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p909: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p910: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p911: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p912: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p913: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p914: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p915: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p916: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p917: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p918: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p919: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p920: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p921: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p922: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p923: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p924: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p925: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p926: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p927: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p928: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p929: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p930: BH_InsideIn{ball=4} -> Ply2_ad_smash_shallow
+            p931: BH_InsideIn{ball=4} -> Ply2_ad_smash_deep
+            p932: BH_InsideIn{ball=4} -> Ply2_ad_lob_shallow
+            p933: BH_InsideIn{ball=4} -> Ply2_ad_lob_deep
+            p934: BH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+            p935: BH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+            p936: BH_InsideIn{ball=4} -> Ply2_ad_slice_shallow
+            p937: BH_InsideIn{ball=4} -> Ply2_ad_slice_deep
+            p938: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p939: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p940: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p941: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p942: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p943: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p944: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p945: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p946: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p947: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p948: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p949: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p950: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p951: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p952: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p953: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p954: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                                    else { turn = (turn+1)%4} }-> NextPt
+            p955: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                    else { turn = (turn+1)%4} }-> NextPt    
+};
 
 // deuce slice is when player1 hit position is 1
-Ply1_de_slice = pcase{
-			p266: FH_InsideOut{ball=6} -> Ply2_de_smash
-			p267: FH_InsideOut{ball=6} -> Ply2_de_lob
-			p268: FH_InsideOut{ball=6} -> Ply2_de_stroke
-			p269: FH_InsideOut{ball=6} -> Ply2_de_slice
-			p270: FH_InsideIn{ball=4} -> Ply2_ad_smash
-			p271: FH_InsideIn{ball=4} -> Ply2_ad_lob
-			p272: FH_InsideIn{ball=4} -> Ply2_ad_stroke
-			p273: FH_InsideIn{ball=4} -> Ply2_ad_slice
-			p274: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p275: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p276: FH_DownMid{ball=5} -> Ply2_mid_stroke
-			p277: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p278: BH_Crosscourt{ball=6} -> Ply2_de_smash
-			p279: BH_Crosscourt{ball=6} -> Ply2_de_lob
-			p280: BH_Crosscourt{ball=6} -> Ply2_de_stroke
-			p281: BH_Crosscourt{ball=6} -> Ply2_de_slice
-			p282: BH_Downline{ball=4} -> Ply2_ad_smash
-			p283: BH_Downline{ball=4} -> Ply2_ad_lob
-			p284: BH_Downline{ball=4} -> Ply2_ad_stroke
-			p285: BH_Downline{ball=4} -> Ply2_ad_slice
-			p286: BH_DownMid{ball=5} -> Ply2_mid_smash
-			p287: BH_DownMid{ball=5} -> Ply2_mid_lob
-			p288: BH_DownMid{ball=5} -> Ply2_mid_stroke
-			p289: BH_DownMid{ball=5} -> Ply2_mid_slice			
-			p290: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+Ply1_de_slice_shallow = pcase{
+            p956: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p957: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p958: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p959: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p960: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p961: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p962: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p963: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p964: FH_InsideIn{ball=4} -> Ply2_ad_smash_shallow
+            p965: FH_InsideIn{ball=4} -> Ply2_ad_smash_deep
+            p966: FH_InsideIn{ball=4} -> Ply2_ad_lob_shallow
+            p967: FH_InsideIn{ball=4} -> Ply2_ad_lob_deep
+            p968: FH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+            p969: FH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+            p970: FH_InsideIn{ball=4} -> Ply2_ad_slice_shallow
+            p971: FH_InsideIn{ball=4} -> Ply2_ad_slice_deep
+            p972: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p973: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p974: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p975: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p976: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p977: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p978: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p979: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p980: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p981: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p982: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p983: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p984: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p985: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p986: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p987: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p988: BH_Downline{ball=4} -> Ply2_ad_smash_shallow
+            p989: BH_Downline{ball=4} -> Ply2_ad_smash_deep
+            p990: BH_Downline{ball=4} -> Ply2_ad_lob_shallow
+            p991: BH_Downline{ball=4} -> Ply2_ad_lob_deep
+            p992: BH_Downline{ball=4} -> Ply2_ad_stroke_shallow
+            p993: BH_Downline{ball=4} -> Ply2_ad_stroke_deep
+            p994: BH_Downline{ball=4} -> Ply2_ad_slice_shallow
+            p995: BH_Downline{ball=4} -> Ply2_ad_slice_deep
+            p996: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p997: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p998: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p999: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p1000: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p1001: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p1002: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p1003: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p1004: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                  else { turn = (turn+1)%4} }-> NextPt
+            p1005: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                  else { turn = (turn+1)%4} }-> NextPt    
+};
+
+Ply1_de_slice_deep = pcase{
+			p1006: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+			p1007: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+			p1008: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+			p1009: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+			p1010: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+			p1011: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+			p1012: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+			p1013: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+			p1014: FH_InsideIn{ball=4} -> Ply2_ad_smash_shallow
+			p1015: FH_InsideIn{ball=4} -> Ply2_ad_smash_deep
+			p1016: FH_InsideIn{ball=4} -> Ply2_ad_lob_shallow
+			p1017: FH_InsideIn{ball=4} -> Ply2_ad_lob_deep
+			p1018: FH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+			p1019: FH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+			p1020: FH_InsideIn{ball=4} -> Ply2_ad_slice_shallow
+			p1021: FH_InsideIn{ball=4} -> Ply2_ad_slice_deep
+			p1022: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+			p1023: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+			p1024: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+			p1025: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+			p1026: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p1027: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+			p1028: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+			p1029: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+			p1030: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+			p1031: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+			p1032: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+			p1033: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+			p1034: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+			p1035: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+			p1036: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+			p1037: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+			p1038: BH_Downline{ball=4} -> Ply2_ad_smash_shallow
+			p1039: BH_Downline{ball=4} -> Ply2_ad_smash_deep
+			p1040: BH_Downline{ball=4} -> Ply2_ad_lob_shallow
+			p1041: BH_Downline{ball=4} -> Ply2_ad_lob_deep
+			p1042: BH_Downline{ball=4} -> Ply2_ad_stroke_shallow
+			p1043: BH_Downline{ball=4} -> Ply2_ad_stroke_deep
+			p1044: BH_Downline{ball=4} -> Ply2_ad_slice_shallow
+			p1045: BH_Downline{ball=4} -> Ply2_ad_slice_deep
+			p1046: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+			p1047: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+			p1048: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+			p1049: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+			p1050: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p1051: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+			p1052: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+			p1053: BH_DownMid{ball=5} -> Ply2_mid_slice_deep			
+			p1054: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p291: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p1055: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
-	};
+};
 	
 // mid slice is when player1 hit position is 2
-Ply1_mid_slice = pcase{
-			p292: FH_InsideOut{ball=6} -> Ply2_de_smash
-			p293: FH_InsideOut{ball=6} -> Ply2_de_lob
-			p294: FH_InsideOut{ball=6} -> Ply2_de_stroke
-			p295: FH_InsideOut{ball=6} -> Ply2_de_slice
-			p296: FH_Crosscourt{ball=4} -> Ply2_ad_smash
-			p297: FH_Crosscourt{ball=4} -> Ply2_ad_lob
-			p298: FH_Crosscourt{ball=4} -> Ply2_ad_stroke
-			p299: FH_Crosscourt{ball=4} -> Ply2_ad_slice
-			p300: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p301: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p302: FH_DownMid{ball=5} -> Ply2_mid_stroke
-			p303: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p304: BH_InsideOut{ball=4} -> Ply2_ad_smash
-			p305: BH_InsideOut{ball=4} -> Ply2_ad_lob
-			p306: BH_InsideOut{ball=4} -> Ply2_ad_stroke
-			p307: BH_InsideOut{ball=4} -> Ply2_ad_slice
-			p308: BH_Crosscourt{ball=6} -> Ply2_de_smash
-			p309: BH_Crosscourt{ball=6} -> Ply2_de_lob
-			p310: BH_Crosscourt{ball=6} -> Ply2_de_stroke
-			p311: BH_Crosscourt{ball=6} -> Ply2_de_slice
-			p312: BH_DownMid{ball=5} -> Ply2_mid_smash
-			p313: BH_DownMid{ball=5} -> Ply2_mid_lob
-			p314: BH_DownMid{ball=5} -> Ply2_mid_stroke
-			p315: BH_DownMid{ball=5} -> Ply2_mid_slice			
-			p316: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+Ply1_mid_slice_shallow = pcase{
+            p1056: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p1057: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p1058: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p1059: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p1060: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p1061: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p1062: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p1063: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p1064: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p1065: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p1066: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p1067: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p1068: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p1069: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p1070: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p1071: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p1072: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p1073: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p1074: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p1075: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p1076: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p1077: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p1078: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p1079: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p1080: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow
+            p1081: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep
+            p1082: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow
+            p1083: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep
+            p1084: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+            p1085: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+            p1086: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow
+            p1087: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep
+            p1088: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p1089: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p1090: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p1091: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p1092: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p1093: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p1094: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p1095: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p1096: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p1097: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p1098: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p1099: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p1100: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p1101: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p1102: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p1103: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p1104: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                                       else { turn = (turn+1)%4} }-> NextPt
+            p1105: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                       else { turn = (turn+1)%4} }-> NextPt    
+};
+
+Ply1_mid_slice_deep = pcase{
+			p1106: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+			p1107: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+			p1108: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+			p1109: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+			p1110: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+			p1111: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+			p1112: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+			p1113: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+			p1114: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+			p1115: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+			p1116: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+			p1117: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+			p1118: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+			p1119: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+			p1120: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+			p1121: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+			p1122: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+			p1123: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+			p1124: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+			p1125: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+			p1126: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p1127: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+			p1128: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+			p1129: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+			p1130: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow
+			p1131: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep
+			p1132: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow
+			p1133: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep
+			p1134: BH_InsideOut{ball=4} -> Ply2_ad_stroke_shallow
+			p1135: BH_InsideOut{ball=4} -> Ply2_ad_stroke_deep
+			p1136: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow
+			p1137: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep
+			p1138: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+			p1139: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+			p1140: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+			p1141: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+			p1142: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+			p1143: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+			p1144: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+			p1145: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+			p1146: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+			p1147: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+			p1148: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+			p1149: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+			p1150: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+			p1151: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+			p1152: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+			p1153: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+			p1154: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p317: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p1155: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt    
-	};
+};
 
 // ad slice is when player1 hit position is 3
-Ply1_ad_slice = pcase{
-			p318: FH_InsideOut{ball=6} -> Ply2_de_smash
-			p319: FH_InsideOut{ball=6} -> Ply2_de_lob
-			p320: FH_InsideOut{ball=6} -> Ply2_de_stroke
-			p321: FH_InsideOut{ball=6} -> Ply2_de_slice
-			p322: FH_Crosscourt{ball=4} -> Ply2_ad_smash
-			p323: FH_Crosscourt{ball=4} -> Ply2_ad_lob
-			p324: FH_Crosscourt{ball=4} -> Ply2_ad_stroke
-			p325: FH_Crosscourt{ball=4} -> Ply2_ad_slice
-			p326: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p327: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p328: FH_DownMid{ball=5} -> Ply2_mid_stroke
-			p329: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p330: BH_InsideIn{ball=4} -> Ply2_ad_smash
-			p331: BH_InsideIn{ball=4} -> Ply2_ad_lob
-			p332: BH_InsideIn{ball=4} -> Ply2_ad_stroke
-			p333: BH_InsideIn{ball=4} -> Ply2_ad_slice
-			p334: BH_Crosscourt{ball=6} -> Ply2_de_smash
-			p335: BH_Crosscourt{ball=6} -> Ply2_de_lob
-			p336: BH_Crosscourt{ball=6} -> Ply2_de_stroke
-			p337: BH_Crosscourt{ball=6} -> Ply2_de_slice
-			p338: BH_DownMid{ball=5} -> Ply2_mid_smash
-			p339: BH_DownMid{ball=5} -> Ply2_mid_lob
-			p340: BH_DownMid{ball=5} -> Ply2_mid_stroke
-			p341: BH_DownMid{ball=5} -> Ply2_mid_slice
-			p342: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p343: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
-      		                                                     else { turn = (turn+1)%4} }-> NextPt  
-	};
+Ply1_ad_slice_shallow = pcase{
+            p1156: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p1157: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p1158: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p1159: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p1160: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p1161: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p1162: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p1163: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p1164: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p1165: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p1166: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p1167: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p1168: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p1169: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p1170: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p1171: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p1172: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p1173: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p1174: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p1175: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p1176: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p1177: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p1178: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p1179: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p1180: BH_InsideIn{ball=4} -> Ply2_ad_smash_shallow
+            p1181: BH_InsideIn{ball=4} -> Ply2_ad_smash_deep
+            p1182: BH_InsideIn{ball=4} -> Ply2_ad_lob_shallow
+            p1183: BH_InsideIn{ball=4} -> Ply2_ad_lob_deep
+            p1184: BH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+            p1185: BH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+            p1186: BH_InsideIn{ball=4} -> Ply2_ad_slice_shallow
+            p1187: BH_InsideIn{ball=4} -> Ply2_ad_slice_deep
+            p1188: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p1189: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p1190: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p1191: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p1192: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p1193: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p1194: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p1195: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p1196: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p1197: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p1198: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p1199: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p1200: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p1201: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p1202: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p1203: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p1204: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                                   else { turn = (turn+1)%4} }-> NextPt
+            p1205: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                   else { turn = (turn+1)%4} }-> NextPt    
+};
+
+Ply1_ad_slice_deep = pcase{
+            p1206: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow
+            p1207: FH_InsideOut{ball=6} -> Ply2_de_smash_deep
+            p1208: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow
+            p1209: FH_InsideOut{ball=6} -> Ply2_de_lob_deep
+            p1210: FH_InsideOut{ball=6} -> Ply2_de_stroke_shallow
+            p1211: FH_InsideOut{ball=6} -> Ply2_de_stroke_deep
+            p1212: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow
+            p1213: FH_InsideOut{ball=6} -> Ply2_de_slice_deep
+            p1214: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow
+            p1215: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep
+            p1216: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow
+            p1217: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep
+            p1218: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_shallow
+            p1219: FH_Crosscourt{ball=4} -> Ply2_ad_stroke_deep
+            p1220: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow
+            p1221: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep
+            p1222: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p1223: FH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p1224: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p1225: FH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p1226: FH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p1227: FH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p1228: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p1229: FH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p1230: BH_InsideIn{ball=4} -> Ply2_ad_smash_shallow
+            p1231: BH_InsideIn{ball=4} -> Ply2_ad_smash_deep
+            p1232: BH_InsideIn{ball=4} -> Ply2_ad_lob_shallow
+            p1233: BH_InsideIn{ball=4} -> Ply2_ad_lob_deep
+            p1234: BH_InsideIn{ball=4} -> Ply2_ad_stroke_shallow
+            p1235: BH_InsideIn{ball=4} -> Ply2_ad_stroke_deep
+            p1236: BH_InsideIn{ball=4} -> Ply2_ad_slice_shallow
+            p1237: BH_InsideIn{ball=4} -> Ply2_ad_slice_deep
+            p1238: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow
+            p1239: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep
+            p1240: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow
+            p1241: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep
+            p1242: BH_Crosscourt{ball=6} -> Ply2_de_stroke_shallow
+            p1243: BH_Crosscourt{ball=6} -> Ply2_de_stroke_deep
+            p1244: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow
+            p1245: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep
+            p1246: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow
+            p1247: BH_DownMid{ball=5} -> Ply2_mid_smash_deep
+            p1248: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow
+            p1249: BH_DownMid{ball=5} -> Ply2_mid_lob_deep
+            p1250: BH_DownMid{ball=5} -> Ply2_mid_stroke_shallow
+            p1251: BH_DownMid{ball=5} -> Ply2_mid_stroke_deep
+            p1252: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow
+            p1253: BH_DownMid{ball=5} -> Ply2_mid_slice_deep
+            p1254: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                                   else { turn = (turn+1)%4} }-> NextPt
+            p1255: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                   else { turn = (turn+1)%4} }-> NextPt    
+};
 
 
 De_Ply2Serve = pcase {
-			p344: ServeT_in{ball=2} -> Ply1_ForeHandR
-			p345: ServeBody_in{ball=1} -> (Ply1_ForeHandR [] Ply1_BackHandR)
-			p346: ServeWide_in{ball=1} -> Ply1_BackHandR
-			p347: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2}
+			p1256: ServeT_in{ball=2} -> Ply1_ForeHandR
+			p1257: ServeBody_in{ball=1} -> (Ply1_ForeHandR [] Ply1_BackHandR)
+			p1258: ServeWide_in{ball=1} -> Ply1_BackHandR
+			p1259: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2}
 																else { turn = (turn+1)%4} }-> NextPt
-			p348: Serve_err{ball=9} -> De_Ply2Serve_2nd}; 
+			p1260: Serve_err{ball=9} -> De_Ply2Serve_2nd}; 
 
 De_Ply2Serve_2nd = pcase {                 //1st serve is out
-			p349: ServeT_in{ball=2} -> Ply1_ForeHandR
-			p350: ServeBody_in{ball=1} -> (Ply1_ForeHandR [] Ply1_BackHandR)
-			p351: ServeWide_in{ball=1} -> Ply1_BackHandR
-			p352: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
+			p1261: ServeT_in{ball=2} -> Ply1_ForeHandR
+			p1262: ServeBody_in{ball=1} -> (Ply1_ForeHandR [] Ply1_BackHandR)
+			p1263: ServeWide_in{ball=1} -> Ply1_BackHandR
+			p1264: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p353: Serve_err{ball=9} -> Ndoublefault{fscore++; if (fscore == points) {won = player1} 
+			p1265: Serve_err{ball=9} -> Ndoublefault{fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
      		 };
      		 
 Ad_Ply2Serve = pcase {
-			p354: ServeT_in{ball=2} -> Ply1_BackHandR
-			p355: ServeBody_in{ball=3} -> (Ply1_ForeHandR [] Ply1_BackHandR)
-			p356: ServeWide_in{ball=3} -> Ply1_ForeHandR
-			p357: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
+			p1266: ServeT_in{ball=2} -> Ply1_BackHandR
+			p1267: ServeBody_in{ball=3} -> (Ply1_ForeHandR [] Ply1_BackHandR)
+			p1268: ServeWide_in{ball=3} -> Ply1_ForeHandR
+			p1269: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p358: Serve_err{ball=9} -> Ad_Ply2Serve_2nd}; 
+			p1270: Serve_err{ball=9} -> Ad_Ply2Serve_2nd}; 
 
 Ad_Ply2Serve_2nd = pcase {                 //1st serve is out
-			p359: ServeT_in{ball=2} -> Ply1_BackHandR
-			p360: ServeBody_in{ball=3} -> (Ply1_ForeHandR [] Ply1_BackHandR)
-			p361: ServeWide_in{ball=3} -> Ply1_ForeHandR
-			p362: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
+			p1271: ServeT_in{ball=2} -> Ply1_BackHandR
+			p1272: ServeBody_in{ball=3} -> (Ply1_ForeHandR [] Ply1_BackHandR)
+			p1273: ServeWide_in{ball=3} -> Ply1_ForeHandR
+			p1274: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p363: Serve_err{ball=9} -> Ndoublefault{fscore++; if (fscore == points) {won = player1} 
+			p1275: Serve_err{ball=9} -> Ndoublefault{fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
      		 };
      		 
-Ply2_ForeHandR = ifa (turn == f_de_ct) {    // Player2 backhand return to Player1 serve from the deuce court side
-		  pcase {
-			p364: FH_CrossCourt{ball = 1} -> Ply1_de_stroke
-			p365: FH_DownLine { ball = 3} -> Ply1_ad_stroke
-			p366: FH_DownMid{ ball = 2} -> Ply1_mid_stroke
-			p367: FH_Winner{ball=9} -> {nscore++; if (nscore == points) {won = player2} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p368: FH_Error{ ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-      		 }}
-      		 else {
-      		pcase {
-      		p369: FH_InsideOut{ ball = 3} -> Ply1_ad_stroke
-			p370: FH_InsideIn{ball = 1} -> Ply1_de_stroke
-			p371: FH_CrossCourt{ball = 1} -> Ply1_de_stroke
-			p372: FH_DownMid{ ball = 2} -> Ply1_mid_stroke
-			p373: FH_Winner{ball=9} -> {nscore++; if (nscore == points) {won = player2} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p374: FH_Error{ ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-      		 }};
-      		 
-Ply2_BackHandR = ifa (turn == f_de_ct) {    // Player2 forehand return to Player1 serve from the deuce court side
-			pcase {
-			p375: BH_CrossCourt{ ball = 3} -> Ply1_ad_stroke
-			p376: BH_InsideIn{ball = 3} -> Ply1_ad_stroke
-			p377: BH_InsideOut{ ball = 1} -> Ply1_de_stroke
-			p378: BH_DownMid{ ball = 2} -> Ply1_mid_stroke
-			p379: BH_Winner{ball=9} -> {nscore++; if (nscore == points) {won = player2} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p380: BH_Error{ ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-      		 }}
-      		 else {
-      		pcase {
-			p381: BH_CrossCourt{ ball = 3} -> Ply1_ad_stroke
-			p382: BH_DownLine{ ball = 1} -> Ply1_de_stroke
-			p383: BH_DownMid{ ball = 2} -> Ply1_mid_stroke
-			p384: BH_Winner{ball=9} -> {nscore++; if (nscore == points) {won = player2} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p385: BH_Error{ ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt			
-      		 }};
+Ply2_ForeHandR = ifa (turn == f_de_ct) {    // Player2 forehand return to Player1 serve from the deuce court side
+          pcase {
+            p1276: FH_CrossCourt{ball = 1} -> Ply1_de_stroke_shallow
+            p1277: FH_CrossCourt{ball = 1} -> Ply1_de_stroke_deep
+            p1278: FH_DownLine{ball = 3} -> Ply1_ad_stroke_shallow
+            p1279: FH_DownLine{ball = 3} -> Ply1_ad_stroke_deep
+            p1280: FH_DownMid{ball = 2} -> Ply1_mid_stroke_shallow
+            p1281: FH_DownMid{ball = 2} -> Ply1_mid_stroke_deep
+            p1282: FH_Winner{ball=9} -> {nscore++; if (nscore == points) {won = player2} 
+                                                      else { turn = (turn+1)%4} }-> NextPt
+            p1283: FH_Error{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                      else { turn = (turn+1)%4} }-> NextPt
+             }}
+             else {
+          pcase {
+            p1284: FH_InsideOut{ball = 3} -> Ply1_ad_stroke_shallow
+            p1285: FH_InsideOut{ball = 3} -> Ply1_ad_stroke_deep
+            p1286: FH_InsideIn{ball = 1} -> Ply1_de_stroke_shallow
+            p1287: FH_InsideIn{ball = 1} -> Ply1_de_stroke_deep
+            p1288: FH_CrossCourt{ball = 1} -> Ply1_de_stroke_shallow
+            p1289: FH_CrossCourt{ball = 1} -> Ply1_de_stroke_deep
+            p1290: FH_DownMid{ball = 2} -> Ply1_mid_stroke_shallow
+            p1291: FH_DownMid{ball = 2} -> Ply1_mid_stroke_deep
+            p1292: FH_Winner{ball=9} -> {nscore++; if (nscore == points) {won = player2} 
+                                                      else { turn = (turn+1)%4} }-> NextPt
+            p1293: FH_Error{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                      else { turn = (turn+1)%4} }-> NextPt
+             }};
+             
+Ply2_BackHandR = ifa (turn == f_de_ct) {    // Player2 backhand return to Player1 serve from the deuce court side
+          pcase {
+            p1294: BH_CrossCourt{ball = 3} -> Ply1_ad_stroke_shallow
+            p1295: BH_CrossCourt{ball = 3} -> Ply1_ad_stroke_deep
+            p1296: BH_InsideIn{ball = 3} -> Ply1_ad_stroke_shallow
+            p1297: BH_InsideIn{ball = 3} -> Ply1_ad_stroke_deep
+            p1298: BH_InsideOut{ball = 1} -> Ply1_de_stroke_shallow
+            p1299: BH_InsideOut{ball = 1} -> Ply1_de_stroke_deep
+            p1300: BH_DownMid{ball = 2} -> Ply1_mid_stroke_shallow
+            p1301: BH_DownMid{ball = 2} -> Ply1_mid_stroke_deep
+            p1302: BH_Winner{ball=9} -> {nscore++; if (nscore == points) {won = player2} 
+                                                      else { turn = (turn+1)%4} }-> NextPt
+            p1303: BH_Error{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                      else { turn = (turn+1)%4} }-> NextPt
+             }}
+             else {
+          pcase {
+            p1304: BH_CrossCourt{ball = 3} -> Ply1_ad_stroke_shallow
+            p1305: BH_CrossCourt{ball = 3} -> Ply1_ad_stroke_deep
+            p1306: BH_DownLine{ball = 1} -> Ply1_de_stroke_shallow
+            p1307: BH_DownLine{ball = 1} -> Ply1_de_stroke_deep
+            p1308: BH_DownMid{ball = 2} -> Ply1_mid_stroke_shallow
+            p1309: BH_DownMid{ball = 2} -> Ply1_mid_stroke_deep
+            p1310: BH_InsideOut{ball = 1} -> Ply1_de_stroke_shallow
+            p1311: BH_InsideOut{ball = 1} -> Ply1_de_stroke_deep
+            p1312: BH_Winner{ball=9} -> {nscore++; if (nscore == points) {won = player2} 
+                                                      else { turn = (turn+1)%4} }-> NextPt
+            p1313: BH_Error{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                      else { turn = (turn+1)%4} }-> NextPt
+             }};
 
 // deuce stroke is when player2 hit position is 6
-Ply2_de_stroke = pcase { // if already 
-			p386: FH_Crosscourt { ball = 1;} -> Ply1_de_smash
-			p387: FH_Crosscourt { ball = 1;} -> Ply1_de_lob
-			p388: FH_Crosscourt { ball = 1;} -> Ply1_de_stroke
-			p389: FH_Crosscourt { ball = 1;} -> Ply1_de_slice
-			p390: FH_Downline { ball = 3} -> Ply1_ad_smash
-			p391: FH_Downline { ball = 3} -> Ply1_ad_lob
-			p392: FH_Downline { ball = 3} -> Ply1_ad_stroke
-			p393: FH_Downline { ball = 3} -> Ply1_ad_slice
-			p394: FH_DownMid { ball = 2} -> Ply1_mid_smash
-			p395: FH_DownMid { ball = 2} -> Ply1_mid_lob
-			p396: FH_DownMid { ball = 2} -> Ply1_mid_stroke
-			p397: FH_DownMid { ball = 2} -> Ply1_mid_slice
-			p398: BH_InsideIn {ball = 3} -> Ply1_ad_smash
-			p399: BH_InsideIn {ball = 3} -> Ply1_ad_lob
-			p400: BH_InsideIn {ball = 3} -> Ply1_ad_stroke
-			p401: BH_InsideIn {ball = 3} -> Ply1_ad_slice
-			p402: BH_InsideOut { ball = 1} -> Ply1_de_smash
-			p403: BH_InsideOut { ball = 1} -> Ply1_de_lob
-			p404: BH_InsideOut { ball = 1} -> Ply1_de_stroke
-			p405: BH_InsideOut { ball = 1} -> Ply1_de_slice
-			p406: BH_DownMid { ball = 2} -> Ply1_mid_smash
-			p407: BH_DownMid { ball = 2} -> Ply1_mid_log
-			p408: BH_DownMid { ball = 2} -> Ply1_mid_stroke
-			p409: BH_DownMid { ball = 2} -> Ply1_mid_slice
-			p410: Winner{ ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+Ply2_de_stroke_shallow = pcase { // if already 
+            p1314: FH_Crosscourt { ball = 1;} -> Ply1_de_smash_shallow
+            p1315: FH_Crosscourt { ball = 1;} -> Ply1_de_smash_deep
+            p1316: FH_Crosscourt { ball = 1;} -> Ply1_de_lob_shallow
+            p1317: FH_Crosscourt { ball = 1;} -> Ply1_de_lob_deep
+            p1318: FH_Crosscourt { ball = 1;} -> Ply1_de_stroke_shallow
+            p1319: FH_Crosscourt { ball = 1;} -> Ply1_de_stroke_deep
+            p1320: FH_Crosscourt { ball = 1;} -> Ply1_de_slice_shallow
+            p1321: FH_Crosscourt { ball = 1;} -> Ply1_de_slice_deep
+            p1322: FH_Downline { ball = 3} -> Ply1_ad_smash_shallow
+            p1323: FH_Downline { ball = 3} -> Ply1_ad_smash_deep
+            p1324: FH_Downline { ball = 3} -> Ply1_ad_lob_shallow
+            p1325: FH_Downline { ball = 3} -> Ply1_ad_lob_deep
+            p1326: FH_Downline { ball = 3} -> Ply1_ad_stroke_shallow
+            p1327: FH_Downline { ball = 3} -> Ply1_ad_stroke_deep
+            p1328: FH_Downline { ball = 3} -> Ply1_ad_slice_shallow
+            p1329: FH_Downline { ball = 3} -> Ply1_ad_slice_deep
+            p1330: FH_DownMid { ball = 2} -> Ply1_mid_smash_shallow
+            p1331: FH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1332: FH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1333: FH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1334: FH_DownMid { ball = 2} -> Ply1_mid_stroke_shallow
+            p1335: FH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1336: FH_DownMid { ball = 2} -> Ply1_mid_slice_shallow
+            p1337: FH_DownMid { ball = 2} -> Ply1_mid_slice_deep
+            p1338: BH_InsideIn {ball = 3} -> Ply1_ad_smash_shallow
+            p1339: BH_InsideIn {ball = 3} -> Ply1_ad_smash_deep
+            p1340: BH_InsideIn {ball = 3} -> Ply1_ad_lob_shallow
+            p1341: BH_InsideIn {ball = 3} -> Ply1_ad_lob_deep
+            p1342: BH_InsideIn {ball = 3} -> Ply1_ad_stroke_shallow
+            p1343: BH_InsideIn {ball = 3} -> Ply1_ad_stroke_deep
+            p1344: BH_InsideIn {ball = 3} -> Ply1_ad_slice_shallow
+            p1345: BH_InsideIn {ball = 3} -> Ply1_ad_slice_deep
+            p1346: BH_InsideOut { ball = 1} -> Ply1_de_smash_shallow
+            p1347: BH_InsideOut { ball = 1} -> Ply1_de_smash_deep
+            p1348: BH_InsideOut { ball = 1} -> Ply1_de_lob_shallow
+            p1349: BH_InsideOut { ball = 1} -> Ply1_de_lob_deep
+            p1350: BH_InsideOut { ball = 1} -> Ply1_de_stroke_shallow
+            p1351: BH_InsideOut { ball = 1} -> Ply1_de_stroke_deep
+            p1352: BH_InsideOut { ball = 1} -> Ply1_de_slice_shallow
+            p1353: BH_InsideOut { ball = 1} -> Ply1_de_slice_deep
+            p1354: BH_DownMid { ball = 2} -> Ply1_mid_smash_shallow
+            p1355: BH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1356: BH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1357: BH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1358: BH_DownMid { ball = 2} -> Ply1_mid_stroke_shallow
+            p1359: BH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1360: BH_DownMid { ball = 2} -> Ply1_mid_slice_shallow
+            p1361: BH_DownMid { ball = 2} -> Ply1_mid_slice_deep
+            p1362: Winner { ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+                                                      else { turn = (turn+1)%4} }-> NextPt
+            p1363: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                      else { turn = (turn+1)%4} }-> NextPt 
+};
+
+Ply2_de_stroke_deep = pcase {
+            p1364: FH_Crosscourt { ball = 1;} -> Ply1_de_smash_shallow
+            p1365: FH_Crosscourt { ball = 1;} -> Ply1_de_smash_deep
+            p1366: FH_Crosscourt { ball = 1;} -> Ply1_de_lob_shallow
+            p1367: FH_Crosscourt { ball = 1;} -> Ply1_de_lob_deep
+            p1368: FH_Crosscourt { ball = 1;} -> Ply1_de_stroke_shallow
+            p1369: FH_Crosscourt { ball = 1;} -> Ply1_de_stroke_deep
+            p1370: FH_Crosscourt { ball = 1;} -> Ply1_de_slice_shallow
+            p1371: FH_Crosscourt { ball = 1;} -> Ply1_de_slice_deep
+            p1372: FH_Downline { ball = 3} -> Ply1_ad_smash_shallow
+            p1373: FH_Downline { ball = 3} -> Ply1_ad_smash_deep
+            p1374: FH_Downline { ball = 3} -> Ply1_ad_lob_shallow
+            p1375: FH_Downline { ball = 3} -> Ply1_ad_lob_deep
+            p1376: FH_Downline { ball = 3} -> Ply1_ad_stroke_shallow
+            p1377: FH_Downline { ball = 3} -> Ply1_ad_stroke_deep
+            p1378: FH_Downline { ball = 3} -> Ply1_ad_slice_shallow
+            p1379: FH_Downline { ball = 3} -> Ply1_ad_slice_deep
+            p1380: FH_DownMid { ball = 2} -> Ply1_mid_smash_shallow
+            p1381: FH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1382: FH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1383: FH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1384: FH_DownMid { ball = 2} -> Ply1_mid_stroke_shallow
+            p1385: FH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1386: FH_DownMid { ball = 2} -> Ply1_mid_slice_shallow
+            p1387: FH_DownMid { ball = 2} -> Ply1_mid_slice_deep
+            p1388: BH_InsideIn {ball = 3} -> Ply1_ad_smash_shallow
+            p1389: BH_InsideIn {ball = 3} -> Ply1_ad_smash_deep
+            p1390: BH_InsideIn {ball = 3} -> Ply1_ad_lob_shallow
+            p1391: BH_InsideIn {ball = 3} -> Ply1_ad_lob_deep
+            p1392: BH_InsideIn {ball = 3} -> Ply1_ad_stroke_shallow
+            p1393: BH_InsideIn {ball = 3} -> Ply1_ad_stroke_deep
+            p1394: BH_InsideIn {ball = 3} -> Ply1_ad_slice_shallow
+            p1395: BH_InsideIn {ball = 3} -> Ply1_ad_slice_deep
+            p1396: BH_InsideOut { ball = 1} -> Ply1_de_smash_shallow
+            p1397: BH_InsideOut { ball = 1} -> Ply1_de_smash_deep
+            p1398: BH_InsideOut { ball = 1} -> Ply1_de_lob_shallow
+            p1399: BH_InsideOut { ball = 1} -> Ply1_de_lob_deep
+            p1400: BH_InsideOut { ball = 1} -> Ply1_de_stroke_shallow
+            p1401: BH_InsideOut { ball = 1} -> Ply1_de_stroke_deep
+            p1402: BH_InsideOut { ball = 1} -> Ply1_de_slice_shallow
+            p1403: BH_InsideOut { ball = 1} -> Ply1_de_slice_deep
+            p1404: BH_DownMid { ball = 2} -> Ply1_mid_smash_shallow
+            p1405: BH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1406: BH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1407: BH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1408: BH_DownMid { ball = 2} -> Ply1_mid_stroke_shallow
+            p1409: BH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1410: BH_DownMid { ball = 2} -> Ply1_mid_slice_shallow
+            p1411: BH_DownMid { ball = 2} -> Ply1_mid_slice_deep
+            p1412: Winner{ ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p411: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p1413: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
-	};
+};
 
 // mid stroke is when player2 hit position is 5
-Ply2_mid_stroke = noMove -> pcase{
-			p412: FH_InsideOut { ball = 3} -> Ply1_ad_smash
-			p413: FH_InsideOut { ball = 3} -> Ply1_ad_lob
-			p414: FH_InsideOut { ball = 3} -> Ply1_ad_stroke
-			p415: FH_InsideOut { ball = 3} -> Ply1_ad_slice
-			p416: FH_Crosscourt {ball = 1} -> Ply1_de_smash
-			p417: FH_Crosscourt {ball = 1} -> Ply1_de_lob
-			p418: FH_Crosscourt {ball = 1} -> Ply1_de_stroke
-			p419: FH_Crosscourt {ball = 1} -> Ply1_de_slice
-			p420: FH_DownMid { ball = 2 } -> Ply1_mid_smash
-			p421: FH_DownMid { ball = 2 } -> Ply1_mid_lob
-			p422: FH_DownMid { ball = 2 } -> Ply1_mid_stroke
-			p423: FH_DownMid { ball = 2 } -> Ply1_mid_slice
-			p424: BH_InsideOut { ball = 1} -> Ply1_de_smash
-			p425: BH_InsideOut { ball = 1} -> Ply1_de_lob
-			p426: BH_InsideOut { ball = 1} -> Ply1_de_stroke
-			p427: BH_InsideOut { ball = 1} -> Ply1_de_slice
-			p428: BH_Crosscourt { ball = 3} -> Ply1_ad_smash
-			p429: BH_Crosscourt { ball = 3} -> Ply1_ad_lob
-			p430: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke
-			p431: BH_Crosscourt { ball = 3} -> Ply1_ad_slice
-			p432: BH_DownMid { ball = 2} -> Ply1_mid_smash
-			p433: BH_DownMid { ball = 2} -> Ply1_mid_lob
-			p434: BH_DownMid { ball = 2} -> Ply1_mid_stroke
-			p435: BH_DownMid { ball = 2} -> Ply1_mid_slice
-			p436: Winner{ ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p437: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt 
-	};
+Ply2_mid_stroke_shallow = noMove -> pcase{
+            p1414: FH_InsideOut { ball = 3} -> Ply1_ad_smash_shallow
+            p1415: FH_InsideOut { ball = 3} -> Ply1_ad_smash_deep
+            p1416: FH_InsideOut { ball = 3} -> Ply1_ad_lob_shallow
+            p1417: FH_InsideOut { ball = 3} -> Ply1_ad_lob_deep
+            p1418: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_shallow
+            p1419: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_deep
+            p1420: FH_InsideOut { ball = 3} -> Ply1_ad_slice_shallow
+            p1421: FH_InsideOut { ball = 3} -> Ply1_ad_slice_deep
+            p1422: FH_Crosscourt {ball = 1} -> Ply1_de_smash_shallow
+            p1423: FH_Crosscourt {ball = 1} -> Ply1_de_smash_deep
+            p1424: FH_Crosscourt {ball = 1} -> Ply1_de_lob_shallow
+            p1425: FH_Crosscourt {ball = 1} -> Ply1_de_lob_deep
+            p1426: FH_Crosscourt {ball = 1} -> Ply1_de_stroke_shallow
+            p1427: FH_Crosscourt {ball = 1} -> Ply1_de_stroke_deep
+            p1428: FH_Crosscourt {ball = 1} -> Ply1_de_slice_shallow
+            p1429: FH_Crosscourt {ball = 1} -> Ply1_de_slice_deep
+            p1430: FH_DownMid { ball = 2 } -> Ply1_mid_smash_shallow
+            p1431: FH_DownMid { ball = 2 } -> Ply1_mid_smash_deep
+            p1432: FH_DownMid { ball = 2 } -> Ply1_mid_lob_shallow
+            p1433: FH_DownMid { ball = 2 } -> Ply1_mid_lob_deep
+            p1434: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_shallow
+            p1435: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_deep
+            p1436: FH_DownMid { ball = 2 } -> Ply1_mid_slice_shallow
+            p1437: FH_DownMid { ball = 2 } -> Ply1_mid_slice_deep
+            p1438: BH_InsideOut { ball = 1} -> Ply1_de_smash_shallow
+            p1439: BH_InsideOut { ball = 1} -> Ply1_de_smash_deep
+            p1440: BH_InsideOut { ball = 1} -> Ply1_de_lob_shallow
+            p1441: BH_InsideOut { ball = 1} -> Ply1_de_lob_deep
+            p1442: BH_InsideOut { ball = 1} -> Ply1_de_stroke_shallow
+            p1443: BH_InsideOut { ball = 1} -> Ply1_de_stroke_deep
+            p1444: BH_InsideOut { ball = 1} -> Ply1_de_slice_shallow
+            p1445: BH_InsideOut { ball = 1} -> Ply1_de_slice_deep
+            p1446: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_shallow
+            p1447: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_deep
+            p1448: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_shallow
+            p1449: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_deep
+            p1450: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_shallow
+            p1451: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_deep
+            p1452: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_shallow
+            p1453: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_deep
+            p1454: BH_DownMid { ball = 2} -> Ply1_mid_smash_shallow
+            p1455: BH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1456: BH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1457: BH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1458: BH_DownMid { ball = 2} -> Ply1_mid_stroke_shallow
+            p1459: BH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1460: BH_DownMid { ball = 2} -> Ply1_mid_slice_shallow
+            p1461: BH_DownMid { ball = 2} -> Ply1_mid_slice_deep
+            p1462: Winner{ ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+                                                    else { turn = (turn+1)%4} }-> NextPt
+            p1463: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                    else { turn = (turn+1)%4} }-> NextPt 
+};
 
+Ply2_mid_stroke_deep = noMove -> pcase{
+            p1464: FH_InsideOut { ball = 3} -> Ply1_ad_smash_shallow
+            p1465: FH_InsideOut { ball = 3} -> Ply1_ad_smash_deep
+            p1466: FH_InsideOut { ball = 3} -> Ply1_ad_lob_shallow
+            p1467: FH_InsideOut { ball = 3} -> Ply1_ad_lob_deep
+            p1468: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_shallow
+            p1469: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_deep
+            p1470: FH_InsideOut { ball = 3} -> Ply1_ad_slice_shallow
+            p1471: FH_InsideOut { ball = 3} -> Ply1_ad_slice_deep
+            p1472: FH_Crosscourt {ball = 1} -> Ply1_de_smash_shallow
+            p1473: FH_Crosscourt {ball = 1} -> Ply1_de_smash_deep
+            p1474: FH_Crosscourt {ball = 1} -> Ply1_de_lob_shallow
+            p1475: FH_Crosscourt {ball = 1} -> Ply1_de_lob_deep
+            p1476: FH_Crosscourt {ball = 1} -> Ply1_de_stroke_shallow
+            p1477: FH_Crosscourt {ball = 1} -> Ply1_de_stroke_deep
+            p1478: FH_Crosscourt {ball = 1} -> Ply1_de_slice_shallow
+            p1479: FH_Crosscourt {ball = 1} -> Ply1_de_slice_deep
+            p1480: FH_DownMid { ball = 2 } -> Ply1_mid_smash_shallow
+            p1481: FH_DownMid { ball = 2 } -> Ply1_mid_smash_deep
+            p1482: FH_DownMid { ball = 2 } -> Ply1_mid_lob_shallow
+            p1483: FH_DownMid { ball = 2 } -> Ply1_mid_lob_deep
+            p1484: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_shallow
+            p1485: FH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1486: FH_DownMid { ball = 2 } -> Ply1_mid_slice_shallow
+            p1487: FH_DownMid { ball = 2 } -> Ply1_mid_slice_deep
+            p1488: BH_InsideOut { ball = 1} -> Ply1_de_smash_shallow
+            p1489: BH_InsideOut { ball = 1} -> Ply1_de_smash_deep
+            p1490: BH_InsideOut { ball = 1} -> Ply1_de_lob_shallow
+            p1491: BH_InsideOut { ball = 1} -> Ply1_de_lob_deep
+            p1492: BH_InsideOut { ball = 1} -> Ply1_de_stroke_shallow
+            p1493: BH_InsideOut { ball = 1} -> Ply1_de_stroke_deep
+            p1494: BH_InsideOut { ball = 1} -> Ply1_de_slice_shallow
+            p1495: BH_InsideOut { ball = 1} -> Ply1_de_slice_deep
+            p1496: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_shallow
+            p1497: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_deep
+            p1498: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_shallow
+            p1499: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_deep
+            p1500: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_shallow
+            p1501: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_deep
+            p1502: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_shallow
+            p1503: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_deep
+            p1504: BH_DownMid { ball = 2} -> Ply1_mid_smash_shallow
+            p1505: BH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1506: BH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1507: BH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1508: BH_DownMid { ball = 2} -> Ply1_mid_stroke_shallow
+            p1509: BH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1510: BH_DownMid { ball = 2} -> Ply1_mid_slice_shallow
+            p1511: BH_DownMid { ball = 2} -> Ply1_mid_slice_deep
+            p1512: Winner{ ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+                                                                   else { turn = (turn+1)%4} }-> NextPt
+            p1513: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                                   else { turn = (turn+1)%4} }-> NextPt 
+};
 
 // ad stroke is when player 2 hit position is 4
-Ply2_ad_stroke = pcase{
-			p438: FH_InsideOut { ball = 3} -> Ply1_ad_smash
-			p439: FH_InsideOut { ball = 3} -> Ply1_ad_lob
-			p440: FH_InsideOut { ball = 3} -> Ply1_ad_stroke
-			p441: FH_InsideOut { ball = 3} -> Ply1_ad_slice
-			p442: FH_InsideIn { ball = 1} -> Ply1_de_smash
-			p443: FH_InsideIn { ball = 1} -> Ply1_de_lob
-			p444: FH_InsideIn { ball = 1} -> Ply1_de_stroke
-			p445: FH_InsideIn { ball = 1} -> Ply1_de_slice
-			p446: FH_DownMid { ball = 2 } -> Ply1_mid_smash
-			p447: FH_DownMid { ball = 2 } -> Ply1_mid_lob
-			p448: FH_DownMid { ball = 2 } -> Ply1_mid_stroke
-			p449: FH_DownMid { ball = 2 } -> Ply1_mid_slice
-			p450: BH_Crosscourt { ball = 3} -> Ply1_ad_smash
-			p451: BH_Crosscourt { ball = 3} -> Ply1_ad_lob
-			p452: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke
-			p453: BH_Crosscourt { ball = 3} -> Ply1_ad_slice
-			p454: BH_Downline { ball = 1} -> Ply1_de_smash
-			p455: BH_Downline { ball = 1} -> Ply1_de_lob
-			p456: BH_Downline { ball = 1} -> Ply1_de_stroke
-			p457: BH_Downline { ball = 1} -> Ply1_de_slice
-			p458: BH_DownMid { ball = 2 } -> Ply1_mid_smash
-			p459: BH_DownMid { ball = 2} -> Ply1_mid_lob
-			p460: BH_DownMid { ball = 2 } -> Ply1_mid_stroke
-			p461: BH_DownMid { ball = 2 } -> Ply1_mid_slice
-			p462: Winner { ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+Ply2_ad_stroke_shallow = pcase{
+            p1514: FH_InsideOut { ball = 3} -> Ply1_ad_smash_shallow
+            p1515: FH_InsideOut { ball = 3} -> Ply1_ad_smash_deep
+            p1516: FH_InsideOut { ball = 3} -> Ply1_ad_lob_shallow
+            p1517: FH_InsideOut { ball = 3} -> Ply1_ad_lob_deep
+            p1518: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_shallow
+            p1519: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_deep
+            p1520: FH_InsideOut { ball = 3} -> Ply1_ad_slice_shallow
+            p1521: FH_InsideOut { ball = 3} -> Ply1_ad_slice_deep
+            p1522: FH_InsideIn { ball = 1} -> Ply1_de_smash_shallow
+            p1523: FH_InsideIn { ball = 1} -> Ply1_de_smash_deep
+            p1524: FH_InsideIn { ball = 1} -> Ply1_de_lob_shallow
+            p1525: FH_InsideIn { ball = 1} -> Ply1_de_lob_deep
+            p1526: FH_InsideIn { ball = 1} -> Ply1_de_stroke_shallow
+            p1527: FH_InsideIn { ball = 1} -> Ply1_de_stroke_deep
+            p1528: FH_InsideIn { ball = 1} -> Ply1_de_slice_shallow
+            p1529: FH_InsideIn { ball = 1} -> Ply1_de_slice_deep
+            p1530: FH_DownMid { ball = 2 } -> Ply1_mid_smash_shallow
+            p1531: FH_DownMid { ball = 2 } -> Ply1_mid_smash_deep
+            p1532: FH_DownMid { ball = 2 } -> Ply1_mid_lob_shallow
+            p1533: FH_DownMid { ball = 2 } -> Ply1_mid_lob_deep
+            p1534: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_shallow
+            p1535: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_deep
+            p1536: FH_DownMid { ball = 2 } -> Ply1_mid_slice_shallow
+            p1537: FH_DownMid { ball = 2 } -> Ply1_mid_slice_deep
+            p1538: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_shallow
+            p1539: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_deep
+            p1540: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_shallow
+            p1541: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_deep
+            p1542: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_shallow
+            p1543: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_deep
+            p1544: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_shallow
+            p1545: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_deep
+            p1546: BH_Downline { ball = 1} -> Ply1_de_smash_shallow
+            p1547: BH_Downline { ball = 1} -> Ply1_de_smash_deep
+            p1548: BH_Downline { ball = 1} -> Ply1_de_lob_shallow
+            p1549: BH_Downline { ball = 1} -> Ply1_de_lob_deep
+            p1550: BH_Downline { ball = 1} -> Ply1_de_stroke_shallow
+            p1551: BH_Downline { ball = 1} -> Ply1_de_stroke_deep
+            p1552: BH_Downline { ball = 1} -> Ply1_de_slice_shallow
+            p1553: BH_Downline { ball = 1} -> Ply1_de_slice_deep
+            p1554: BH_DownMid { ball = 2 } -> Ply1_mid_smash_shallow
+            p1555: BH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1556: BH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1557: BH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1558: BH_DownMid { ball = 2 } -> Ply1_mid_stroke_shallow
+            p1559: BH_DownMid { ball = 2 } -> Ply1_mid_stroke_deep
+            p1560: BH_DownMid { ball = 2 } -> Ply1_mid_slice_shallow
+            p1561: BH_DownMid { ball = 2 } -> Ply1_mid_slice_deep
+            p1562: Winner { ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+                                                          else { turn = (turn+1)%4} }-> NextPt
+            p1563: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                          else { turn = (turn+1)%4} }-> NextPt 
+};
+
+Ply2_ad_stroke_deep = pcase{
+			p1564: FH_InsideOut { ball = 3} -> Ply1_ad_smash_shallow
+			p1565: FH_InsideOut { ball = 3} -> Ply1_ad_smash_deep
+			p1566: FH_InsideOut { ball = 3} -> Ply1_ad_lob_shallow
+			p1567: FH_InsideOut { ball = 3} -> Ply1_ad_lob_deep
+			p1568: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_shallow
+			p1569: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_deep
+			p1570: FH_InsideOut { ball = 3} -> Ply1_ad_slice_shallow
+			p1571: FH_InsideOut { ball = 3} -> Ply1_ad_slice_deep
+			p1572: FH_InsideIn { ball = 1} -> Ply1_de_smash_shallow
+			p1573: FH_InsideIn { ball = 1} -> Ply1_de_smash_deep
+			p1574: FH_InsideIn { ball = 1} -> Ply1_de_lob_shallow
+			p1575: FH_InsideIn { ball = 1} -> Ply1_de_lob_deep
+			p1576: FH_InsideIn { ball = 1} -> Ply1_de_stroke_shallow
+			p1577: FH_InsideIn { ball = 1} -> Ply1_de_stroke_deep
+			p1578: FH_InsideIn { ball = 1} -> Ply1_de_slice_shallow
+			p1579: FH_InsideIn { ball = 1} -> Ply1_de_slice_deep
+			p1580: FH_DownMid { ball = 2 } -> Ply1_mid_smash_shallow
+			p1581: FH_DownMid { ball = 2 } -> Ply1_mid_smash_deep
+			p1582: FH_DownMid { ball = 2 } -> Ply1_mid_lob_shallow
+			p1583: FH_DownMid { ball = 2 } -> Ply1_mid_lob_deep
+			p1584: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_shallow
+			p1585: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_deep
+			p1586: FH_DownMid { ball = 2 } -> Ply1_mid_slice_shallow
+			p1587: FH_DownMid { ball = 2 } -> Ply1_mid_slice_deep
+			p1588: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_shallow
+			p1589: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_deep
+			p1590: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_shallow
+			p1591: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_deep
+			p1592: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_shallow
+			p1593: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_deep
+			p1594: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_shallow
+			p1595: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_deep
+			p1596: BH_Downline { ball = 1} -> Ply1_de_smash_shallow
+			p1597: BH_Downline { ball = 1} -> Ply1_de_smash_deep
+			p1598: BH_Downline { ball = 1} -> Ply1_de_lob_shallow
+			p1599: BH_Downline { ball = 1} -> Ply1_de_lob_deep
+			p1600: BH_Downline { ball = 1} -> Ply1_de_stroke_shallow
+			p1601: BH_Downline { ball = 1} -> Ply1_de_stroke_deep
+			p1602: BH_Downline { ball = 1} -> Ply1_de_slice_shallow
+			p1603: BH_Downline { ball = 1} -> Ply1_de_slice_deep
+			p1604: BH_DownMid { ball = 2 } -> Ply1_mid_smash_shallow
+			p1605: BH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+			p1606: BH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+			p1607: BH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+			p1608: BH_DownMid { ball = 2 } -> Ply1_mid_stroke_shallow
+			p1609: BH_DownMid { ball = 2 } -> Ply1_mid_stroke_deep
+			p1610: BH_DownMid { ball = 2 } -> Ply1_mid_slice_shallow
+			p1611: BH_DownMid { ball = 2 } -> Ply1_mid_slice_deep
+			p1612: Winner { ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p463: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p1613: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // deuce smash is when player2 hit position is 6
-Ply2_de_smash = pcase { // if already
-			p464: FH_Crosscourt { ball = 1;} -> Ply1_de_smash
-			p465: FH_Crosscourt { ball = 1;} -> Ply1_de_lob
-			p466: FH_Crosscourt { ball = 1;} -> Ply1_de_stroke
-			p467: FH_Crosscourt { ball = 1;} -> Ply1_de_slice
-			p468: FH_Downline { ball = 3} -> Ply1_ad_smash
-			p469: FH_Downline { ball = 3} -> Ply1_ad_lob
-			p470: FH_Downline { ball = 3} -> Ply1_ad_stroke
-			p471: FH_Downline { ball = 3} -> Ply1_ad_slice
-			p472: FH_DownMid { ball = 2} -> Ply1_mid_smash
-			p473: FH_DownMid { ball = 2} -> Ply1_mid_lob
-			p474: FH_DownMid { ball = 2} -> Ply1_mid_stroke
-			p475: FH_DownMid { ball = 2} -> Ply1_mid_slice
-			p476: BH_InsideIn {ball = 3} -> Ply1_ad_smash
-			p477: BH_InsideIn {ball = 3} -> Ply1_ad_lob
-			p478: BH_InsideIn {ball = 3} -> Ply1_ad_stroke
-			p479: BH_InsideIn {ball = 3} -> Ply1_ad_slice
-			p480: BH_InsideOut { ball = 1} -> Ply1_de_smash
-			p481: BH_InsideOut { ball = 1} -> Ply1_de_lob
-			p482: BH_InsideOut { ball = 1} -> Ply1_de_stroke
-			p483: BH_InsideOut { ball = 1} -> Ply1_de_slice
-			p484: BH_DownMid { ball = 2} -> Ply1_mid_smash
-			p485: BH_DownMid { ball = 2} -> Ply1_mid_lob
-			p486: BH_DownMid { ball = 2} -> Ply1_mid_stroke
-			p487: BH_DownMid { ball = 2} -> Ply1_mid_slice
-			p488: Winner{ ball = 9} -> {nscore++; if (nscore == points) {won = player2}
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p489: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1}
-      		                                                     else { turn = (turn+1)%4} }-> NextPt 
-	};
+Ply2_de_smash_shallow = pcase {
+            p1614: FH_Crosscourt { ball = 1;} -> Ply1_de_smash_shallow
+            p1615: FH_Crosscourt { ball = 1;} -> Ply1_de_smash_deep
+            p1616: FH_Crosscourt { ball = 1;} -> Ply1_de_lob_shallow
+            p1617: FH_Crosscourt { ball = 1;} -> Ply1_de_lob_deep
+            p1618: FH_Crosscourt { ball = 1;} -> Ply1_de_stroke_shallow
+            p1619: FH_Crosscourt { ball = 1;} -> Ply1_de_stroke_deep
+            p1620: FH_Crosscourt { ball = 1;} -> Ply1_de_slice_shallow
+            p1621: FH_Crosscourt { ball = 1;} -> Ply1_de_slice_deep
+            p1622: FH_Downline { ball = 3} -> Ply1_ad_smash_shallow
+            p1623: FH_Downline { ball = 3} -> Ply1_ad_smash_deep
+            p1624: FH_Downline { ball = 3} -> Ply1_ad_lob_shallow
+            p1625: FH_Downline { ball = 3} -> Ply1_ad_lob_deep
+            p1626: FH_Downline { ball = 3} -> Ply1_ad_stroke_shallow
+            p1627: FH_Downline { ball = 3} -> Ply1_ad_stroke_deep
+            p1628: FH_Downline { ball = 3} -> Ply1_ad_slice_shallow
+            p1629: FH_Downline { ball = 3} -> Ply1_ad_slice_deep
+            p1630: FH_DownMid { ball = 2} -> Ply1_mid_smash_shallow
+            p1631: FH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1632: FH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1633: FH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1634: FH_DownMid { ball = 2} -> Ply1_mid_stroke_shallow
+            p1635: FH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1636: FH_DownMid { ball = 2} -> Ply1_mid_slice_shallow
+            p1637: FH_DownMid { ball = 2} -> Ply1_mid_slice_deep
+            p1638: BH_InsideIn {ball = 3} -> Ply1_ad_smash_shallow
+            p1639: BH_InsideIn {ball = 3} -> Ply1_ad_smash_deep
+            p1640: BH_InsideIn {ball = 3} -> Ply1_ad_lob_shallow
+            p1641: BH_InsideIn {ball = 3} -> Ply1_ad_lob_deep
+            p1642: BH_InsideIn {ball = 3} -> Ply1_ad_stroke_shallow
+            p1643: BH_InsideIn {ball = 3} -> Ply1_ad_stroke_deep
+            p1644: BH_InsideIn {ball = 3} -> Ply1_ad_slice_shallow
+            p1645: BH_InsideIn {ball = 3} -> Ply1_ad_slice_deep
+            p1646: BH_InsideOut { ball = 1} -> Ply1_de_smash_shallow
+            p1647: BH_InsideOut { ball = 1} -> Ply1_de_smash_deep
+            p1648: BH_InsideOut { ball = 1} -> Ply1_de_lob_shallow
+            p1649: BH_InsideOut { ball = 1} -> Ply1_de_lob_deep
+            p1650: BH_InsideOut { ball = 1} -> Ply1_de_stroke_shallow
+            p1651: BH_InsideOut { ball = 1} -> Ply1_de_stroke_deep
+            p1652: BH_InsideOut { ball = 1} -> Ply1_de_slice_shallow
+            p1653: BH_InsideOut { ball = 1} -> Ply1_de_slice_deep
+            p1654: BH_DownMid { ball = 2} -> Ply1_mid_smash_shallow
+            p1655: BH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1656: BH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1657: BH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1658: BH_DownMid { ball = 2} -> Ply1_mid_stroke_shallow
+            p1659: BH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1660: BH_DownMid { ball = 2} -> Ply1_mid_slice_shallow
+            p1661: BH_DownMid { ball = 2} -> Ply1_mid_slice_deep
+            p1662: Winner{ ball = 9} -> {nscore++; if (nscore == points) {won = player2}
+                                                               else { turn = (turn+1)%4} }-> NextPt
+            p1663: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1}
+                                                               else { turn = (turn+1)%4} }-> NextPt
+};
+
+Ply2_de_smash_deep = pcase {
+            p1664: FH_Crosscourt { ball = 1;} -> Ply1_de_smash_shallow
+            p1665: FH_Crosscourt { ball = 1;} -> Ply1_de_smash_deep
+            p1666: FH_Crosscourt { ball = 1;} -> Ply1_de_lob_shallow
+            p1667: FH_Crosscourt { ball = 1;} -> Ply1_de_lob_deep
+            p1668: FH_Crosscourt { ball = 1;} -> Ply1_de_stroke_shallow
+            p1669: FH_Crosscourt { ball = 1;} -> Ply1_de_stroke_deep
+            p1670: FH_Crosscourt { ball = 1;} -> Ply1_de_slice_shallow
+            p1671: FH_Crosscourt { ball = 1;} -> Ply1_de_slice_deep
+            p1672: FH_Downline { ball = 3} -> Ply1_ad_smash_shallow
+            p1673: FH_Downline { ball = 3} -> Ply1_ad_smash_deep
+            p1674: FH_Downline { ball = 3} -> Ply1_ad_lob_shallow
+            p1675: FH_Downline { ball = 3} -> Ply1_ad_lob_deep
+            p1676: FH_Downline { ball = 3} -> Ply1_ad_stroke_shallow
+            p1677: FH_Downline { ball = 3} -> Ply1_ad_stroke_deep
+            p1678: FH_Downline { ball = 3} -> Ply1_ad_slice_shallow
+            p1679: FH_Downline { ball = 3} -> Ply1_ad_slice_deep
+            p1680: FH_DownMid { ball = 2} -> Ply1_mid_smash_shallow
+            p1681: FH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1682: FH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1683: FH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1684: FH_DownMid { ball = 2} -> Ply1_mid_stroke_shallow
+            p1685: FH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1686: FH_DownMid { ball = 2} -> Ply1_mid_slice_shallow
+            p1687: FH_DownMid { ball = 2} -> Ply1_mid_slice_deep
+            p1688: BH_InsideIn {ball = 3} -> Ply1_ad_smash_shallow
+            p1689: BH_InsideIn {ball = 3} -> Ply1_ad_smash_deep
+            p1690: BH_InsideIn {ball = 3} -> Ply1_ad_lob_shallow
+            p1691: BH_InsideIn {ball = 3} -> Ply1_ad_lob_deep
+            p1692: BH_InsideIn {ball = 3} -> Ply1_ad_stroke_shallow
+            p1693: BH_InsideIn {ball = 3} -> Ply1_ad_stroke_deep
+            p1694: BH_InsideIn {ball = 3} -> Ply1_ad_slice_shallow
+            p1695: BH_InsideIn {ball = 3} -> Ply1_ad_slice_deep
+            p1696: BH_InsideOut { ball = 1} -> Ply1_de_smash_shallow
+            p1697: BH_InsideOut { ball = 1} -> Ply1_de_smash_deep
+            p1698: BH_InsideOut { ball = 1} -> Ply1_de_lob_shallow
+            p1699: BH_InsideOut { ball = 1} -> Ply1_de_lob_deep
+            p1700: BH_InsideOut { ball = 1} -> Ply1_de_stroke_shallow
+            p1701: BH_InsideOut { ball = 1} -> Ply1_de_stroke_deep
+            p1702: BH_InsideOut { ball = 1} -> Ply1_de_slice_shallow
+            p1703: BH_InsideOut { ball = 1} -> Ply1_de_slice_deep
+            p1704: BH_DownMid { ball = 2} -> Ply1_mid_smash_shallow
+            p1705: BH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1706: BH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1707: BH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1708: BH_DownMid { ball = 2} -> Ply1_mid_stroke_shallow
+            p1709: BH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1710: BH_DownMid { ball = 2} -> Ply1_mid_slice_shallow
+            p1711: BH_DownMid { ball = 2} -> Ply1_mid_slice_deep
+            p1712: Winner{ ball = 9} -> {nscore++; if (nscore == points) {won = player2}
+                                                                 else { turn = (turn+1)%4} }-> NextPt
+            p1713: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1}
+                                                                 else { turn = (turn+1)%4} }-> NextPt 
+};
 
 // mid smash is when player2 hit position is 5
-Ply2_mid_smash = noMove -> pcase{
-			p490: FH_InsideOut { ball = 3} -> Ply1_ad_smash
-			p491: FH_InsideOut { ball = 3} -> Ply1_ad_lob
-			p492: FH_InsideOut { ball = 3} -> Ply1_ad_stroke
-			p493: FH_InsideOut { ball = 3} -> Ply1_ad_slice
-			p494: FH_Crosscourt {ball = 1} -> Ply1_de_smash
-			p495: FH_Crosscourt {ball = 1} -> Ply1_de_lob
-			p496: FH_Crosscourt {ball = 1} -> Ply1_de_stroke
-			p497: FH_Crosscourt {ball = 1} -> Ply1_de_slice
-			p498: FH_DownMid { ball = 2 } -> Ply1_mid_smash
-			p499: FH_DownMid { ball = 2 } -> Ply1_mid_lob
-			p500: FH_DownMid { ball = 2 } -> Ply1_mid_stroke
-			p501: FH_DownMid { ball = 2 } -> Ply1_mid_slice
-			p502: BH_InsideOut { ball = 1} -> Ply1_de_smash
-			p503: BH_InsideOut { ball = 1} -> Ply1_de_lob
-			p504: BH_InsideOut { ball = 1} -> Ply1_de_stroke
-			p505: BH_InsideOut { ball = 1} -> Ply1_de_slice
-			p506: BH_Crosscourt { ball = 3} -> Ply1_ad_smash
-			p507: BH_Crosscourt { ball = 3} -> Ply1_ad_lob
-			p508: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke
-			p509: BH_Crosscourt { ball = 3} -> Ply1_ad_slice
-			p510: BH_DownMid { ball = 2} -> Ply1_mid_smash
-			p511: BH_DownMid { ball = 2} -> Ply1_mid_lob
-			p512: BH_DownMid { ball = 2} -> Ply1_mid_stroke
-			p513: BH_DownMid { ball = 2} -> Ply1_mid_slice
-			p514: Winner{ ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p515: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt 
-	};
+Ply2_mid_smash_shallow = noMove -> pcase{
+            p1714: FH_InsideOut { ball = 3} -> Ply1_ad_smash_shallow
+            p1715: FH_InsideOut { ball = 3} -> Ply1_ad_smash_deep
+            p1716: FH_InsideOut { ball = 3} -> Ply1_ad_lob_shallow
+            p1717: FH_InsideOut { ball = 3} -> Ply1_ad_lob_deep
+            p1718: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_shallow
+            p1719: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_deep
+            p1720: FH_InsideOut { ball = 3} -> Ply1_ad_slice_shallow
+            p1721: FH_InsideOut { ball = 3} -> Ply1_ad_slice_deep
+            p1722: FH_Crosscourt {ball = 1} -> Ply1_de_smash_shallow
+            p1723: FH_Crosscourt {ball = 1} -> Ply1_de_smash_deep
+            p1724: FH_Crosscourt {ball = 1} -> Ply1_de_lob_shallow
+            p1725: FH_Crosscourt {ball = 1} -> Ply1_de_lob_deep
+            p1726: FH_Crosscourt {ball = 1} -> Ply1_de_stroke_shallow
+            p1727: FH_Crosscourt {ball = 1} -> Ply1_de_stroke_deep
+            p1728: FH_Crosscourt {ball = 1} -> Ply1_de_slice_shallow
+            p1729: FH_Crosscourt {ball = 1} -> Ply1_de_slice_deep
+            p1730: FH_DownMid { ball = 2 } -> Ply1_mid_smash_shallow
+            p1731: FH_DownMid { ball = 2 } -> Ply1_mid_smash_deep
+            p1732: FH_DownMid { ball = 2 } -> Ply1_mid_lob_shallow
+            p1733: FH_DownMid { ball = 2 } -> Ply1_mid_lob_deep
+            p1734: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_shallow
+            p1735: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_deep
+            p1736: FH_DownMid { ball = 2 } -> Ply1_mid_slice_shallow
+            p1737: FH_DownMid { ball = 2 } -> Ply1_mid_slice_deep
+            p1738: BH_InsideOut { ball = 1} -> Ply1_de_smash_shallow
+            p1739: BH_InsideOut { ball = 1} -> Ply1_de_smash_deep
+            p1740: BH_InsideOut { ball = 1} -> Ply1_de_lob_shallow
+            p1741: BH_InsideOut { ball = 1} -> Ply1_de_lob_deep
+            p1742: BH_InsideOut { ball = 1} -> Ply1_de_stroke_shallow
+            p1743: BH_InsideOut { ball = 1} -> Ply1_de_stroke_deep
+            p1744: BH_InsideOut { ball = 1} -> Ply1_de_slice_shallow
+            p1745: BH_InsideOut { ball = 1} -> Ply1_de_slice_deep
+            p1746: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_shallow
+            p1747: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_deep
+            p1748: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_shallow
+            p1749: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_deep
+            p1750: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_shallow
+            p1751: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_deep
+            p1752: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_shallow
+            p1753: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_deep
+            p1754: BH_DownMid { ball = 2} -> Ply1_mid_smash_shallow
+            p1755: BH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1756: BH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1757: BH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1758: BH_DownMid { ball = 2} -> Ply1_mid_stroke_shallow
+            p1759: BH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1760: BH_DownMid { ball = 2} -> Ply1_mid_slice_shallow
+            p1761: BH_DownMid { ball = 2} -> Ply1_mid_slice_deep
+            p1762: Winner{ ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+                                                      else { turn = (turn+1)%4} }-> NextPt
+            p1763: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                      else { turn = (turn+1)%4} }-> NextPt 
+};
 
+Ply2_mid_smash_deep = noMove -> pcase{
+            p1764: FH_InsideOut { ball = 3} -> Ply1_ad_smash_shallow
+            p1765: FH_InsideOut { ball = 3} -> Ply1_ad_smash_deep
+            p1766: FH_InsideOut { ball = 3} -> Ply1_ad_lob_shallow
+            p1767: FH_InsideOut { ball = 3} -> Ply1_ad_lob_deep
+            p1768: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_shallow
+            p1769: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_deep
+            p1770: FH_InsideOut { ball = 3} -> Ply1_ad_slice_shallow
+            p1771: FH_InsideOut { ball = 3} -> Ply1_ad_slice_deep
+            p1772: FH_Crosscourt {ball = 1} -> Ply1_de_smash_shallow
+            p1773: FH_Crosscourt {ball = 1} -> Ply1_de_smash_deep
+            p1774: FH_Crosscourt {ball = 1} -> Ply1_de_lob_shallow
+            p1775: FH_Crosscourt {ball = 1} -> Ply1_de_lob_deep
+            p1776: FH_Crosscourt {ball = 1} -> Ply1_de_stroke_shallow
+            p1777: FH_Crosscourt {ball = 1} -> Ply1_de_stroke_deep
+            p1778: FH_Crosscourt {ball = 1} -> Ply1_de_slice_shallow
+            p1779: FH_Crosscourt {ball = 1} -> Ply1_de_slice_deep
+            p1780: FH_DownMid { ball = 2 } -> Ply1_mid_smash_shallow
+            p1781: FH_DownMid { ball = 2 } -> Ply1_mid_smash_deep
+            p1782: FH_DownMid { ball = 2 } -> Ply1_mid_lob_shallow
+            p1783: FH_DownMid { ball = 2 } -> Ply1_mid_lob_deep
+            p1784: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_shallow
+            p1785: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_deep
+            p1786: FH_DownMid { ball = 2 } -> Ply1_mid_slice_shallow
+            p1787: FH_DownMid { ball = 2 } -> Ply1_mid_slice_deep
+            p1788: BH_InsideOut { ball = 1} -> Ply1_de_smash_shallow
+            p1789: BH_InsideOut { ball = 1} -> Ply1_de_smash_deep
+            p1790: BH_InsideOut { ball = 1} -> Ply1_de_lob_shallow
+            p1791: BH_InsideOut { ball = 1} -> Ply1_de_lob_deep
+            p1792: BH_InsideOut { ball = 1} -> Ply1_de_stroke_shallow
+            p1793: BH_InsideOut { ball = 1} -> Ply1_de_stroke_deep
+            p1794: BH_InsideOut { ball = 1} -> Ply1_de_slice_shallow
+            p1795: BH_InsideOut { ball = 1} -> Ply1_de_slice_deep
+            p1796: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_shallow
+            p1797: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_deep
+            p1798: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_shallow
+            p1799: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_deep
+            p1800: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_shallow
+            p1801: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_deep
+            p1802: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_shallow
+            p1803: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_deep
+            p1804: BH_DownMid { ball = 2} -> Ply1_mid_smash_shallow
+            p1805: BH_DownMid { ball = 2} -> Ply1_mid_smash_deep
+            p1806: BH_DownMid { ball = 2} -> Ply1_mid_lob_shallow
+            p1807: BH_DownMid { ball = 2} -> Ply1_mid_lob_deep
+            p1808: BH_DownMid { ball = 2} -> Ply1_mid_stroke_shallow
+            p1809: BH_DownMid { ball = 2} -> Ply1_mid_stroke_deep
+            p1810: BH_DownMid { ball = 2} -> Ply1_mid_slice_shallow
+            p1811: BH_DownMid { ball = 2} -> Ply1_mid_slice_deep
+            p1812: Winner{ ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+                                                                else { turn = (turn+1)%4} }-> NextPt
+            p1813: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                                else { turn = (turn+1)%4} }-> NextPt 
+};
 
 // ad smash is when player 2 hit position is 4
-Ply2_ad_smash = pcase{
-			p516: FH_InsideOut { ball = 3} -> Ply1_ad_smash
-			p517: FH_InsideOut { ball = 3} -> Ply1_ad_lob
-			p518: FH_InsideOut { ball = 3} -> Ply1_ad_stroke
-			p519: FH_InsideOut { ball = 3} -> Ply1_ad_slice
-			p520: FH_InsideIn { ball = 1} -> Ply1_de_smash
-			p521: FH_InsideIn { ball = 1} -> Ply1_de_lob
-			p522: FH_InsideIn { ball = 1} -> Ply1_de_stroke
-			p523: FH_InsideIn { ball = 1} -> Ply1_de_slice
-			p524: FH_DownMid { ball = 2 } -> Ply1_mid_smash
-			p525: FH_DownMid { ball = 2 } -> Ply1_mid_lob
-			p526: FH_DownMid { ball = 2 } -> Ply1_mid_stroke
-			p527: FH_DownMid { ball = 2 } -> Ply1_mid_slice
-			p528: BH_Crosscourt { ball = 3} -> Ply1_ad_smash
-			p529: BH_Crosscourt { ball = 3} -> Ply1_ad_lob
-			p530: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke
-			p531: BH_Crosscourt { ball = 3} -> Ply1_ad_slice
-			p532: BH_Downline { ball = 1} -> Ply1_de_smash
-			p533: BH_Downline { ball = 1} -> Ply1_de_lob
-			p534: BH_Downline { ball = 1} -> Ply1_de_stroke
-			p535: BH_Downline { ball = 1} -> Ply1_de_slice
-			p536: BH_DownMid { ball = 2 } -> Ply1_mid_smash
-			p537: BH_DownMid { ball = 2 } -> Ply1_mid_lob
-			p538: BH_DownMid { ball = 2 } -> Ply1_mid_stroke
-			p539: BH_DownMid { ball = 2 } -> Ply1_mid_slice
-			p540: Winner { ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p541: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
-      		                                                     else { turn = (turn+1)%4} }-> NextPt 
-	};
+Ply2_ad_smash_shallow = pcase{
+            p1814: FH_InsideOut { ball = 3} -> Ply1_ad_smash_shallow
+            p1815: FH_InsideOut { ball = 3} -> Ply1_ad_smash_deep
+            p1816: FH_InsideOut { ball = 3} -> Ply1_ad_lob_shallow
+            p1817: FH_InsideOut { ball = 3} -> Ply1_ad_lob_deep
+            p1818: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_shallow
+            p1819: FH_InsideOut { ball = 3} -> Ply1_ad_stroke_deep
+            p1820: FH_InsideOut { ball = 3} -> Ply1_ad_slice_shallow
+            p1821: FH_InsideOut { ball = 3} -> Ply1_ad_slice_deep
+            p1822: FH_InsideIn { ball = 1} -> Ply1_de_smash_shallow
+            p1823: FH_InsideIn { ball = 1} -> Ply1_de_smash_deep
+            p1824: FH_InsideIn { ball = 1} -> Ply1_de_lob_shallow
+            p1825: FH_InsideIn { ball = 1} -> Ply1_de_lob_deep
+            p1826: FH_InsideIn { ball = 1} -> Ply1_de_stroke_shallow
+            p1827: FH_InsideIn { ball = 1} -> Ply1_de_stroke_deep
+            p1828: FH_InsideIn { ball = 1} -> Ply1_de_slice_shallow
+            p1829: FH_InsideIn { ball = 1} -> Ply1_de_slice_deep
+            p1830: FH_DownMid { ball = 2 } -> Ply1_mid_smash_shallow
+            p1831: FH_DownMid { ball = 2 } -> Ply1_mid_smash_deep
+            p1832: FH_DownMid { ball = 2 } -> Ply1_mid_lob_shallow
+            p1833: FH_DownMid { ball = 2 } -> Ply1_mid_lob_deep
+            p1834: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_shallow
+            p1835: FH_DownMid { ball = 2 } -> Ply1_mid_stroke_deep
+            p1836: FH_DownMid { ball = 2 } -> Ply1_mid_slice_shallow
+            p1837: FH_DownMid { ball = 2 } -> Ply1_mid_slice_deep
+            p1838: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_shallow
+            p1839: BH_Crosscourt { ball = 3} -> Ply1_ad_smash_deep
+            p1840: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_shallow
+            p1841: BH_Crosscourt { ball = 3} -> Ply1_ad_lob_deep
+            p1842: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_shallow
+            p1843: BH_Crosscourt { ball = 3} -> Ply1_ad_stroke_deep
+            p1844: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_shallow
+            p1845: BH_Crosscourt { ball = 3} -> Ply1_ad_slice_deep
+            p1846: BH_Downline { ball = 1} -> Ply1_de_smash_shallow
+            p1847: BH_Downline { ball = 1} -> Ply1_de_smash_deep
+            p1848: BH_Downline { ball = 1} -> Ply1_de_lob_shallow
+            p1849: BH_Downline { ball = 1} -> Ply1_de_lob_deep
+            p1850: BH_Downline { ball = 1} -> Ply1_de_stroke_shallow
+            p1851: BH_Downline { ball = 1} -> Ply1_de_stroke_deep
+            p1852: BH_Downline { ball = 1} -> Ply1_de_slice_shallow
+            p1853: BH_Downline { ball = 1} -> Ply1_de_slice_deep
+            p1854: BH_DownMid { ball = 2 } -> Ply1_mid_smash_shallow
+            p1855: BH_DownMid { ball = 2 } -> Ply1_mid_smash_deep
+            p1856: BH_DownMid { ball = 2 } -> Ply1_mid_lob_shallow
+            p1857: BH_DownMid { ball = 2 } -> Ply1_mid_lob_deep
+            p1858: BH_DownMid { ball = 2 } -> Ply1_mid_stroke_shallow
+            p1859: BH_DownMid { ball = 2 } -> Ply1_mid_stroke_deep
+            p1860: BH_DownMid { ball = 2 } -> Ply1_mid_slice_shallow
+            p1861: BH_DownMid { ball = 2 } -> Ply1_mid_slice_deep
+            p1862: Winner { ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+                                                      else { turn = (turn+1)%4} }-> NextPt
+            p1863: Error { ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+                                                      else { turn = (turn+1)%4} }-> NextPt 
+};
+
 
 // deuce lob is when player2 hit position is 6
 Ply2_de_lob = pcase {
