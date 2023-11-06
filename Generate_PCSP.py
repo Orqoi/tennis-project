@@ -47,7 +47,6 @@ def get_params(df, hand):
     Ad_ForeHandR = df.query('shot_type==3 and prev_shot_from_which_court==3 and shot<=20')
     De_BackHandR = df.query('shot_type==3 and prev_shot_from_which_court==1 and shot<=40 and shot>20')
     Ad_BackHandR = df.query('shot_type==3 and prev_shot_from_which_court==3 and shot<=40 and shot>20')
-    De_Smash =  df.query('shot_type==3 and prev_shot_from_which_court==1 and shot<=20')
 
     # Stroke
     De_Stroke = df.query('shot_type==4 and from_which_court==1')
@@ -93,50 +92,61 @@ def get_params(df, hand):
         directions = [[[1, 3, 2], [1, 3, 2]],  # de - FHIO, FHII, FHDM, BHCC, BHDL, BHDM
                       [[1, 3, 2], [3, 1, 2]],  # mid - FHIO, FHCC, FHDM, BHIO, BHCC, BHDM
                       [[3, 1, 2], [1, 3, 2]]]  # ad - FHCC, FHDL, FHDM, BHII, BHIO, BHDM
+        
+    # Handlers
     for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
-        FH_Stroke = Stroke.query('shot==1')
-        BH_Stroke = Stroke.query('shot==22')
+        # Regular, Smash, Lob
+        Regular = Stroke.query('prev_shot not in [7, 11, 28, 32]') # receive a regular at DE/MID/AD
+        Smash = Stroke.query('prev_shot in [7, 28]')
+        Lob = Stroke.query('prev_shot in [11, 32]')
+        for curr in [Regular, Smash, Lob]:
+            react_regular = [len(curr.query('shot not in [7, 11, 28, 32]'))]
+            react_smash = [len(curr.query('shot in [7, 28]'))]
+            react_lob = [len(curr.query('shot in [11, 32]'))]
+            results.append(react_regular + react_smash + react_lob)
+    
+    # Regular played by current player
+
+    for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
+        # (0, DE), (1, MID), (2, AD)
+        FH_Stroke = Stroke.query('shot<=20 and shot not in [7, 11]')
+        BH_Stroke = Stroke.query('shot<=40 and shot>20 and shot not in [28, 32]')
         FH_shots = [FH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
         BH_shots = [BH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
+        shots = FH_shots + BH_shots
         FH_stroke_in = [len(x.query('shot_outcome==7')) for x in FH_shots]
         BH_stroke_in = [len(x.query('shot_outcome==7')) for x in BH_shots]
-
-        FH_Lob_Stroke = Stroke.query('shot==11')
-        BH_Lob_Stroke = Stroke.query('shot==32')
-        FH_Lob_shots = [FH_Lob_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
-        BH_Lob_shots = [BH_Lob_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
-        FH_Lob_stroke_in = [len(x.query('shot_outcome==7')) for x in FH_Lob_shots]
-        BH_Lob_stroke_in = [len(x.query('shot_outcome==7')) for x in BH_Lob_shots]
-
-        FH_Slice_Stroke = Stroke.query('shot==3')
-        BH_Slice_Stroke = Stroke.query('shot==24')
-        FH_Slice_shots = [FH_Slice_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
-        BH_Slice_shots = [BH_Slice_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
-        FH_Slice_stroke_in = [len(x.query('shot_outcome==7')) for x in FH_Slice_shots]
-        BH_Slice_stroke_in = [len(x.query('shot_outcome==7')) for x in BH_Slice_shots]
-
-        FH_Smash_Stroke = Stroke.query('shot==7')
-        BH_Smash_Stroke = Stroke.query('shot==28')
-        FH_Smash_shots = [FH_Smash_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
-        BH_Smash_shots = [BH_Smash_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
-        FH_Smash_stroke_in = [len(x.query('shot_outcome==7')) for x in FH_Smash_shots]
-        BH_Smash_stroke_in = [len(x.query('shot_outcome==7')) for x in BH_Smash_shots]
-
-        FH_Volley_Stroke = Stroke.query('shot==5 or shot==13')
-        BH_Volley_Stroke = Stroke.query('shot==26 or shot==34')
-        FH_Volley_shots = [FH_Volley_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
-        BH_Volley_shots = [BH_Volley_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
-        FH_Volley_stroke_in = [len(x.query('shot_outcome==7')) for x in FH_Volley_shots]
-        BH_Volley_stroke_in = [len(x.query('shot_outcome==7')) for x in BH_Volley_shots]
-        
-        shots = FH_shots + BH_shots + FH_Lob_shots + BH_Lob_shots + FH_Slice_shots + BH_Slice_shots + FH_Smash_shots + BH_Smash_shots + FH_Volley_shots + BH_Volley_shots
-        
-        
         stroke_win = [len(Stroke.query('shot_outcome in [1, 5, 6]'))]
         stroke_err = [len(Stroke.query('shot_outcome in [2, 3, 4]'))]
-        results.append(FH_stroke_in + BH_stroke_in + FH_Lob_stroke_in + BH_Lob_stroke_in 
-                       + FH_Slice_stroke_in + BH_Slice_stroke_in + FH_Smash_stroke_in + BH_Smash_stroke_in
-                        + FH_Volley_stroke_in + BH_Volley_stroke_in + stroke_win + stroke_err)
+        results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
+    
+    # Smash played by current player
+    for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
+        # (0, DE), (1, MID), (2, AD)
+        FH_Stroke = Stroke.query('shot==7')
+        BH_Stroke = Stroke.query('shot==28')
+        FH_shots = [FH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
+        BH_shots = [BH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
+        shots = FH_shots + BH_shots
+        FH_stroke_in = [len(x.query('shot_outcome==7')) for x in FH_shots]
+        BH_stroke_in = [len(x.query('shot_outcome==7')) for x in BH_shots]
+        stroke_win = [len(Stroke.query('shot_outcome in [1, 5, 6]'))]
+        stroke_err = [len(Stroke.query('shot_outcome in [2, 3, 4]'))]
+        results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
+    
+    # Lob played by current player
+    for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
+        # (0, DE), (1, MID), (2, AD)
+        FH_Stroke = Stroke.query('shot==11')
+        BH_Stroke = Stroke.query('shot==32')
+        FH_shots = [FH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
+        BH_shots = [BH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
+        shots = FH_shots + BH_shots
+        FH_stroke_in = [len(x.query('shot_outcome==7')) for x in FH_shots]
+        BH_stroke_in = [len(x.query('shot_outcome==7')) for x in BH_shots]
+        stroke_win = [len(Stroke.query('shot_outcome in [1, 5, 6]'))]
+        stroke_err = [len(Stroke.query('shot_outcome in [2, 3, 4]'))]
+        results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
 
     return results
 
@@ -160,8 +170,9 @@ def generate_transition_probs(data, date, ply1_name, ply2_name, ply1_hand, ply2_
 
     print('# P1 matches:', num_ply1_prev_n)
     print('# P2 matches:', num_ply2_prev_n)
-
-    generate_pcsp(params, date, ply1_name, ply2_name, ply1_hand, ply2_hand)
+    if (num_ply1_prev_n >= 5):
+        generate_pcsp(params, date, ply1_name, ply2_name, ply1_hand, ply2_hand)
+   
 
 
 date = '2020-01-01'

@@ -1,0 +1,5 @@
+# Ignore all files with the extension .pcsp
+*.pcsp
+
+# Ignore all files with the extension .csv
+*.csv
