@@ -63,6 +63,8 @@ def get_params(df, hand):
         serve_win = [len(Serve.query('shot_outcome in [1, 5, 6]'))]
         serve_err = [len(Serve.query('shot_outcome in [2, 3, 4]'))]
         results.append(serve_in + serve_win + serve_err)
+    print("serve")
+    print(len(sum(results, [])))
 
     # Return
     if hand == 'RH':  # RH
@@ -81,6 +83,8 @@ def get_params(df, hand):
         return_win = [len(Return.query('shot_outcome in [1, 5, 6]'))]
         return_err = [len(Return.query('shot_outcome in [2, 3, 4]'))]
         results.append(return_in + return_win + return_err)
+    print("return")
+    print(len(sum(results, [])))
 
     # Rally
     if hand == 'RH':  # RH
@@ -96,20 +100,36 @@ def get_params(df, hand):
     # Handlers
     for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
         # Regular, Smash, Lob
-        Regular = Stroke.query('prev_shot not in [3, 7, 11, 24, 28, 32]') # receive a regular at DE/MID/AD
-        Smash = Stroke.query('prev_shot in [7, 28]')
-        Lob = Stroke.query('prev_shot in [11, 32]')
-        Slice = Stroke.query('prev_shot in [3, 24]')
-        for curr in [Regular, Smash, Lob, Slice]:
-            react_regular = [len(curr.query('shot not in [3, 7, 11, 24, 28, 32]'))]
-            react_smash = [len(curr.query('shot in [7, 28]'))]
-            react_lob = [len(curr.query('shot in [11, 32]'))]
-            react_slice = [len(curr.query('shot in [3, 24]'))]
-            results.append(react_regular + react_smash + react_lob + react_slice)
-    
+        Regular_Shallow = Stroke.query('prev_shot not in [3, 7, 11, 24, 28, 32] and hit_at_depth==1')
+        Smash_Shallow = Stroke.query('prev_shot in [7, 28] and hit_at_depth==1')
+        Lob_Shallow = Stroke.query('prev_shot in [11, 32] and hit_at_depth==1')
+        Slice_Shallow = Stroke.query('prev_shot in [3, 24] and hit_at_depth==1')
+        Regular_Deep = Stroke.query('prev_shot not in [3, 7, 11, 24, 28, 32] and hit_at_depth!=1')
+        Smash_Deep = Stroke.query('prev_shot in [7, 28] and hit_at_depth==2')
+        Lob_Deep = Stroke.query('prev_shot in [11, 32] and hit_at_depth==2')
+        Slice_Deep = Stroke.query('prev_shot in [3, 24] and hit_at_depth==2')
+        for curr in [Regular_Shallow, Smash_Shallow, Lob_Shallow, Slice_Shallow, Regular_Deep, Smash_Deep, Lob_Deep, Slice_Deep]:
+            react_regular_shallow = [len(curr.query('shot not in [3, 7, 11, 24, 28, 32] and depth==1'))]
+            react_smash_shallow = [len(curr.query('shot in [7, 28] and depth==1'))]
+            react_lob_shallow = [len(curr.query('shot in [11, 32] and depth==1'))]
+            react_slice_shallow = [len(curr.query('shot in [3, 24] and depth==1'))]
+            react_regular_deep = [len(curr.query('shot not in [3, 7, 11, 24, 28, 32] and depth!=1'))]
+            react_smash_deep = [len(curr.query('shot in [7, 28] and depth!=1'))]
+            react_lob_deep = [len(curr.query('shot in [11, 32] and depth!=1'))]
+            react_slice_deep = [len(curr.query('shot in [3, 24] and depth!=1'))]
+            results.append(react_regular_shallow + react_smash_shallow + react_lob_shallow + react_slice_shallow 
+                           + react_regular_deep + react_smash_deep + react_lob_deep + react_slice_deep)
+    print("handlers")
+    print(len(sum(results, [])))
+        
+    # SHALLOW
+    De_Stroke_Shallow = De_Stroke.query('depth==1')
+    Mid_Stroke_Shallow = Mid_Stroke.query('depth==1')
+    Ad_Stroke_Shallow = Ad_Stroke.query('depth==1')
+
     # Regular played by current player
 
-    for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
+    for i, Stroke in enumerate([De_Stroke_Shallow, Mid_Stroke_Shallow, Ad_Stroke_Shallow]):
         # (0, DE), (1, MID), (2, AD)
         FH_Stroke = Stroke.query('shot<=20 and shot not in [3, 7, 11]')
         BH_Stroke = Stroke.query('shot<=40 and shot>20 and shot not in [24, 28, 32]')
@@ -123,7 +143,7 @@ def get_params(df, hand):
         results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
     
     # Smash played by current player
-    for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
+    for i, Stroke in enumerate([De_Stroke_Shallow, Mid_Stroke_Shallow, Ad_Stroke_Shallow]):
         # (0, DE), (1, MID), (2, AD)
         FH_Stroke = Stroke.query('shot==7')
         BH_Stroke = Stroke.query('shot==28')
@@ -137,7 +157,7 @@ def get_params(df, hand):
         results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
     
     # Lob played by current player
-    for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
+    for i, Stroke in enumerate([De_Stroke_Shallow, Mid_Stroke_Shallow, Ad_Stroke_Shallow]):
         # (0, DE), (1, MID), (2, AD)
         FH_Stroke = Stroke.query('shot==11')
         BH_Stroke = Stroke.query('shot==32')
@@ -151,7 +171,7 @@ def get_params(df, hand):
         results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
     
     # Slice played by current player
-    for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
+    for i, Stroke in enumerate([De_Stroke_Shallow, Mid_Stroke_Shallow, Ad_Stroke_Shallow]):
         # (0, DE), (1, MID), (2, AD)
         FH_Stroke = Stroke.query('shot==11')
         BH_Stroke = Stroke.query('shot==32')
@@ -163,6 +183,73 @@ def get_params(df, hand):
         stroke_win = [len(Stroke.query('shot_outcome in [1, 5, 6]'))]
         stroke_err = [len(Stroke.query('shot_outcome in [2, 3, 4]'))]
         results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
+    
+    print("shallow")
+    print(len(sum(results, [])))
+    
+
+    # DEEP
+
+    De_Stroke_Deep = De_Stroke.query('depth!=1')
+    Mid_Stroke_Deep = Mid_Stroke.query('depth!=1')
+    Ad_Stroke_Deep = Ad_Stroke.query('depth!=1')
+    for i, Stroke in enumerate([De_Stroke_Deep, Mid_Stroke_Deep, Ad_Stroke_Deep]):
+        # (0, DE), (1, MID), (2, AD)
+        FH_Stroke = Stroke.query('shot<=20 and shot not in [3, 7, 11]')
+        BH_Stroke = Stroke.query('shot<=40 and shot>20 and shot not in [24, 28, 32]')
+        FH_shots = [FH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
+        BH_shots = [BH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
+        shots = FH_shots + BH_shots
+        FH_stroke_in = [len(x.query('shot_outcome==7')) for x in FH_shots]
+        BH_stroke_in = [len(x.query('shot_outcome==7')) for x in BH_shots]
+        stroke_win = [len(Stroke.query('shot_outcome in [1, 5, 6]'))]
+        stroke_err = [len(Stroke.query('shot_outcome in [2, 3, 4]'))]
+        results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
+    
+    # Smash played by current player
+    for i, Stroke in enumerate([De_Stroke_Deep, Mid_Stroke_Deep, Ad_Stroke_Deep]):
+        # (0, DE), (1, MID), (2, AD)
+        FH_Stroke = Stroke.query('shot==7')
+        BH_Stroke = Stroke.query('shot==28')
+        FH_shots = [FH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
+        BH_shots = [BH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
+        shots = FH_shots + BH_shots
+        FH_stroke_in = [len(x.query('shot_outcome==7')) for x in FH_shots]
+        BH_stroke_in = [len(x.query('shot_outcome==7')) for x in BH_shots]
+        stroke_win = [len(Stroke.query('shot_outcome in [1, 5, 6]'))]
+        stroke_err = [len(Stroke.query('shot_outcome in [2, 3, 4]'))]
+        results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
+    
+    # Lob played by current player
+    for i, Stroke in enumerate([De_Stroke_Deep, Mid_Stroke_Deep, Ad_Stroke_Deep]):
+        # (0, DE), (1, MID), (2, AD)
+        FH_Stroke = Stroke.query('shot==11')
+        BH_Stroke = Stroke.query('shot==32')
+        FH_shots = [FH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
+        BH_shots = [BH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
+        shots = FH_shots + BH_shots
+        FH_stroke_in = [len(x.query('shot_outcome==7')) for x in FH_shots]
+        BH_stroke_in = [len(x.query('shot_outcome==7')) for x in BH_shots]
+        stroke_win = [len(Stroke.query('shot_outcome in [1, 5, 6]'))]
+        stroke_err = [len(Stroke.query('shot_outcome in [2, 3, 4]'))]
+        results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
+    
+    # Slice played by current player
+    for i, Stroke in enumerate([De_Stroke_Deep, Mid_Stroke_Deep, Ad_Stroke_Deep]):
+        # (0, DE), (1, MID), (2, AD)
+        FH_Stroke = Stroke.query('shot==11')
+        BH_Stroke = Stroke.query('shot==32')
+        FH_shots = [FH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
+        BH_shots = [BH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
+        shots = FH_shots + BH_shots
+        FH_stroke_in = [len(x.query('shot_outcome==7')) for x in FH_shots]
+        BH_stroke_in = [len(x.query('shot_outcome==7')) for x in BH_shots]
+        stroke_win = [len(Stroke.query('shot_outcome in [1, 5, 6]'))]
+        stroke_err = [len(Stroke.query('shot_outcome in [2, 3, 4]'))]
+        results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
+    
+    print("deep")
+    print(len(sum(results, [])))
 
     return results
 
