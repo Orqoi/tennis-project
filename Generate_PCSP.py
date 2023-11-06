@@ -170,7 +170,7 @@ def generate_transition_probs(data, date, ply1_name, ply2_name, ply1_hand, ply2_
 
     print('# P1 matches:', num_ply1_prev_n)
     print('# P2 matches:', num_ply2_prev_n)
-    if (num_ply1_prev_n >= 5):
+    if (num_ply1_prev_n + num_ply2_prev_n >= 5):
         generate_pcsp(params, date, ply1_name, ply2_name, ply1_hand, ply2_hand)
    
 
