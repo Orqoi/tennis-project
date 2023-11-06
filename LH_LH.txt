@@ -90,55 +90,85 @@ Ply1_BackHandR = ifa (turn == n_de_ct) {    // Player2 backhand return to Player
 Ply2_de_regular_handler = pcase{
 			p183: React_Regular{ball=6} -> Ply2_de_regular
 			p184: React_Smash{ball=6} -> Ply2_de_smash
-			p185: React_Lob{ball=6} -> Ply2_de_lob 
+			p185: React_Lob{ball=6} -> Ply2_de_lob
+			p185: React_Lob{ball=6} -> Ply2_de_slice 
 	};
 
 Ply2_de_smash_handler = pcase{
 			p186: React_Regular{ball=6} -> Ply2_de_regular
 			p187: React_Smash{ball=6} -> Ply2_de_smash
-			p188: React_Lob{ball=6} -> Ply2_de_lob 
+			p188: React_Lob{ball=6} -> Ply2_de_lob
+			p185: React_Lob{ball=6} -> Ply2_de_slice
 	};
 
 Ply2_de_lob_handler = pcase{
 			p189: React_Regular{ball=6} -> Ply2_de_regular
 			p190: React_Smash{ball=6} -> Ply2_de_smash
+			p191: React_Lob{ball=6} -> Ply2_de_lob
+			p185: React_Lob{ball=6} -> Ply2_de_slice
+	};
+
+Ply2_de_slice_handler = pcase{
+			p189: React_Regular{ball=6} -> Ply2_de_regular
+			p190: React_Smash{ball=6} -> Ply2_de_smash
 			p191: React_Lob{ball=6} -> Ply2_de_lob 
+			p185: React_Lob{ball=6} -> Ply2_de_slice
 	};
 
 Ply2_mid_regular_handler = pcase{
 			p192: React_Regular{ball=5} -> Ply2_mid_regular
 			p193: React_Smash{ball=5} -> Ply2_mid_smash
-			p194: React_Lob{ball=5} -> Ply2_mid_lob 
+			p194: React_Lob{ball=5} -> Ply2_mid_lob
+			p194: React_Lob{ball=5} -> Ply2_mid_slice
 	};
 
 Ply2_mid_smash_handler = pcase{
 			p195: React_Regular{ball=5} -> Ply2_mid_regular
 			p196: React_Smash{ball=5} -> Ply2_mid_smash
-			p197: React_Lob{ball=5} -> Ply2_mid_lob 
+			p197: React_Lob{ball=5} -> Ply2_mid_lob
+			p194: React_Lob{ball=5} -> Ply2_mid_slice
 	};
 
 Ply2_mid_lob_handler = pcase{
 			p198: React_Regular{ball=5} -> Ply2_mid_regular
 			p199: React_Smash{ball=5} -> Ply2_mid_smash
-			p200: React_Lob{ball=5} -> Ply2_mid_lob 
+			p200: React_Lob{ball=5} -> Ply2_mid_lob
+			p194: React_Lob{ball=5} -> Ply2_mid_slice 
+	};
+
+Ply2_mid_slice_handler = pcase{
+			p198: React_Regular{ball=5} -> Ply2_mid_regular
+			p199: React_Smash{ball=5} -> Ply2_mid_smash
+			p200: React_Lob{ball=5} -> Ply2_mid_lob
+			p194: React_Lob{ball=5} -> Ply2_mid_slice 
 	};
 
 Ply2_ad_regular_handler = pcase{
 			p201: React_Regular{ball=4} -> Ply2_ad_regular
 			p202: React_Smash{ball=4} -> Ply2_ad_smash
-			p203: React_Lob{ball=4} -> Ply2_ad_lob 
+			p203: React_Lob{ball=4} -> Ply2_ad_lob
+			p194: React_Lob{ball=5} -> Ply2_ad_slice 
 	};
 
 Ply2_ad_smash_handler = pcase{
 			p204: React_Regular{ball=4} -> Ply2_ad_regular
 			p205: React_Smash{ball=4} -> Ply2_ad_smash
-			p206: React_Lob{ball=4} -> Ply2_ad_lob 
+			p206: React_Lob{ball=4} -> Ply2_ad_lob
+			p194: React_Lob{ball=5} -> Ply2_ad_slice
 	};
 
 Ply2_ad_lob_handler = pcase{
 			p207: React_Regular{ball=4} -> Ply2_ad_regular
 			p208: React_Smash{ball=4} -> Ply2_ad_smash
-			p209: React_Lob{ball=4} -> Ply2_ad_lob 
+			p209: React_Lob{ball=4} -> Ply2_ad_lob
+			p194: React_Lob{ball=5} -> Ply2_ad_slice
+	};
+
+Ply2_ad_slice_handler = pcase{
+			p207: React_Regular{ball=4} -> Ply2_ad_regular
+			p208: React_Smash{ball=4} -> Ply2_ad_smash
+			p209: React_Lob{ball=4} -> Ply2_ad_lob
+			p194: React_Lob{ball=5} -> Ply2_ad_slice
 	};
 
 
@@ -269,6 +299,48 @@ Ply1_ad_lob = pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 
+// deuce slice is when player1 hit position is 1
+Ply1_de_slice = pcase{
+			p162: FH_InsideOut{ball=6} -> Ply2_de_slice_handler
+			p165: FH_InsideIn{ball=4} -> Ply2_ad_slice_handler
+			p168: FH_DownMid{ball=5} -> Ply2_mid_slice_handler
+			p171: BH_Crosscourt{ball=6} -> Ply2_de_slice_handler
+			p174: BH_Downline{ball=4} -> Ply2_ad_slice_handler
+			p177: BH_DownMid{ball=5} -> Ply2_mid_slice_handler	
+			p180: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+      		                                                     else { turn = (turn+1)%4} }-> NextPt
+			p181: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+      		                                                     else { turn = (turn+1)%4} }-> NextPt  
+	};
+	
+// mid slice is when player1 hit position is 2
+Ply1_mid_slice = pcase{
+			p182: FH_InsideOut{ball=6} -> Ply2_de_slice_handler
+			p185: FH_Crosscourt{ball=4} -> Ply2_ad_slice_handler
+			p188: FH_DownMid{ball=5} -> Ply2_mid_slice_handler
+			p191: BH_InsideOut{ball=4} -> Ply2_ad_slice_handler
+			p194: BH_Crosscourt{ball=6} -> Ply2_de_slice_handler
+			p197: BH_DownMid{ball=5} -> Ply2_mid_slice_handler
+			p200: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+      		                                                     else { turn = (turn+1)%4} }-> NextPt
+			p201: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+      		                                                     else { turn = (turn+1)%4} }-> NextPt    
+	};
+
+// ad slice is when player1 hit position is 3
+Ply1_ad_slice = pcase{
+			p202: FH_Crosscourt{ball=4} -> Ply2_ad_slice_handler
+			p205: FH_Downline{ball=6} -> Ply2_de_slice_handler
+			p208: FH_DownMid{ball=5} -> Ply2_mid_slice_handler
+			p211: BH_InsideIn{ball=6} -> Ply2_de_slice_handler
+			p214: BH_InsideOut{ball=4} -> Ply2_ad_slice_handler
+			p217: BH_DownMid{ball=5} -> Ply2_mid_slice_handler
+			p220: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+      		                                                     else { turn = (turn+1)%4} }-> NextPt
+			p221: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+      		                                                     else { turn = (turn+1)%4} }-> NextPt  
+	};
+
 
 De_Ply2Serve = pcase {
 			p222: ServeT_in{ball=2} -> Ply1_ForeHandR
@@ -356,54 +428,84 @@ Ply1_de_regular_handler = pcase{
 			p42: React_Regular{ball=1} -> Ply1_de_regular
 			p43: React_Smash{ball=1} -> Ply1_de_smash
 			p44: React_Lob{ball=1} -> Ply1_de_lob
+			p44: React_Slice{ball=1} -> Ply1_de_slice
 	};
 
 Ply1_de_smash_handler = pcase{
 			p45: React_Regular{ball=1} -> Ply1_de_regular
 			p46: React_Smash{ball=1} -> Ply1_de_smash
 			p47: React_Lob{ball=1} -> Ply1_de_lob
+			p44: React_Slice{ball=1} -> Ply1_de_slice
 	};
 
 Ply1_de_lob_handler = pcase{
 			p48: React_Regular{ball=1} -> Ply1_de_regular
 			p49: React_Smash{ball=1} -> Ply1_de_smash
 			p50: React_Lob{ball=1} -> Ply1_de_lob
+			p44: React_Slice{ball=1} -> Ply1_de_slice
+	};
+
+Ply1_de_slice_handler = pcase{
+			p48: React_Regular{ball=1} -> Ply1_de_regular
+			p49: React_Smash{ball=1} -> Ply1_de_smash
+			p50: React_Lob{ball=1} -> Ply1_de_lob
+			p44: React_Slice{ball=1} -> Ply1_de_slice
 	};
 
 Ply1_mid_regular_handler = pcase{
 			p51: React_Regular{ball=2} -> Ply1_mid_regular
 			p52: React_Smash{ball=2} -> Ply1_mid_smash
 			p53: React_Lob{ball=2} -> Ply1_mid_lob
+			p53: React_Slice{ball=2} -> Ply1_mid_slice
 	};
 
 Ply1_mid_smash_handler = pcase{
 			p54: React_Regular{ball=2} -> Ply1_mid_regular
 			p55: React_Smash{ball=2} -> Ply1_mid_smash
 			p56: React_Lob{ball=2} -> Ply1_mid_lob
+			p53: React_Slice{ball=2} -> Ply1_mid_slice
 	};
 
 Ply1_mid_lob_handler = pcase{
 			p57: React_Regular{ball=2} -> Ply1_mid_regular
 			p58: React_Smash{ball=2} -> Ply1_mid_smash
 			p59: React_Lob{ball=2} -> Ply1_mid_lob
+			p53: React_Slice{ball=2} -> Ply1_mid_slice
+	};
+
+Ply1_mid_slice_handler = pcase{
+			p57: React_Regular{ball=2} -> Ply1_mid_regular
+			p58: React_Smash{ball=2} -> Ply1_mid_smash
+			p59: React_Lob{ball=2} -> Ply1_mid_lob
+			p53: React_Slice{ball=2} -> Ply1_mid_slice
 	};
 
 Ply1_ad_regular_handler = pcase{
 			p60: React_Regular{ball=3} -> Ply1_ad_regular
 			p61: React_Smash{ball=3} -> Ply1_ad_smash
 			p62: React_Lob{ball=3} -> Ply1_ad_lob
+			p62: React_Slice{ball=3} -> Ply1_ad_slice
 	};
 
 Ply1_ad_smash_handler = pcase{
 			p63: React_Regular{ball=3} -> Ply1_ad_regular
 			p64: React_Smash{ball=3} -> Ply1_ad_smash
 			p65: React_Lob{ball=3} -> Ply1_ad_lob
+			p62: React_Slice{ball=3} -> Ply1_ad_slice
 	};
 
 Ply1_ad_lob_handler = pcase{
 			p66: React_Regular{ball=3} -> Ply1_ad_regular
 			p67: React_Smash{ball=3} -> Ply1_ad_smash
 			p68: React_Lob{ball=3} -> Ply1_ad_lob
+			p62: React_Slice{ball=3} -> Ply1_ad_slice
+	};
+
+Ply1_ad_slice_handler = pcase{
+			p66: React_Regular{ball=3} -> Ply1_ad_regular
+			p67: React_Smash{ball=3} -> Ply1_ad_smash
+			p68: React_Lob{ball=3} -> Ply1_ad_lob
+			p62: React_Slice{ball=3} -> Ply1_ad_slice
 	};
 
 
@@ -450,7 +552,6 @@ Ply2_ad_stroke = pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	}; 
 
-
 // deuce smash is when player2 hit position is 6
 Ply2_de_smash = pcase { // if already 
 			p324: FH_InsideOut {ball = 1} -> Ply1_de_smash_handler
@@ -493,8 +594,6 @@ Ply2_ad_smash = pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};    
 
-
-
 // deuce lob is when player2 hit position is 6
 Ply2_de_lob = pcase { // if already 
 			p385: FH_InsideOut {ball = 1} -> Ply1_de_lob_handler
@@ -536,6 +635,48 @@ Ply2_ad_lob = pcase{
 			p443: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};    	
+
+// deuce slice is when player2 hit position is 6
+Ply2_de_slice = pcase { // if already 
+			p385: FH_InsideOut {ball = 1} -> Ply1_de_slice_handler
+			p388: FH_insideIn {ball = 3} -> Ply1_ad_slice_handler
+			p391: FH_DownMid {ball = 2} -> Ply1_mid_slice_handler
+			p394: BH_Crosscourt {ball = 1} -> Ply1_de_slice_handler
+			p397: BH_Downline {ball = 3} -> Ply1_ad_slice_handler
+			p400: BH_DownMid {ball = 2} -> Ply1_mid_slice_handler
+			p402: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+      		                                                     else { turn = (turn+1)%4} }-> NextPt
+			p403: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+      		                                                     else { turn = (turn+1)%4} }-> NextPt 
+	};
+
+// mid slice is when player2 hit position is 5
+Ply2_mid_slice = noMove -> pcase{
+			p405: FH_InsideOut {ball = 1} -> Ply1_de_slice_handler
+			p408: FH_Crosscourt{ball = 3} -> Ply1_ad_slice_handler
+			p411: FH_DownMid {ball = 2} -> Ply1_mid_slice_handler
+			p414: BH_InsideOut {ball = 3} -> Ply1_ad_slice_handler
+			p417: BH_Crosscourt {ball = 1} -> Ply1_de_slice_handler
+			p420: BH_DownMid {ball = 2} -> Ply1_mid_slice_handler
+			p422: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+      		                                                     else { turn = (turn+1)%4} }-> NextPt
+			p423: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+      		                                                     else { turn = (turn+1)%4} }-> NextPt 
+	};
+
+// ad slice is when player 2 hit position is 4
+Ply2_ad_slice = pcase{
+			p425: FH_Crosscourt {ball = 3} -> Ply1_ad_slice_handler
+			p428: FH_Downline {ball = 1} -> Ply1_de_slice_handler
+			p431: FH_DownMid {ball = 2} -> Ply1_mid_slice_handler
+			p434: BH_InsideIn {ball = 1} -> Ply1_de_slice_handler
+			p437: BH_InsideOut {ball = 3} -> Ply1_ad_slice_handler
+			p440: BH_DownMid {ball = 2} -> Ply1_mid_slice_handler
+			p442: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+      		                                                     else { turn = (turn+1)%4} }-> NextPt
+			p443: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+      		                                                     else { turn = (turn+1)%4} }-> NextPt 
+	};  
 
 
 
