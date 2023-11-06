@@ -96,21 +96,23 @@ def get_params(df, hand):
     # Handlers
     for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
         # Regular, Smash, Lob
-        Regular = Stroke.query('prev_shot not in [7, 11, 28, 32]') # receive a regular at DE/MID/AD
+        Regular = Stroke.query('prev_shot not in [3, 7, 11, 24, 28, 32]') # receive a regular at DE/MID/AD
         Smash = Stroke.query('prev_shot in [7, 28]')
         Lob = Stroke.query('prev_shot in [11, 32]')
-        for curr in [Regular, Smash, Lob]:
-            react_regular = [len(curr.query('shot not in [7, 11, 28, 32]'))]
+        Slice = Stroke.query('prev_shot in [3, 24]')
+        for curr in [Regular, Smash, Lob, Slice]:
+            react_regular = [len(curr.query('shot not in [3, 7, 11, 24, 28, 32]'))]
             react_smash = [len(curr.query('shot in [7, 28]'))]
             react_lob = [len(curr.query('shot in [11, 32]'))]
-            results.append(react_regular + react_smash + react_lob)
+            react_slice = [len(curr.query('shot in [3, 24]'))]
+            results.append(react_regular + react_smash + react_lob + react_slice)
     
     # Regular played by current player
 
     for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
         # (0, DE), (1, MID), (2, AD)
-        FH_Stroke = Stroke.query('shot<=20 and shot not in [7, 11]')
-        BH_Stroke = Stroke.query('shot<=40 and shot>20 and shot not in [28, 32]')
+        FH_Stroke = Stroke.query('shot<=20 and shot not in [3, 7, 11]')
+        BH_Stroke = Stroke.query('shot<=40 and shot>20 and shot not in [24, 28, 32]')
         FH_shots = [FH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
         BH_shots = [BH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
         shots = FH_shots + BH_shots
@@ -135,6 +137,20 @@ def get_params(df, hand):
         results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
     
     # Lob played by current player
+    for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
+        # (0, DE), (1, MID), (2, AD)
+        FH_Stroke = Stroke.query('shot==11')
+        BH_Stroke = Stroke.query('shot==32')
+        FH_shots = [FH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
+        BH_shots = [BH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
+        shots = FH_shots + BH_shots
+        FH_stroke_in = [len(x.query('shot_outcome==7')) for x in FH_shots]
+        BH_stroke_in = [len(x.query('shot_outcome==7')) for x in BH_shots]
+        stroke_win = [len(Stroke.query('shot_outcome in [1, 5, 6]'))]
+        stroke_err = [len(Stroke.query('shot_outcome in [2, 3, 4]'))]
+        results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
+    
+    # Slice played by current player
     for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
         # (0, DE), (1, MID), (2, AD)
         FH_Stroke = Stroke.query('shot==11')
