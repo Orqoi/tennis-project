@@ -170,12 +170,12 @@ Ply1_ad_slice_handler = pcase{
 
 // deuce stroke is when player1 hit position is 1
 Ply1_de_regular = pcase{
-			p90: FH_Crosscourt{ball=6} -> Ply2_de_regular
-			p91: FH_Downline{ball=4} -> Ply2_ad_regular
-			p92: FH_DownMid{ball=5} -> Ply2_mid_regular
-			p93: BH_InsideIn{ball=4} -> Ply2_ad_regular
-			p94: BH_InsideOut{ball=6} -> Ply2_de_regular
-			p95: BH_DownMid{ball=5} -> Ply2_mid_regular
+			p90: FH_Crosscourt{ball=6} -> Ply2_de_regular_handler
+			p91: FH_Downline{ball=4} -> Ply2_ad_regular_handler
+			p92: FH_DownMid{ball=5} -> Ply2_mid_regular_handler
+			p93: BH_InsideIn{ball=4} -> Ply2_ad_regular_handler
+			p94: BH_InsideOut{ball=6} -> Ply2_de_regular_handler
+			p95: BH_DownMid{ball=5} -> Ply2_mid_regular_handler
 			p96: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p97: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
@@ -184,12 +184,12 @@ Ply1_de_regular = pcase{
 	
 // mid stroke is when player1 hit position is 2
 Ply1_mid_regular = pcase{
-			p98: FH_InsideOut{ball=4} -> Ply2_ad_regular
-			p99: FH_Crosscourt{ball=6} -> Ply2_de_regular
-			p100: FH_DownMid{ball=5} -> Ply2_mid_regular
-			p101: BH_InsideOut{ball=6} -> Ply2_de_regular
-			p102: BH_Crosscourt{ball=4} -> Ply2_ad_regular
-			p103: BH_DownMid{ball=5} -> Ply2_mid_regular
+			p98: FH_InsideOut{ball=4} -> Ply2_ad_regular_handler
+			p99: FH_Crosscourt{ball=6} -> Ply2_de_regular_handler
+			p100: FH_DownMid{ball=5} -> Ply2_mid_regular_handler
+			p101: BH_InsideOut{ball=6} -> Ply2_de_regular_handler
+			p102: BH_Crosscourt{ball=4} -> Ply2_ad_regular_handler
+			p103: BH_DownMid{ball=5} -> Ply2_mid_regular_handler
 			p104: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p105: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
@@ -199,12 +199,12 @@ Ply1_mid_regular = pcase{
 
 // ad stroke is when player1 hit position is 3
 Ply1_ad_regular = pcase{
-			p106: FH_InsideOut{ball=4} -> Ply2_ad_regular
-			p107: FH_InsideIn{ball=6} -> Ply2_de_regular
-			p108: FH_DownMid{ball=5} -> Ply2_mid_regular
-			p109: BH_Crosscourt{ball=4} -> Ply2_ad_regular
-			p110: BH_Downline{ball=6} -> Ply2_de_regular
-			p111: BH_DownMid{ball=5} -> Ply2_mid_regular
+			p106: FH_InsideOut{ball=4} -> Ply2_ad_regular_handler
+			p107: FH_InsideIn{ball=6} -> Ply2_de_regular_handler
+			p108: FH_DownMid{ball=5} -> Ply2_mid_regular_handler
+			p109: BH_Crosscourt{ball=4} -> Ply2_ad_regular_handler
+			p110: BH_Downline{ball=6} -> Ply2_de_regular_handler
+			p111: BH_DownMid{ball=5} -> Ply2_mid_regular_handler
 			p112: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p113: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
@@ -215,12 +215,12 @@ Ply1_ad_regular = pcase{
 
 // deuce stroke is when player1 hit position is 1
 Ply1_de_smash = pcase{
-			p114: FH_Crosscourt{ball=6} -> Ply2_de_smash
-			p115: FH_Downline{ball=4} -> Ply2_ad_smash
-			p116: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p117: BH_InsideIn{ball=4} -> Ply2_ad_smash
-			p118: BH_InsideOut{ball=6} -> Ply2_de_smash
-			p119: BH_DownMid{ball=5} -> Ply2_mid_smash
+			p114: FH_Crosscourt{ball=6} -> Ply2_de_smash_handler
+			p115: FH_Downline{ball=4} -> Ply2_ad_smash_handler
+			p116: FH_DownMid{ball=5} -> Ply2_mid_smash_handler
+			p117: BH_InsideIn{ball=4} -> Ply2_ad_smash_handler
+			p118: BH_InsideOut{ball=6} -> Ply2_de_smash_handler
+			p119: BH_DownMid{ball=5} -> Ply2_mid_smash_handler
 			p120: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p121: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
@@ -229,12 +229,12 @@ Ply1_de_smash = pcase{
 	
 // mid stroke is when player1 hit position is 2
 Ply1_mid_smash = pcase{
-			p122: FH_InsideOut{ball=4} -> Ply2_ad_smash
-			p123: FH_Crosscourt{ball=6} -> Ply2_de_smash
-			p124: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p125: BH_InsideOut{ball=6} -> Ply2_de_smash
-			p126: BH_Crosscourt{ball=4} -> Ply2_ad_smash
-			p127: BH_DownMid{ball=5} -> Ply2_mid_smash
+			p122: FH_InsideOut{ball=4} -> Ply2_ad_smash_handler
+			p123: FH_Crosscourt{ball=6} -> Ply2_de_smash_handler
+			p124: FH_DownMid{ball=5} -> Ply2_mid_smash_handler
+			p125: BH_InsideOut{ball=6} -> Ply2_de_smash_handler
+			p126: BH_Crosscourt{ball=4} -> Ply2_ad_smash_handler
+			p127: BH_DownMid{ball=5} -> Ply2_mid_smash_handler
 			p128: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p129: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
@@ -244,12 +244,12 @@ Ply1_mid_smash = pcase{
 
 // ad stroke is when player1 hit position is 3
 Ply1_ad_smash = pcase{
-			p130: FH_InsideOut{ball=4} -> Ply2_ad_smash
-			p131: FH_InsideIn{ball=6} -> Ply2_de_smash
-			p132: FH_DownMid{ball=5} -> Ply2_mid_smash
-			p133: BH_Crosscourt{ball=4} -> Ply2_ad_smash
-			p134: BH_Downline{ball=6} -> Ply2_de_smash
-			p135: BH_DownMid{ball=5} -> Ply2_mid_smash
+			p130: FH_InsideOut{ball=4} -> Ply2_ad_smash_handler
+			p131: FH_InsideIn{ball=6} -> Ply2_de_smash_handler
+			p132: FH_DownMid{ball=5} -> Ply2_mid_smash_handler
+			p133: BH_Crosscourt{ball=4} -> Ply2_ad_smash_handler
+			p134: BH_Downline{ball=6} -> Ply2_de_smash_handler
+			p135: BH_DownMid{ball=5} -> Ply2_mid_smash_handler
 			p136: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p137: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
@@ -260,12 +260,12 @@ Ply1_ad_smash = pcase{
 
 // deuce stroke is when player1 hit position is 1
 Ply1_de_lob = pcase{
-			p138: FH_Crosscourt{ball=6} -> Ply2_de_lob
-			p139: FH_Downline{ball=4} -> Ply2_ad_lob
-			p140: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p141: BH_InsideIn{ball=4} -> Ply2_ad_lob
-			p142: BH_InsideOut{ball=6} -> Ply2_de_lob
-			p143: BH_DownMid{ball=5} -> Ply2_mid_lob
+			p138: FH_Crosscourt{ball=6} -> Ply2_de_lob_handler
+			p139: FH_Downline{ball=4} -> Ply2_ad_lob_handler
+			p140: FH_DownMid{ball=5} -> Ply2_mid_lob_handler
+			p141: BH_InsideIn{ball=4} -> Ply2_ad_lob_handler
+			p142: BH_InsideOut{ball=6} -> Ply2_de_lob_handler
+			p143: BH_DownMid{ball=5} -> Ply2_mid_lob_handler
 			p144: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p145: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
@@ -274,12 +274,12 @@ Ply1_de_lob = pcase{
 	
 // mid stroke is when player1 hit position is 2
 Ply1_mid_lob = pcase{
-			p146: FH_InsideOut{ball=4} -> Ply2_ad_lob
-			p147: FH_Crosscourt{ball=6} -> Ply2_de_lob
-			p148: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p149: BH_InsideOut{ball=6} -> Ply2_de_lob
-			p150: BH_Crosscourt{ball=4} -> Ply2_ad_lob
-			p151: BH_DownMid{ball=5} -> Ply2_mid_lob
+			p146: FH_InsideOut{ball=4} -> Ply2_ad_lob_handler
+			p147: FH_Crosscourt{ball=6} -> Ply2_de_lob_handler
+			p148: FH_DownMid{ball=5} -> Ply2_mid_lob_handler
+			p149: BH_InsideOut{ball=6} -> Ply2_de_lob_handler
+			p150: BH_Crosscourt{ball=4} -> Ply2_ad_lob_handler
+			p151: BH_DownMid{ball=5} -> Ply2_mid_lob_handler
 			p152: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p153: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
@@ -289,12 +289,12 @@ Ply1_mid_lob = pcase{
 
 // ad stroke is when player1 hit position is 3
 Ply1_ad_lob = pcase{
-			p154: FH_InsideOut{ball=4} -> Ply2_ad_lob
-			p155: FH_InsideIn{ball=6} -> Ply2_de_lob
-			p156: FH_DownMid{ball=5} -> Ply2_mid_lob
-			p157: BH_Crosscourt{ball=4} -> Ply2_ad_lob
-			p158: BH_Downline{ball=6} -> Ply2_de_lob
-			p159: BH_DownMid{ball=5} -> Ply2_mid_lob
+			p154: FH_InsideOut{ball=4} -> Ply2_ad_lob_handler
+			p155: FH_InsideIn{ball=6} -> Ply2_de_lob_handler
+			p156: FH_DownMid{ball=5} -> Ply2_mid_lob_handler
+			p157: BH_Crosscourt{ball=4} -> Ply2_ad_lob_handler
+			p158: BH_Downline{ball=6} -> Ply2_de_lob_handler
+			p159: BH_DownMid{ball=5} -> Ply2_mid_lob_handler
 			p160: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p161: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
@@ -305,12 +305,12 @@ Ply1_ad_lob = pcase{
 
 // deuce stroke is when player1 hit position is 1
 Ply1_de_slice = pcase{
-			p162: FH_Crosscourt{ball=6} -> Ply2_de_slice
-			p163: FH_Downline{ball=4} -> Ply2_ad_slice
-			p164: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p165: BH_InsideIn{ball=4} -> Ply2_ad_slice
-			p166: BH_InsideOut{ball=6} -> Ply2_de_slice
-			p167: BH_DownMid{ball=5} -> Ply2_mid_slice
+			p162: FH_Crosscourt{ball=6} -> Ply2_de_slice_handler
+			p163: FH_Downline{ball=4} -> Ply2_ad_slice_handler
+			p164: FH_DownMid{ball=5} -> Ply2_mid_slice_handler
+			p165: BH_InsideIn{ball=4} -> Ply2_ad_slice_handler
+			p166: BH_InsideOut{ball=6} -> Ply2_de_slice_handler
+			p167: BH_DownMid{ball=5} -> Ply2_mid_slice_handler
 			p168: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p169: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
@@ -319,12 +319,12 @@ Ply1_de_slice = pcase{
 	
 // mid stroke is when player1 hit position is 2
 Ply1_mid_slice = pcase{
-			p170: FH_InsideOut{ball=4} -> Ply2_ad_slice
-			p171: FH_Crosscourt{ball=6} -> Ply2_de_slice
-			p172: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p173: BH_InsideOut{ball=6} -> Ply2_de_slice
-			p174: BH_Crosscourt{ball=4} -> Ply2_ad_slice
-			p175: BH_DownMid{ball=5} -> Ply2_mid_slice
+			p170: FH_InsideOut{ball=4} -> Ply2_ad_slice_handler
+			p171: FH_Crosscourt{ball=6} -> Ply2_de_slice_handler
+			p172: FH_DownMid{ball=5} -> Ply2_mid_slice_handler
+			p173: BH_InsideOut{ball=6} -> Ply2_de_slice_handler
+			p174: BH_Crosscourt{ball=4} -> Ply2_ad_slice_handler
+			p175: BH_DownMid{ball=5} -> Ply2_mid_slice_handler
 			p176: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p177: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
@@ -334,12 +334,12 @@ Ply1_mid_slice = pcase{
 
 // ad stroke is when player1 hit position is 3
 Ply1_ad_slice = pcase{
-			p178: FH_InsideOut{ball=4} -> Ply2_ad_slice
-			p179: FH_InsideIn{ball=6} -> Ply2_de_slice
-			p180: FH_DownMid{ball=5} -> Ply2_mid_slice
-			p181: BH_Crosscourt{ball=4} -> Ply2_ad_slice
-			p182: BH_Downline{ball=6} -> Ply2_de_slice
-			p183: BH_DownMid{ball=5} -> Ply2_mid_slice
+			p178: FH_InsideOut{ball=4} -> Ply2_ad_slice_handler
+			p179: FH_InsideIn{ball=6} -> Ply2_de_slice_handler
+			p180: FH_DownMid{ball=5} -> Ply2_mid_slice_handler
+			p181: BH_Crosscourt{ball=4} -> Ply2_ad_slice_handler
+			p182: BH_Downline{ball=6} -> Ply2_de_slice_handler
+			p183: BH_DownMid{ball=5} -> Ply2_mid_slice_handler
 			p184: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p185: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
@@ -514,12 +514,12 @@ Ply2_ad_slice_handler = pcase{
 
 // deuce stroke is when player2 hit position is 6
 Ply2_de_regular = pcase { // if already 
-			p276: FH_InsideOut {ball = 1} -> Ply1_de_regular
-			p277: FH_insideIn {ball = 3} -> Ply1_ad_regular
-			p278: FH_DownMid {ball = 2} -> Ply1_mid_regular
-			p279: BH_Crosscourt {ball = 1} -> Ply1_de_regular
-			p280: BH_Downline {ball = 3} -> Ply1_ad_regular
-			p281: BH_DownMid {ball = 2} -> Ply1_mid_regular
+			p276: FH_InsideOut {ball = 1} -> Ply1_de_regular_handler
+			p277: FH_insideIn {ball = 3} -> Ply1_ad_regular_handler
+			p278: FH_DownMid {ball = 2} -> Ply1_mid_regular_handler
+			p279: BH_Crosscourt {ball = 1} -> Ply1_de_regular_handler
+			p280: BH_Downline {ball = 3} -> Ply1_ad_regular_handler
+			p281: BH_DownMid {ball = 2} -> Ply1_mid_regular_handler
 			p282: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p283: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
@@ -528,12 +528,12 @@ Ply2_de_regular = pcase { // if already
 
 // mid stroke is when player2 hit position is 5
 Ply2_mid_regular = noMove -> pcase{
-			p284: FH_InsideOut {ball = 1} -> Ply1_de_regular
-			p285: FH_Crosscourt{ball = 3} -> Ply1_ad_regular
-			p286: FH_DownMid {ball = 2} -> Ply1_mid_regular
-			p287: BH_InsideOut {ball = 3} -> Ply1_ad_regular
-			p288: BH_Crosscourt {ball = 1} -> Ply1_de_regular
-			p289: BH_DownMid {ball = 2} -> Ply1_mid_regular
+			p284: FH_InsideOut {ball = 1} -> Ply1_de_regular_handler
+			p285: FH_Crosscourt{ball = 3} -> Ply1_ad_regular_handler
+			p286: FH_DownMid {ball = 2} -> Ply1_mid_regular_handler
+			p287: BH_InsideOut {ball = 3} -> Ply1_ad_regular_handler
+			p288: BH_Crosscourt {ball = 1} -> Ply1_de_regular_handler
+			p289: BH_DownMid {ball = 2} -> Ply1_mid_regular_handler
 			p290: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p291: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
@@ -542,12 +542,12 @@ Ply2_mid_regular = noMove -> pcase{
 
 // ad stroke is when player 2 hit position is 4
 Ply2_ad_regular = pcase{
-			p292: FH_Crosscourt {ball = 3} -> Ply1_ad_regular
-			p293: FH_Downline {ball = 1} -> Ply1_de_regular
-			p294: FH_DownMid {ball = 2} -> Ply1_mid_regular
-			p295: BH_InsideIn {ball = 1} -> Ply1_de_regular
-			p296: BH_InsideOut {ball = 3} -> Ply1_ad_regular
-			p297: BH_DownMid {ball = 2} -> Ply1_mid_regular
+			p292: FH_Crosscourt {ball = 3} -> Ply1_ad_regular_handler
+			p293: FH_Downline {ball = 1} -> Ply1_de_regular_handler
+			p294: FH_DownMid {ball = 2} -> Ply1_mid_regular_handler
+			p295: BH_InsideIn {ball = 1} -> Ply1_de_regular_handler
+			p296: BH_InsideOut {ball = 3} -> Ply1_ad_regular_handler
+			p297: BH_DownMid {ball = 2} -> Ply1_mid_regular_handler
 			p298: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p299: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
@@ -558,12 +558,12 @@ Ply2_ad_regular = pcase{
 
 // deuce stroke is when player2 hit position is 6
 Ply2_de_smash = pcase { // if already 
-			p300: FH_InsideOut {ball = 1} -> Ply1_de_smash
-			p301: FH_insideIn {ball = 3} -> Ply1_ad_smash
-			p302: FH_DownMid {ball = 2} -> Ply1_mid_smash
-			p303: BH_Crosscourt {ball = 1} -> Ply1_de_smash
-			p304: BH_Downline {ball = 3} -> Ply1_ad_smash
-			p305: BH_DownMid {ball = 2} -> Ply1_mid_smash
+			p300: FH_InsideOut {ball = 1} -> Ply1_de_smash_handler
+			p301: FH_insideIn {ball = 3} -> Ply1_ad_smash_handler
+			p302: FH_DownMid {ball = 2} -> Ply1_mid_smash_handler
+			p303: BH_Crosscourt {ball = 1} -> Ply1_de_smash_handler
+			p304: BH_Downline {ball = 3} -> Ply1_ad_smash_handler
+			p305: BH_DownMid {ball = 2} -> Ply1_mid_smash_handler
 			p306: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p307: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
@@ -572,12 +572,12 @@ Ply2_de_smash = pcase { // if already
 
 // mid stroke is when player2 hit position is 5
 Ply2_mid_smash = noMove -> pcase{
-			p308: FH_InsideOut {ball = 1} -> Ply1_de_smash
-			p309: FH_Crosscourt{ball = 3} -> Ply1_ad_smash
-			p310: FH_DownMid {ball = 2} -> Ply1_mid_smash
-			p311: BH_InsideOut {ball = 3} -> Ply1_ad_smash
-			p312: BH_Crosscourt {ball = 1} -> Ply1_de_smash
-			p313: BH_DownMid {ball = 2} -> Ply1_mid_smash
+			p308: FH_InsideOut {ball = 1} -> Ply1_de_smash_handler
+			p309: FH_Crosscourt{ball = 3} -> Ply1_ad_smash_handler
+			p310: FH_DownMid {ball = 2} -> Ply1_mid_smash_handler
+			p311: BH_InsideOut {ball = 3} -> Ply1_ad_smash_handler
+			p312: BH_Crosscourt {ball = 1} -> Ply1_de_smash_handler
+			p313: BH_DownMid {ball = 2} -> Ply1_mid_smash_handler
 			p314: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p315: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
@@ -586,12 +586,12 @@ Ply2_mid_smash = noMove -> pcase{
 
 // ad stroke is when player 2 hit position is 4
 Ply2_ad_smash = pcase{
-			p316: FH_Crosscourt {ball = 3} -> Ply1_ad_smash
-			p317: FH_Downline {ball = 1} -> Ply1_de_smash
-			p318: FH_DownMid {ball = 2} -> Ply1_mid_smash
-			p319: BH_InsideIn {ball = 1} -> Ply1_de_smash
-			p320: BH_InsideOut {ball = 3} -> Ply1_ad_smash
-			p321: BH_DownMid {ball = 2} -> Ply1_mid_smash
+			p316: FH_Crosscourt {ball = 3} -> Ply1_ad_smash_handler
+			p317: FH_Downline {ball = 1} -> Ply1_de_smash_handler
+			p318: FH_DownMid {ball = 2} -> Ply1_mid_smash_handler
+			p319: BH_InsideIn {ball = 1} -> Ply1_de_smash_handler
+			p320: BH_InsideOut {ball = 3} -> Ply1_ad_smash_handler
+			p321: BH_DownMid {ball = 2} -> Ply1_mid_smash_handler
 			p322: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p323: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
@@ -602,12 +602,12 @@ Ply2_ad_smash = pcase{
 
 // deuce stroke is when player2 hit position is 6
 Ply2_de_lob = pcase { // if already 
-			p324: FH_InsideOut {ball = 1} -> Ply1_de_lob
-			p325: FH_insideIn {ball = 3} -> Ply1_ad_lob
-			p326: FH_DownMid {ball = 2} -> Ply1_mid_lob
-			p327: BH_Crosscourt {ball = 1} -> Ply1_de_lob
-			p328: BH_Downline {ball = 3} -> Ply1_ad_lob
-			p329: BH_DownMid {ball = 2} -> Ply1_mid_lob
+			p324: FH_InsideOut {ball = 1} -> Ply1_de_lob_handler
+			p325: FH_insideIn {ball = 3} -> Ply1_ad_lob_handler
+			p326: FH_DownMid {ball = 2} -> Ply1_mid_lob_handler
+			p327: BH_Crosscourt {ball = 1} -> Ply1_de_lob_handler
+			p328: BH_Downline {ball = 3} -> Ply1_ad_lob_handler
+			p329: BH_DownMid {ball = 2} -> Ply1_mid_lob_handler
 			p330: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p331: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
@@ -616,12 +616,12 @@ Ply2_de_lob = pcase { // if already
 
 // mid stroke is when player2 hit position is 5
 Ply2_mid_lob = noMove -> pcase{
-			p332: FH_InsideOut {ball = 1} -> Ply1_de_lob
-			p333: FH_Crosscourt{ball = 3} -> Ply1_ad_lob
-			p334: FH_DownMid {ball = 2} -> Ply1_mid_lob
-			p335: BH_InsideOut {ball = 3} -> Ply1_ad_lob
-			p336: BH_Crosscourt {ball = 1} -> Ply1_de_lob
-			p337: BH_DownMid {ball = 2} -> Ply1_mid_lob
+			p332: FH_InsideOut {ball = 1} -> Ply1_de_lob_handler
+			p333: FH_Crosscourt{ball = 3} -> Ply1_ad_lob_handler
+			p334: FH_DownMid {ball = 2} -> Ply1_mid_lob_handler
+			p335: BH_InsideOut {ball = 3} -> Ply1_ad_lob_handler
+			p336: BH_Crosscourt {ball = 1} -> Ply1_de_lob_handler
+			p337: BH_DownMid {ball = 2} -> Ply1_mid_lob_handler
 			p338: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p339: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
@@ -630,12 +630,12 @@ Ply2_mid_lob = noMove -> pcase{
 
 // ad stroke is when player 2 hit position is 4
 Ply2_ad_lob = pcase{
-			p340: FH_Crosscourt {ball = 3} -> Ply1_ad_lob
-			p341: FH_Downline {ball = 1} -> Ply1_de_lob
-			p342: FH_DownMid {ball = 2} -> Ply1_mid_lob
-			p343: BH_InsideIn {ball = 1} -> Ply1_de_lob
-			p344: BH_InsideOut {ball = 3} -> Ply1_ad_lob
-			p345: BH_DownMid {ball = 2} -> Ply1_mid_lob
+			p340: FH_Crosscourt {ball = 3} -> Ply1_ad_lob_handler
+			p341: FH_Downline {ball = 1} -> Ply1_de_lob_handler
+			p342: FH_DownMid {ball = 2} -> Ply1_mid_lob_handler
+			p343: BH_InsideIn {ball = 1} -> Ply1_de_lob_handler
+			p344: BH_InsideOut {ball = 3} -> Ply1_ad_lob_handler
+			p345: BH_DownMid {ball = 2} -> Ply1_mid_lob_handler
 			p346: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p347: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
@@ -646,12 +646,12 @@ Ply2_ad_lob = pcase{
 
 // deuce stroke is when player2 hit position is 6
 Ply2_de_slice = pcase { // if already 
-			p348: FH_InsideOut {ball = 1} -> Ply1_de_slice
-			p349: FH_insideIn {ball = 3} -> Ply1_ad_slice
-			p350: FH_DownMid {ball = 2} -> Ply1_mid_slice
-			p351: BH_Crosscourt {ball = 1} -> Ply1_de_slice
-			p352: BH_Downline {ball = 3} -> Ply1_ad_slice
-			p353: BH_DownMid {ball = 2} -> Ply1_mid_slice
+			p348: FH_InsideOut {ball = 1} -> Ply1_de_slice_handler
+			p349: FH_insideIn {ball = 3} -> Ply1_ad_slice_handler
+			p350: FH_DownMid {ball = 2} -> Ply1_mid_slice_handler
+			p351: BH_Crosscourt {ball = 1} -> Ply1_de_slice_handler
+			p352: BH_Downline {ball = 3} -> Ply1_ad_slice_handler
+			p353: BH_DownMid {ball = 2} -> Ply1_mid_slice_handler
 			p354: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p355: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
@@ -660,12 +660,12 @@ Ply2_de_slice = pcase { // if already
 
 // mid stroke is when player2 hit position is 5
 Ply2_mid_slice = noMove -> pcase{
-			p356: FH_InsideOut {ball = 1} -> Ply1_de_slice
-			p357: FH_Crosscourt{ball = 3} -> Ply1_ad_slice
-			p358: FH_DownMid {ball = 2} -> Ply1_mid_slice
-			p359: BH_InsideOut {ball = 3} -> Ply1_ad_slice
-			p360: BH_Crosscourt {ball = 1} -> Ply1_de_slice
-			p361: BH_DownMid {ball = 2} -> Ply1_mid_slice
+			p356: FH_InsideOut {ball = 1} -> Ply1_de_slice_handler
+			p357: FH_Crosscourt{ball = 3} -> Ply1_ad_slice_handler
+			p358: FH_DownMid {ball = 2} -> Ply1_mid_slice_handler
+			p359: BH_InsideOut {ball = 3} -> Ply1_ad_slice_handler
+			p360: BH_Crosscourt {ball = 1} -> Ply1_de_slice_handler
+			p361: BH_DownMid {ball = 2} -> Ply1_mid_slice_handler
 			p362: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p363: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
@@ -674,12 +674,12 @@ Ply2_mid_slice = noMove -> pcase{
 
 // ad stroke is when player 2 hit position is 4
 Ply2_ad_slice = pcase{
-			p364: FH_Crosscourt {ball = 3} -> Ply1_ad_slice
-			p365: FH_Downline {ball = 1} -> Ply1_de_slice
-			p366: FH_DownMid {ball = 2} -> Ply1_mid_slice
-			p367: BH_InsideIn {ball = 1} -> Ply1_de_slice
-			p368: BH_InsideOut {ball = 3} -> Ply1_ad_slice
-			p369: BH_DownMid {ball = 2} -> Ply1_mid_slice
+			p364: FH_Crosscourt {ball = 3} -> Ply1_ad_slice_handler
+			p365: FH_Downline {ball = 1} -> Ply1_de_slice_handler
+			p366: FH_DownMid {ball = 2} -> Ply1_mid_slice_handler
+			p367: BH_InsideIn {ball = 1} -> Ply1_de_slice_handler
+			p368: BH_InsideOut {ball = 3} -> Ply1_ad_slice_handler
+			p369: BH_DownMid {ball = 2} -> Ply1_mid_slice_handler
 			p370: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p371: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
