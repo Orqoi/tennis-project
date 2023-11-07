@@ -236,290 +236,290 @@ Ply2_de_smash_deep_handler = pcase{
             p146: React_Regular_Shallow{ball=6} -> Ply2_de_regular_shallow
             p147: React_Smash_Shallow{ball=6} -> Ply2_de_smash_shallow
             p148: React_Lob_Shallow{ball=6} -> Ply2_de_lob_shallow
-            p141: React_Slice_Shallow{ball=6} -> Ply2_de_slice_shallow
-            p149: React_Regular_Deep{ball=6} -> Ply2_de_regular_deep
-            p150: React_Smash_Deep{ball=6} -> Ply2_de_smash_deep
-            p151: React_Lob_Deep{ball=6} -> Ply2_de_lob_deep
-            p152: React_Slice_Deep{ball=6} -> Ply2_de_slice_deep
+            p149: React_Slice_Shallow{ball=6} -> Ply2_de_slice_shallow
+            p150: React_Regular_Deep{ball=6} -> Ply2_de_regular_deep
+            p151: React_Smash_Deep{ball=6} -> Ply2_de_smash_deep
+            p152: React_Lob_Deep{ball=6} -> Ply2_de_lob_deep
+            p153: React_Slice_Deep{ball=6} -> Ply2_de_slice_deep
     };
 
 Ply2_de_lob_deep_handler = pcase{
-            p153: React_Regular_Shallow{ball=6} -> Ply2_de_regular_shallow
-            p154: React_Smash_Shallow{ball=6} -> Ply2_de_smash_shallow
-            p155: React_Lob_Shallow{ball=6} -> Ply2_de_lob_shallow
-            p156: React_Slice_Shallow{ball=6} -> Ply2_de_slice_shallow
-            p157: React_Regular_Deep{ball=6} -> Ply2_de_regular_deep
-            p158: React_Smash_Deep{ball=6} -> Ply2_de_smash_deep
-            p159: React_Lob_Deep{ball=6} -> Ply2_de_lob_deep
-            p160: React_Slice_Deep{ball=6} -> Ply2_de_slice_deep
+            p154: React_Regular_Shallow{ball=6} -> Ply2_de_regular_shallow
+            p155: React_Smash_Shallow{ball=6} -> Ply2_de_smash_shallow
+            p156: React_Lob_Shallow{ball=6} -> Ply2_de_lob_shallow
+            p157: React_Slice_Shallow{ball=6} -> Ply2_de_slice_shallow
+            p158: React_Regular_Deep{ball=6} -> Ply2_de_regular_deep
+            p159: React_Smash_Deep{ball=6} -> Ply2_de_smash_deep
+            p160: React_Lob_Deep{ball=6} -> Ply2_de_lob_deep
+            p161: React_Slice_Deep{ball=6} -> Ply2_de_slice_deep
 };
 
 Ply2_de_slice_deep_handler = pcase{
-            p161: React_Regular_Shallow{ball=6} -> Ply2_de_regular_shallow
-            p162: React_Smash_Shallow{ball=6} -> Ply2_de_smash_shallow
-            p163: React_Lob_Shallow{ball=6} -> Ply2_de_lob_shallow
-            p164: React_Slice_Shallow{ball=6} -> Ply2_de_slice_shallow
-            p165: React_Regular_Deep{ball=6} -> Ply2_de_regular_deep
-            p166: React_Smash_Deep{ball=6} -> Ply2_de_smash_deep
-            p167: React_Lob_Deep{ball=6} -> Ply2_de_lob_deep
-            p168: React_Slice_Deep{ball=6} -> Ply2_de_slice_deep
+            p162: React_Regular_Shallow{ball=6} -> Ply2_de_regular_shallow
+            p163: React_Smash_Shallow{ball=6} -> Ply2_de_smash_shallow
+            p164: React_Lob_Shallow{ball=6} -> Ply2_de_lob_shallow
+            p165: React_Slice_Shallow{ball=6} -> Ply2_de_slice_shallow
+            p166: React_Regular_Deep{ball=6} -> Ply2_de_regular_deep
+            p167: React_Smash_Deep{ball=6} -> Ply2_de_smash_deep
+            p168: React_Lob_Deep{ball=6} -> Ply2_de_lob_deep
+            p169: React_Slice_Deep{ball=6} -> Ply2_de_slice_deep
 };
 
 Ply2_mid_regular_deep_handler = pcase{
-            p169: React_Regular_Shallow{ball=5} -> Ply2_mid_regular_shallow
-            p170: React_Smash_Shallow{ball=5} -> Ply2_mid_smash_shallow
-            p171: React_Lob_Shallow{ball=5} -> Ply2_mid_lob_shallow
-            p172: React_Slice_Shallow{ball=5} -> Ply2_mid_slice_shallow
-            p173: React_Regular_Deep{ball=5} -> Ply2_mid_regular_deep
-            p174: React_Smash_Deep{ball=5} -> Ply2_mid_smash_deep
-            p175: React_Lob_Deep{ball=5} -> Ply2_mid_lob_deep
-            p176: React_Slice_Deep{ball=5} -> Ply2_mid_slice_deep
+            p170: React_Regular_Shallow{ball=5} -> Ply2_mid_regular_shallow
+            p171: React_Smash_Shallow{ball=5} -> Ply2_mid_smash_shallow
+            p172: React_Lob_Shallow{ball=5} -> Ply2_mid_lob_shallow
+            p173: React_Slice_Shallow{ball=5} -> Ply2_mid_slice_shallow
+            p174: React_Regular_Deep{ball=5} -> Ply2_mid_regular_deep
+            p175: React_Smash_Deep{ball=5} -> Ply2_mid_smash_deep
+            p176: React_Lob_Deep{ball=5} -> Ply2_mid_lob_deep
+            p177: React_Slice_Deep{ball=5} -> Ply2_mid_slice_deep
 };
 
 Ply2_mid_smash_deep_handler = pcase{
-            p177: React_Regular_Shallow{ball=5} -> Ply2_mid_regular_shallow
-            p178: React_Smash_Shallow{ball=5} -> Ply2_mid_smash_shallow
-            p179: React_Lob_Shallow{ball=5} -> Ply2_mid_lob_shallow
-            p180: React_Slice_Shallow{ball=5} -> Ply2_mid_slice_shallow
-            p181: React_Regular_Deep{ball=5} -> Ply2_mid_regular_deep
-            p182: React_Smash_Deep{ball=5} -> Ply2_mid_smash_deep
-            p183: React_Lob_Deep{ball=5} -> Ply2_mid_lob_deep
-            p184: React_Slice_Deep{ball=5} -> Ply2_mid_slice_deep
+            p178: React_Regular_Shallow{ball=5} -> Ply2_mid_regular_shallow
+            p179: React_Smash_Shallow{ball=5} -> Ply2_mid_smash_shallow
+            p180: React_Lob_Shallow{ball=5} -> Ply2_mid_lob_shallow
+            p181: React_Slice_Shallow{ball=5} -> Ply2_mid_slice_shallow
+            p182: React_Regular_Deep{ball=5} -> Ply2_mid_regular_deep
+            p183: React_Smash_Deep{ball=5} -> Ply2_mid_smash_deep
+            p184: React_Lob_Deep{ball=5} -> Ply2_mid_lob_deep
+            p185: React_Slice_Deep{ball=5} -> Ply2_mid_slice_deep
 };
 
 Ply2_mid_lob_deep_handler = pcase{
-            p185: React_Regular_Shallow{ball=5} -> Ply2_mid_regular_shallow
-            p186: React_Smash_Shallow{ball=5} -> Ply2_mid_smash_shallow
-            p187: React_Lob_Shallow{ball=5} -> Ply2_mid_lob_shallow
-            p188: React_Slice_Shallow{ball=5} -> Ply2_mid_slice_shallow
-            p189: React_Regular_Deep{ball=5} -> Ply2_mid_regular_deep
-            p190: React_Smash_Deep{ball=5} -> Ply2_mid_smash_deep
-            p191: React_Lob_Deep{ball=5} -> Ply2_mid_lob_deep
-            p192: React_Slice_Deep{ball=5} -> Ply2_mid_slice_deep
+            p186: React_Regular_Shallow{ball=5} -> Ply2_mid_regular_shallow
+            p187: React_Smash_Shallow{ball=5} -> Ply2_mid_smash_shallow
+            p188: React_Lob_Shallow{ball=5} -> Ply2_mid_lob_shallow
+            p189: React_Slice_Shallow{ball=5} -> Ply2_mid_slice_shallow
+            p190: React_Regular_Deep{ball=5} -> Ply2_mid_regular_deep
+            p191: React_Smash_Deep{ball=5} -> Ply2_mid_smash_deep
+            p192: React_Lob_Deep{ball=5} -> Ply2_mid_lob_deep
+            p193: React_Slice_Deep{ball=5} -> Ply2_mid_slice_deep
 };
 
 Ply2_mid_slice_deep_handler = pcase{
-            p193: React_Regular_Shallow{ball=5} -> Ply2_mid_regular_shallow
-            p194: React_Smash_Shallow{ball=5} -> Ply2_mid_smash_shallow
-            p195: React_Lob_Shallow{ball=5} -> Ply2_mid_lob_shallow
-            p196: React_Slice_Shallow{ball=5} -> Ply2_mid_slice_shallow
-            p197: React_Regular_Deep{ball=5} -> Ply2_mid_regular_deep
-            p198: React_Smash_Deep{ball=5} -> Ply2_mid_smash_deep
-            p199: React_Lob_Deep{ball=5} -> Ply2_mid_lob_deep
-            p200: React_Slice_Deep{ball=5} -> Ply2_mid_slice_deep
+            p194: React_Regular_Shallow{ball=5} -> Ply2_mid_regular_shallow
+            p195: React_Smash_Shallow{ball=5} -> Ply2_mid_smash_shallow
+            p196: React_Lob_Shallow{ball=5} -> Ply2_mid_lob_shallow
+            p197: React_Slice_Shallow{ball=5} -> Ply2_mid_slice_shallow
+            p198: React_Regular_Deep{ball=5} -> Ply2_mid_regular_deep
+            p199: React_Smash_Deep{ball=5} -> Ply2_mid_smash_deep
+            p200: React_Lob_Deep{ball=5} -> Ply2_mid_lob_deep
+            p201: React_Slice_Deep{ball=5} -> Ply2_mid_slice_deep
 };
 
 Ply2_ad_regular_deep_handler = pcase{
-			p201: React_Regular_Shallow{ball=4} -> Ply2_ad_regular_shallow
-			p202: React_Smash_Shallow{ball=4} -> Ply2_ad_smash_shallow
-			p203: React_Lob_Shallow{ball=4} -> Ply2_ad_lob_shallow
-			p204: React_Slice_Shallow{ball=4} -> Ply2_ad_slice_shallow
-			p205: React_Regular_Deep{ball=4} -> Ply2_ad_regular_deep
-			p206: React_Smash_Deep{ball=4} -> Ply2_ad_smash_deep
-			p207: React_Lob_Deep{ball=4} -> Ply2_ad_lob_deep
-			p208: React_Slice_Deep{ball=4} -> Ply2_ad_slice_deep
+			p202: React_Regular_Shallow{ball=4} -> Ply2_ad_regular_shallow
+			p203: React_Smash_Shallow{ball=4} -> Ply2_ad_smash_shallow
+			p204: React_Lob_Shallow{ball=4} -> Ply2_ad_lob_shallow
+			p205: React_Slice_Shallow{ball=4} -> Ply2_ad_slice_shallow
+			p206: React_Regular_Deep{ball=4} -> Ply2_ad_regular_deep
+			p207: React_Smash_Deep{ball=4} -> Ply2_ad_smash_deep
+			p208: React_Lob_Deep{ball=4} -> Ply2_ad_lob_deep
+			p209: React_Slice_Deep{ball=4} -> Ply2_ad_slice_deep
 };
 
 Ply2_ad_smash_deep_handler = pcase{
-			p209: React_Regular_Shallow{ball=4} -> Ply2_ad_regular_shallow
-			p210: React_Smash_Shallow{ball=4} -> Ply2_ad_smash_shallow
-			p211: React_Lob_Shallow{ball=4} -> Ply2_ad_lob_shallow
-			p212: React_Slice_Shallow{ball=4} -> Ply2_ad_slice_shallow
-			p213: React_Regular_Deep{ball=4} -> Ply2_ad_regular_deep
-			p214: React_Smash_Deep{ball=4} -> Ply2_ad_smash_deep
-			p215: React_Lob_Deep{ball=4} -> Ply2_ad_lob_deep
-			p216: React_Slice_Deep{ball=4} -> Ply2_ad_slice_deep
+			p210: React_Regular_Shallow{ball=4} -> Ply2_ad_regular_shallow
+			p211: React_Smash_Shallow{ball=4} -> Ply2_ad_smash_shallow
+			p212: React_Lob_Shallow{ball=4} -> Ply2_ad_lob_shallow
+			p213: React_Slice_Shallow{ball=4} -> Ply2_ad_slice_shallow
+			p214: React_Regular_Deep{ball=4} -> Ply2_ad_regular_deep
+			p215: React_Smash_Deep{ball=4} -> Ply2_ad_smash_deep
+			p216: React_Lob_Deep{ball=4} -> Ply2_ad_lob_deep
+			p217: React_Slice_Deep{ball=4} -> Ply2_ad_slice_deep
 };
 
 Ply2_ad_lob_deep_handler = pcase{
-			p217: React_Regular_Shallow{ball=4} -> Ply2_ad_regular_shallow
-			p218: React_Smash_Shallow{ball=4} -> Ply2_ad_smash_shallow
-			p219: React_Lob_Shallow{ball=4} -> Ply2_ad_lob_shallow
-			p220: React_Slice_Shallow{ball=4} -> Ply2_ad_slice_shallow
-			p221: React_Regular_Deep{ball=4} -> Ply2_ad_regular_deep
-			p222: React_Smash_Deep{ball=4} -> Ply2_ad_smash_deep
-			p223: React_Lob_Deep{ball=4} -> Ply2_ad_lob_deep
-			p224: React_Slice_Deep{ball=4} -> Ply2_ad_slice_deep
+			p218: React_Regular_Shallow{ball=4} -> Ply2_ad_regular_shallow
+			p219: React_Smash_Shallow{ball=4} -> Ply2_ad_smash_shallow
+			p220: React_Lob_Shallow{ball=4} -> Ply2_ad_lob_shallow
+			p221: React_Slice_Shallow{ball=4} -> Ply2_ad_slice_shallow
+			p222: React_Regular_Deep{ball=4} -> Ply2_ad_regular_deep
+			p223: React_Smash_Deep{ball=4} -> Ply2_ad_smash_deep
+			p224: React_Lob_Deep{ball=4} -> Ply2_ad_lob_deep
+			p225: React_Slice_Deep{ball=4} -> Ply2_ad_slice_deep
 };
 
 Ply2_ad_slice_deep_handler = pcase{
-			p225: React_Regular_Shallow{ball=4} -> Ply2_ad_regular_shallow
-			p226: React_Smash_Shallow{ball=4} -> Ply2_ad_smash_shallow
-			p227: React_Lob_Shallow{ball=4} -> Ply2_ad_lob_shallow
-			p228: React_Slice_Shallow{ball=4} -> Ply2_ad_slice_shallow
-			p229: React_Regular_Deep{ball=4} -> Ply2_ad_regular_deep
-			p230: React_Smash_Deep{ball=4} -> Ply2_ad_smash_deep
-			p231: React_Lob_Deep{ball=4} -> Ply2_ad_lob_deep
-			p232: React_Slice_Deep{ball=4} -> Ply2_ad_slice_deep
+			p226: React_Regular_Shallow{ball=4} -> Ply2_ad_regular_shallow
+			p227: React_Smash_Shallow{ball=4} -> Ply2_ad_smash_shallow
+			p228: React_Lob_Shallow{ball=4} -> Ply2_ad_lob_shallow
+			p229: React_Slice_Shallow{ball=4} -> Ply2_ad_slice_shallow
+			p230: React_Regular_Deep{ball=4} -> Ply2_ad_regular_deep
+			p231: React_Smash_Deep{ball=4} -> Ply2_ad_smash_deep
+			p232: React_Lob_Deep{ball=4} -> Ply2_ad_lob_deep
+			p233: React_Slice_Deep{ball=4} -> Ply2_ad_slice_deep
 };
 
 
 // Shallow Actions
 // deuce regular shallow stroke is when player1 hit position is 1
 Ply1_de_regular_shallow = pcase{
-			p233: FH_InsideOut{ball=6} -> Ply2_de_regular_shallow_handler
-			p234: FH_InsideIn{ball=4} -> Ply2_ad_regular_shallow_handler
-			p235: FH_DownMid{ball=5} -> Ply2_mid_regular_shallow_handler
-			p236: BH_Crosscourt{ball=6} -> Ply2_de_regular_shallow_handler
-			p237: BH_Downline{ball=4} -> Ply2_ad_regular_shallow_handler
-			p238: BH_DownMid{ball=5} -> Ply2_mid_regular_shallow_handler
-			p239: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1}
+			p234: FH_InsideOut{ball=6} -> Ply2_de_regular_shallow_handler
+			p235: FH_InsideIn{ball=4} -> Ply2_ad_regular_shallow_handler
+			p236: FH_DownMid{ball=5} -> Ply2_mid_regular_shallow_handler
+			p237: BH_Crosscourt{ball=6} -> Ply2_de_regular_shallow_handler
+			p238: BH_Downline{ball=4} -> Ply2_ad_regular_shallow_handler
+			p239: BH_DownMid{ball=5} -> Ply2_mid_regular_shallow_handler
+			p240: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1}
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p240: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p241: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 };
 	
 // mid regular shallow stroke is when player1 hit position is 2
 Ply1_mid_regular_shallow = pcase{
-			p241: FH_InsideOut{ball=6} -> Ply2_de_regular_shallow_handler
-			p242: FH_Crosscourt{ball=4} -> Ply2_ad_regular_shallow_handler
-			p243: FH_DownMid{ball=5} -> Ply2_mid_regular_shallow_handler			
-			p244: BH_InsideOut{ball=4} -> Ply2_ad_regular_shallow_handler
-			p245: BH_Crosscourt{ball=6} -> Ply2_de_regular_shallow_handler
-			p246: BH_DownMid{ball=5} -> Ply2_mid_regular_shallow_handler
-			p247: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p242: FH_InsideOut{ball=6} -> Ply2_de_regular_shallow_handler
+			p243: FH_Crosscourt{ball=4} -> Ply2_ad_regular_shallow_handler
+			p244: FH_DownMid{ball=5} -> Ply2_mid_regular_shallow_handler			
+			p245: BH_InsideOut{ball=4} -> Ply2_ad_regular_shallow_handler
+			p246: BH_Crosscourt{ball=6} -> Ply2_de_regular_shallow_handler
+			p247: BH_DownMid{ball=5} -> Ply2_mid_regular_shallow_handler
+			p248: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p248: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p249: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt    
 };
 
 // ad regular shallow stroke is when player1 hit position is 3
 Ply1_ad_regular_shallow = pcase{
-			p249: FH_Crosscourt{ball=4} -> Ply2_ad_regular_shallow_handler
-			p250: FH_Downline{ball=6} -> Ply2_de_regular_shallow_handler
-			p251: FH_DownMid{ball=5} -> Ply2_mid_regular_shallow_handler
-			p252: BH_InsideIn{ball=6} -> Ply2_de_regular_shallow_handler
-			p253: BH_InsideOut{ball=4} -> Ply2_ad_regular_shallow_handler
-			p254: BH_DownMid{ball=5} -> Ply2_mid_regular_shallow_handler
-			p255: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p250: FH_Crosscourt{ball=4} -> Ply2_ad_regular_shallow_handler
+			p251: FH_Downline{ball=6} -> Ply2_de_regular_shallow_handler
+			p252: FH_DownMid{ball=5} -> Ply2_mid_regular_shallow_handler
+			p253: BH_InsideIn{ball=6} -> Ply2_de_regular_shallow_handler
+			p254: BH_InsideOut{ball=4} -> Ply2_ad_regular_shallow_handler
+			p255: BH_DownMid{ball=5} -> Ply2_mid_regular_shallow_handler
+			p256: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p256: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p257: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 };
 
 // deuce smash shallow is when player1 hit position is 1
 Ply1_de_smash_shallow = pcase{
-			p257: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow_handler
-			p258: FH_InsideIn{ball=4} -> Ply2_ad_smash_shallow_handler
-			p259: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow_handler
-			p260: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow_handler
-			p261: BH_Downline{ball=4} -> Ply2_ad_smash_shallow_handler
-			p262: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow_handler
-			p263: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p258: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow_handler
+			p259: FH_InsideIn{ball=4} -> Ply2_ad_smash_shallow_handler
+			p260: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow_handler
+			p261: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow_handler
+			p262: BH_Downline{ball=4} -> Ply2_ad_smash_shallow_handler
+			p263: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow_handler
+			p264: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p264: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p265: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 	
 // mid smash shallow is when player1 hit position is 2
 Ply1_mid_smash_shallow = pcase{
-			p265: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow_handler
-			p266: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow_handler
-			p267: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow_handler
-			p268: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow_handler
-			p269: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow_handler
-			p270: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow_handler
-			p271: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p266: FH_InsideOut{ball=6} -> Ply2_de_smash_shallow_handler
+			p267: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow_handler
+			p268: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow_handler
+			p269: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow_handler
+			p270: BH_Crosscourt{ball=6} -> Ply2_de_smash_shallow_handler
+			p271: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow_handler
+			p272: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p272: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p273: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 
 // ad smash shallow is when player1 hit position is 3
 Ply1_ad_smash_shallow = pcase{
-			p273: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow_handler
-			p274: FH_Downline{ball=6} -> Ply2_de_smash_shallow_handler
-			p275: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow_handler
-			p276: BH_InsideIn{ball=6} -> Ply2_de_smash_shallow_handler
-			p277: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow_handler
-			p278: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow_handler
-			p279: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p274: FH_Crosscourt{ball=4} -> Ply2_ad_smash_shallow_handler
+			p275: FH_Downline{ball=6} -> Ply2_de_smash_shallow_handler
+			p276: FH_DownMid{ball=5} -> Ply2_mid_smash_shallow_handler
+			p277: BH_InsideIn{ball=6} -> Ply2_de_smash_shallow_handler
+			p278: BH_InsideOut{ball=4} -> Ply2_ad_smash_shallow_handler
+			p279: BH_DownMid{ball=5} -> Ply2_mid_smash_shallow_handler
+			p280: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p280: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p281: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 
 // deuce lob shallow is when player1 hit position is 1
 Ply1_de_lob_shallow = pcase{
-			p281: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow_handler
-			p282: FH_InsideIn{ball=4} -> Ply2_ad_lob_shallow_handler
-			p283: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow_handler
-			p284: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow_handler
-			p285: BH_Downline{ball=4} -> Ply2_ad_lob_shallow_handler
-			p286: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow_handler	
-			p287: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p282: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow_handler
+			p283: FH_InsideIn{ball=4} -> Ply2_ad_lob_shallow_handler
+			p284: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow_handler
+			p285: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow_handler
+			p286: BH_Downline{ball=4} -> Ply2_ad_lob_shallow_handler
+			p287: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow_handler	
+			p288: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p288: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p289: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 	
 // mid lob shallow is when player1 hit position is 2
 Ply1_mid_lob_shallow = pcase{
-			p289: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow_handler
-			p290: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow_handler
-			p291: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow_handler
-			p292: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow_handler
-			p293: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow_handler
-			p294: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow_handler
-			p295: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p290: FH_InsideOut{ball=6} -> Ply2_de_lob_shallow_handler
+			p291: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow_handler
+			p292: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow_handler
+			p293: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow_handler
+			p294: BH_Crosscourt{ball=6} -> Ply2_de_lob_shallow_handler
+			p295: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow_handler
+			p296: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p296: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p297: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt    
 	};
 
 // ad lob shallow is when player1 hit position is 3
 Ply1_ad_lob_shallow = pcase{
-			p297: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow_handler
-			p298: FH_Downline{ball=6} -> Ply2_de_lob_shallow_handler
-			p299: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow_handler
-			p300: BH_InsideIn{ball=6} -> Ply2_de_lob_shallow_handler
-			p301: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow_handler
-			p302: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow_handler
-			p303: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p298: FH_Crosscourt{ball=4} -> Ply2_ad_lob_shallow_handler
+			p299: FH_Downline{ball=6} -> Ply2_de_lob_shallow_handler
+			p300: FH_DownMid{ball=5} -> Ply2_mid_lob_shallow_handler
+			p301: BH_InsideIn{ball=6} -> Ply2_de_lob_shallow_handler
+			p302: BH_InsideOut{ball=4} -> Ply2_ad_lob_shallow_handler
+			p303: BH_DownMid{ball=5} -> Ply2_mid_lob_shallow_handler
+			p304: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p304: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p305: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 
 // deuce slice shallow is when player1 hit position is 1
 Ply1_de_slice_shallow = pcase{
-			p305: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow_handler
-			p306: FH_InsideIn{ball=4} -> Ply2_ad_slice_shallow_handler
-			p307: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow_handler
-			p308: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow_handler
-			p309: BH_Downline{ball=4} -> Ply2_ad_slice_shallow_handler
-			p310: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow_handler	
-			p311: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p306: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow_handler
+			p307: FH_InsideIn{ball=4} -> Ply2_ad_slice_shallow_handler
+			p308: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow_handler
+			p309: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow_handler
+			p310: BH_Downline{ball=4} -> Ply2_ad_slice_shallow_handler
+			p311: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow_handler	
+			p312: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p312: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p313: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 	
 // mid slice shallow is when player1 hit position is 2
 Ply1_mid_slice_shallow = pcase{
-			p313: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow_handler
-			p314: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow_handler
-			p315: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow_handler
-			p316: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow_handler
-			p317: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow_handler
-			p318: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow_handler
-			p319: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p314: FH_InsideOut{ball=6} -> Ply2_de_slice_shallow_handler
+			p315: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow_handler
+			p316: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow_handler
+			p317: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow_handler
+			p318: BH_Crosscourt{ball=6} -> Ply2_de_slice_shallow_handler
+			p319: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow_handler
+			p320: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p320: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p321: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt    
 	};
 
 // ad slice shallow is when player1 hit position is 3
 Ply1_ad_slice_shallow = pcase{
-			p321: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow_handler
-			p322: FH_Downline{ball=6} -> Ply2_de_slice_shallow_handler
-			p323: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow_handler
-			p324: BH_InsideIn{ball=6} -> Ply2_de_slice_shallow_handler
-			p325: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow_handler
-			p326: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow_handler
-			p327: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p322: FH_Crosscourt{ball=4} -> Ply2_ad_slice_shallow_handler
+			p323: FH_Downline{ball=6} -> Ply2_de_slice_shallow_handler
+			p324: FH_DownMid{ball=5} -> Ply2_mid_slice_shallow_handler
+			p325: BH_InsideIn{ball=6} -> Ply2_de_slice_shallow_handler
+			p326: BH_InsideOut{ball=4} -> Ply2_ad_slice_shallow_handler
+			p327: BH_DownMid{ball=5} -> Ply2_mid_slice_shallow_handler
+			p328: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p328: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p329: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 
@@ -527,689 +527,689 @@ Ply1_ad_slice_shallow = pcase{
 // Deep Actions
 // deuce regular deep stroke is when player1 hit position is 1
 Ply1_de_regular_deep = pcase{
-			p329: FH_InsideOut{ball=6} -> Ply2_de_regular_deep_handler
-			p330: FH_InsideIn{ball=4} -> Ply2_ad_regular_deep_handler
-			p331: FH_DownMid{ball=5} -> Ply2_mid_regular_deep_handler
-			p332: BH_Crosscourt{ball=6} -> Ply2_de_regular_deep_handler
-			p333: BH_Downline{ball=4} -> Ply2_ad_regular_deep_handler
-			p334: BH_DownMid{ball=5} -> Ply2_mid_regular_deep_handler
-			p335: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p330: FH_InsideOut{ball=6} -> Ply2_de_regular_deep_handler
+			p331: FH_InsideIn{ball=4} -> Ply2_ad_regular_deep_handler
+			p332: FH_DownMid{ball=5} -> Ply2_mid_regular_deep_handler
+			p333: BH_Crosscourt{ball=6} -> Ply2_de_regular_deep_handler
+			p334: BH_Downline{ball=4} -> Ply2_ad_regular_deep_handler
+			p335: BH_DownMid{ball=5} -> Ply2_mid_regular_deep_handler
+			p336: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p336: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p337: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 	};
 	
 // mid regular deep stroke is when player1 hit position is 2
 Ply1_mid_regular_deep = pcase{
-			p337: FH_InsideOut{ball=6} -> Ply2_de_regular_deep_handler
-			p338: FH_Crosscourt{ball=4} -> Ply2_ad_regular_deep_handler
-			p339: FH_DownMid{ball=5} -> Ply2_mid_regular_deep_handler			
-			p340: BH_InsideOut{ball=4} -> Ply2_ad_regular_deep_handler
-			p341: BH_Crosscourt{ball=6} -> Ply2_de_regular_deep_handler
-			p342: BH_DownMid{ball=5} -> Ply2_mid_regular_deep_handler
-			p343: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p338: FH_InsideOut{ball=6} -> Ply2_de_regular_deep_handler
+			p339: FH_Crosscourt{ball=4} -> Ply2_ad_regular_deep_handler
+			p340: FH_DownMid{ball=5} -> Ply2_mid_regular_deep_handler			
+			p341: BH_InsideOut{ball=4} -> Ply2_ad_regular_deep_handler
+			p342: BH_Crosscourt{ball=6} -> Ply2_de_regular_deep_handler
+			p343: BH_DownMid{ball=5} -> Ply2_mid_regular_deep_handler
+			p344: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p344: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p345: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt    
 	};
 
 // ad regular deep stroke is when player1 hit position is 3
 Ply1_ad_regular_deep = pcase{
-			p345: FH_Crosscourt{ball=4} -> Ply2_ad_regular_deep_handler
-			p346: FH_Downline{ball=6} -> Ply2_de_regular_deep_handler
-			p347: FH_DownMid{ball=5} -> Ply2_mid_regular_deep_handler
-			p348: BH_InsideIn{ball=6} -> Ply2_de_regular_deep_handler
-			p349: BH_InsideOut{ball=4} -> Ply2_ad_regular_deep_handler
-			p350: BH_DownMid{ball=5} -> Ply2_mid_regular_deep_handler
-			p351: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p346: FH_Crosscourt{ball=4} -> Ply2_ad_regular_deep_handler
+			p347: FH_Downline{ball=6} -> Ply2_de_regular_deep_handler
+			p348: FH_DownMid{ball=5} -> Ply2_mid_regular_deep_handler
+			p349: BH_InsideIn{ball=6} -> Ply2_de_regular_deep_handler
+			p350: BH_InsideOut{ball=4} -> Ply2_ad_regular_deep_handler
+			p351: BH_DownMid{ball=5} -> Ply2_mid_regular_deep_handler
+			p352: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p352: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p353: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 
 // deuce smash deep is when player1 hit position is 1
 Ply1_de_smash_deep = pcase{
-			p353: FH_InsideOut{ball=6} -> Ply2_de_smash_deep_handler
-			p354: FH_InsideIn{ball=4} -> Ply2_ad_smash_deep_handler
-			p355: FH_DownMid{ball=5} -> Ply2_mid_smash_deep_handler
-			p356: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep_handler
-			p357: BH_Downline{ball=4} -> Ply2_ad_smash_deep_handler
-			p358: BH_DownMid{ball=5} -> Ply2_mid_smash_deep_handler
-			p359: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p354: FH_InsideOut{ball=6} -> Ply2_de_smash_deep_handler
+			p355: FH_InsideIn{ball=4} -> Ply2_ad_smash_deep_handler
+			p356: FH_DownMid{ball=5} -> Ply2_mid_smash_deep_handler
+			p357: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep_handler
+			p358: BH_Downline{ball=4} -> Ply2_ad_smash_deep_handler
+			p359: BH_DownMid{ball=5} -> Ply2_mid_smash_deep_handler
+			p360: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p360: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p361: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 	};
 
 // mid smash deep is when player1 hit position is 2
 Ply1_mid_smash_deep = pcase{
-			p361: FH_InsideOut{ball=6} -> Ply2_de_smash_deep_handler
-			p362: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep_handler
-			p363: FH_DownMid{ball=5} -> Ply2_mid_smash_deep_handler
-			p364: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep_handler
-			p365: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep_handler
-			p366: BH_DownMid{ball=5} -> Ply2_mid_smash_deep_handler
-			p367: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p362: FH_InsideOut{ball=6} -> Ply2_de_smash_deep_handler
+			p363: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep_handler
+			p364: FH_DownMid{ball=5} -> Ply2_mid_smash_deep_handler
+			p365: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep_handler
+			p366: BH_Crosscourt{ball=6} -> Ply2_de_smash_deep_handler
+			p367: BH_DownMid{ball=5} -> Ply2_mid_smash_deep_handler
+			p368: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p368: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p369: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt    
 	};
 
 // ad smash deep is when player1 hit position is 3
 Ply1_ad_smash_deep = pcase{
-			p369: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep_handler
-			p370: FH_Downline{ball=6} -> Ply2_de_smash_deep_handler
-			p371: FH_DownMid{ball=5} -> Ply2_mid_smash_deep_handler
-			p372: BH_InsideIn{ball=6} -> Ply2_de_smash_deep_handler
-			p373: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep_handler
-			p374: BH_DownMid{ball=5} -> Ply2_mid_smash_deep_handler
-			p375: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p370: FH_Crosscourt{ball=4} -> Ply2_ad_smash_deep_handler
+			p371: FH_Downline{ball=6} -> Ply2_de_smash_deep_handler
+			p372: FH_DownMid{ball=5} -> Ply2_mid_smash_deep_handler
+			p373: BH_InsideIn{ball=6} -> Ply2_de_smash_deep_handler
+			p374: BH_InsideOut{ball=4} -> Ply2_ad_smash_deep_handler
+			p375: BH_DownMid{ball=5} -> Ply2_mid_smash_deep_handler
+			p376: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p376: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p377: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 
 // deuce lob deep is when player1 hit position is 1
 Ply1_de_lob_deep = pcase{
-			p377: FH_InsideOut{ball=6} -> Ply2_de_lob_deep_handler
-			p378: FH_InsideIn{ball=4} -> Ply2_ad_lob_deep_handler
-			p379: FH_DownMid{ball=5} -> Ply2_mid_lob_deep_handler
-			p380: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep_handler
-			p381: BH_Downline{ball=4} -> Ply2_ad_lob_deep_handler
-			p382: BH_DownMid{ball=5} -> Ply2_mid_lob_deep_handler
-			p383: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p378: FH_InsideOut{ball=6} -> Ply2_de_lob_deep_handler
+			p379: FH_InsideIn{ball=4} -> Ply2_ad_lob_deep_handler
+			p380: FH_DownMid{ball=5} -> Ply2_mid_lob_deep_handler
+			p381: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep_handler
+			p382: BH_Downline{ball=4} -> Ply2_ad_lob_deep_handler
+			p383: BH_DownMid{ball=5} -> Ply2_mid_lob_deep_handler
+			p384: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p384: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p385: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 	
 // mid lob deep is when player1 hit position is 2
 Ply1_mid_lob_deep = pcase{
-			p385: FH_InsideOut{ball=6} -> Ply2_de_lob_deep_handler
-			p386: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep_handler
-			p387: FH_DownMid{ball=5} -> Ply2_mid_lob_deep_handler
-			p388: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep_handler
-			p389: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep_handler
-			p390: BH_DownMid{ball=5} -> Ply2_mid_lob_deep_handler
-			p391: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p386: FH_InsideOut{ball=6} -> Ply2_de_lob_deep_handler
+			p387: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep_handler
+			p388: FH_DownMid{ball=5} -> Ply2_mid_lob_deep_handler
+			p389: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep_handler
+			p390: BH_Crosscourt{ball=6} -> Ply2_de_lob_deep_handler
+			p391: BH_DownMid{ball=5} -> Ply2_mid_lob_deep_handler
+			p392: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p392: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p393: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt    
 	};
 
 // ad lob deep is when player1 hit position is 3
 Ply1_ad_lob_deep = pcase{
-			p393: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep_handler
-			p394: FH_Downline{ball=6} -> Ply2_de_lob_deep_handler
-			p395: FH_DownMid{ball=5} -> Ply2_mid_lob_deep_handler
-			p396: BH_InsideIn{ball=6} -> Ply2_de_lob_deep_handler
-			p397: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep_handler
-			p398: BH_DownMid{ball=5} -> Ply2_mid_lob_deep_handler
-			p399: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p394: FH_Crosscourt{ball=4} -> Ply2_ad_lob_deep_handler
+			p395: FH_Downline{ball=6} -> Ply2_de_lob_deep_handler
+			p396: FH_DownMid{ball=5} -> Ply2_mid_lob_deep_handler
+			p397: BH_InsideIn{ball=6} -> Ply2_de_lob_deep_handler
+			p398: BH_InsideOut{ball=4} -> Ply2_ad_lob_deep_handler
+			p399: BH_DownMid{ball=5} -> Ply2_mid_lob_deep_handler
+			p400: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p400: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p401: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 
 // deuce slice deep is when player1 hit position is 1
 Ply1_de_slice_deep = pcase{
-			p401: FH_InsideOut{ball=6} -> Ply2_de_slice_deep_handler
-			p402: FH_InsideIn{ball=4} -> Ply2_ad_slice_deep_handler
-			p403: FH_DownMid{ball=5} -> Ply2_mid_slice_deep_handler
-			p404: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep_handler
-			p405: BH_Downline{ball=4} -> Ply2_ad_slice_deep_handler
-			p406: BH_DownMid{ball=5} -> Ply2_mid_slice_deep_handler
-			p407: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p402: FH_InsideOut{ball=6} -> Ply2_de_slice_deep_handler
+			p403: FH_InsideIn{ball=4} -> Ply2_ad_slice_deep_handler
+			p404: FH_DownMid{ball=5} -> Ply2_mid_slice_deep_handler
+			p405: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep_handler
+			p406: BH_Downline{ball=4} -> Ply2_ad_slice_deep_handler
+			p407: BH_DownMid{ball=5} -> Ply2_mid_slice_deep_handler
+			p408: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p408: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p409: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 	
 // mid slice deep is when player1 hit position is 2
 Ply1_mid_slice_deep = pcase{
-			p409: FH_InsideOut{ball=6} -> Ply2_de_slice_deep_handler
-			p410: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep_handler
-			p411: FH_DownMid{ball=5} -> Ply2_mid_slice_deep_handler
-			p412: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep_handler
-			p413: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep_handler
-			p414: BH_DownMid{ball=5} -> Ply2_mid_slice_deep_handler
-			p415: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p410: FH_InsideOut{ball=6} -> Ply2_de_slice_deep_handler
+			p411: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep_handler
+			p412: FH_DownMid{ball=5} -> Ply2_mid_slice_deep_handler
+			p413: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep_handler
+			p414: BH_Crosscourt{ball=6} -> Ply2_de_slice_deep_handler
+			p415: BH_DownMid{ball=5} -> Ply2_mid_slice_deep_handler
+			p416: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p416: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p417: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt    
 	};
 
 // ad slice deep is when player1 hit position is 3
 Ply1_ad_slice_deep = pcase{
-			p417: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep_handler
-			p418: FH_Downline{ball=6} -> Ply2_de_slice_deep_handler
-			p419: FH_DownMid{ball=5} -> Ply2_mid_slice_deep_handler
-			p420: BH_InsideIn{ball=6} -> Ply2_de_slice_deep_handler
-			p421: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep_handler
-			p422: BH_DownMid{ball=5} -> Ply2_mid_slice_deep_handler
-			p423: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
+			p418: FH_Crosscourt{ball=4} -> Ply2_ad_slice_deep_handler
+			p419: FH_Downline{ball=6} -> Ply2_de_slice_deep_handler
+			p420: FH_DownMid{ball=5} -> Ply2_mid_slice_deep_handler
+			p421: BH_InsideIn{ball=6} -> Ply2_de_slice_deep_handler
+			p422: BH_InsideOut{ball=4} -> Ply2_ad_slice_deep_handler
+			p423: BH_DownMid{ball=5} -> Ply2_mid_slice_deep_handler
+			p424: Winner{ball=9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p424: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
+			p425: Error{ball=9} -> {nscore++; if (nscore == points) {won = player2}
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 
 
 // Player 1 respond to player 2
 De_Ply2Serve = pcase {
-			p425: ServeT_in{ball=2} -> Ply1_ForeHandR
-			p426: ServeBody_in{ball=1} -> (Ply1_ForeHandR [] Ply1_BackHandR)
-			p427: ServeWide_in{ball=1} -> Ply1_BackHandR
-			p428: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
+			p426: ServeT_in{ball=2} -> Ply1_ForeHandR
+			p427: ServeBody_in{ball=1} -> (Ply1_ForeHandR [] Ply1_BackHandR)
+			p428: ServeWide_in{ball=1} -> Ply1_BackHandR
+			p429: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p429: Serve_err{ball=9} -> De_Ply2Serve_2nd}; 
+			p430: Serve_err{ball=9} -> De_Ply2Serve_2nd}; 
 
 De_Ply2Serve_2nd = pcase {                 //1st serve is out
-			p430: ServeT_in{ball=2} -> Ply1_ForeHandR
-			p431: ServeBody_in{ball=1} -> (Ply1_ForeHandR [] Ply1_BackHandR)
-			p432: ServeWide_in{ball=1} -> Ply1_BackHandR
-			p433: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
+			p431: ServeT_in{ball=2} -> Ply1_ForeHandR
+			p432: ServeBody_in{ball=1} -> (Ply1_ForeHandR [] Ply1_BackHandR)
+			p433: ServeWide_in{ball=1} -> Ply1_BackHandR
+			p434: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p434: Serve_err{ball=9} -> Ndoublefault{fscore++; if (fscore == points) {won = player1} 
+			p435: Serve_err{ball=9} -> Ndoublefault{fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
      		 };
      		 
 Ad_Ply2Serve = pcase {
-			p435: ServeT_in{ball=2} -> Ply1_BackHandR
-			p436: ServeBody_in{ball=3} -> (Ply1_ForeHandR [] Ply1_BackHandR)
-			p437: ServeWide_in{ball=3} -> Ply1_ForeHandR
-			p438: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
+			p436: ServeT_in{ball=2} -> Ply1_BackHandR
+			p437: ServeBody_in{ball=3} -> (Ply1_ForeHandR [] Ply1_BackHandR)
+			p438: ServeWide_in{ball=3} -> Ply1_ForeHandR
+			p439: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p439: Serve_err{ball=9} -> Ad_Ply2Serve_2nd}; 
+			p440: Serve_err{ball=9} -> Ad_Ply2Serve_2nd}; 
 
 Ad_Ply2Serve_2nd = pcase {                 //1st serve is out
-			p440: ServeT_in{ball=2} -> Ply1_BackHandR
-			p441: ServeBody_in{ball=3} -> (Ply1_ForeHandR [] Ply1_BackHandR)
-			p442: ServeWide_in{ball=3} -> Ply1_ForeHandR
-			p443: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
+			p441: ServeT_in{ball=2} -> Ply1_BackHandR
+			p442: ServeBody_in{ball=3} -> (Ply1_ForeHandR [] Ply1_BackHandR)
+			p443: ServeWide_in{ball=3} -> Ply1_ForeHandR
+			p444: Serve_Winner{ball=9} -> NWinner{nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p444: Serve_err{ball=9} -> Ndoublefault{fscore++; if (fscore == points) {won = player1} 
+			p445: Serve_err{ball=9} -> Ndoublefault{fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
      		 };
      		 
 Ply2_ForeHandR = ifa (turn == f_de_ct) {    // Player2 backhand return to Player1 serve from the deuce court side
 		  pcase {
-			p445: FH_InsideOut{ball = 1} -> Ply1_de_regular_deep_handler
-			p446: FH_InsideIn{ball = 3} -> Ply1_ad_regular_deep_handler
-			p447: FH_CrossCourt{ball = 3} -> Ply1_ad_regular_deep_handler
-			p448: FH_DownMid{ball = 2} -> Ply1_mid_regular_deep_handler
-			p449: FH_Winner{ball=9} -> {nscore++; if (nscore == points) {won = player2} 
+			p446: FH_InsideOut{ball = 1} -> Ply1_de_regular_deep_handler
+			p447: FH_InsideIn{ball = 3} -> Ply1_ad_regular_deep_handler
+			p448: FH_CrossCourt{ball = 3} -> Ply1_ad_regular_deep_handler
+			p449: FH_DownMid{ball = 2} -> Ply1_mid_regular_deep_handler
+			p450: FH_Winner{ball=9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p450: FH_Error{ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p451: FH_Error{ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
       		 }}
       		 else {
       		pcase {
-      		p451: FH_CrossCourt{ ball = 3} -> Ply1_ad_regular_deep_handler
-			p452: FH_DownLine{ball = 1} -> Ply1_de_regular_deep_handler
-			p453: FH_DownMid{ ball = 2} -> Ply1_mid_regular_deep_handler
-			p454: FH_Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+      		p452: FH_CrossCourt{ ball = 3} -> Ply1_ad_regular_deep_handler
+			p453: FH_DownLine{ball = 1} -> Ply1_de_regular_deep_handler
+			p454: FH_DownMid{ ball = 2} -> Ply1_mid_regular_deep_handler
+			p455: FH_Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p455: FH_Error{ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p456: FH_Error{ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
       		 }};
       		 
 Ply2_BackHandR = ifa (turn == f_de_ct) {    // Player2 forehand return to Player1 serve from the deuce court side
 			pcase {
-			p456: BH_CrossCourt{ball = 1} -> Ply1_de_regular_deep_handler
-			p457: BH_DownLine{ball = 3} -> Ply1_ad_regular_deep_handler
-			p458: BH_DownMid{ball = 2} -> Ply1_mid_regular_deep_handler
-			p459: BH_Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p457: BH_CrossCourt{ball = 1} -> Ply1_de_regular_deep_handler
+			p458: BH_DownLine{ball = 3} -> Ply1_ad_regular_deep_handler
+			p459: BH_DownMid{ball = 2} -> Ply1_mid_regular_deep_handler
+			p460: BH_Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                      else { turn = (turn+1)%4} }-> NextPt
-			p460: BH_Error{ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p461: BH_Error{ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
       		 }}
       		 else {
       		pcase {
-			p461: BH_CrossCourt{ball = 1} -> Ply1_de_regular_deep_handler
-			p462: BH_InsideIn{ball = 1} -> Ply1_de_regular_deep_handler
-			p463: BH_InsideOut{ball = 3} -> Ply1_ad_regular_deep_handler
-			p464: BH_DownMid{ball = 2} -> Ply1_mid_regular_deep_handler
-			p465: BH_Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p462: BH_CrossCourt{ball = 1} -> Ply1_de_regular_deep_handler
+			p463: BH_InsideIn{ball = 1} -> Ply1_de_regular_deep_handler
+			p464: BH_InsideOut{ball = 3} -> Ply1_ad_regular_deep_handler
+			p465: BH_DownMid{ball = 2} -> Ply1_mid_regular_deep_handler
+			p466: BH_Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p466: BH_Error{ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p467: BH_Error{ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt			
       		 }};
 
 
 // Shallow Handlers
 Ply1_de_regular_shallow_handler = pcase{
-			p467: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
-			p468: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
-			p469: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
-			p470: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
-			p471: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
-			p472: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
-			p473: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
-			p474: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
+			p468: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
+			p469: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
+			p470: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
+			p471: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
+			p472: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
+			p473: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
+			p474: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
+			p475: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
 	};
 
 Ply1_de_smash_shallow_handler = pcase{
-			p475: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
-			p476: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
-			p477: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
-			p478: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
-			p479: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
-			p480: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
-			p481: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
-			p482: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
+			p476: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
+			p477: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
+			p478: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
+			p479: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
+			p480: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
+			p481: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
+			p482: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
+			p483: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
 	};
 
 Ply1_de_lob_shallow_handler = pcase{
-			p483: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
-			p484: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
-			p485: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
-			p486: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
-			p487: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
-			p488: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
-			p489: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
-			p490: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
+			p484: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
+			p485: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
+			p486: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
+			p487: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
+			p488: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
+			p489: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
+			p490: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
+			p491: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
 	};
 
 Ply1_de_slice_shallow_handler = pcase{
-			p491: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
-			p492: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
-			p493: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
-			p494: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
-			p495: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
-			p496: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
-			p497: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
-			p498: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
+			p492: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
+			p493: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
+			p494: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
+			p495: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
+			p496: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
+			p497: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
+			p498: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
+			p499: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
 	};
 
 Ply1_mid_regular_shallow_handler = pcase{
-			p499: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
-			p500: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
-			p501: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
-			p502: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
-			p503: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
-			p504: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
-			p505: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
-			p506: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
+			p500: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
+			p501: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
+			p502: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
+			p503: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
+			p504: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
+			p505: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
+			p506: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
+			p507: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
 	};
 
 Ply1_mid_smash_shallow_handler = pcase{
-			p507: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
-			p508: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
-			p509: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
-			p510: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
-			p511: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
-			p512: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
-			p513: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
-			p514: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
+			p508: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
+			p509: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
+			p510: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
+			p511: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
+			p512: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
+			p513: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
+			p514: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
+			p515: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
 	};
 
 Ply1_mid_lob_shallow_handler = pcase{
-			p515: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
-			p516: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
-			p517: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
-			p518: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
-			p519: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
-			p520: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
-			p521: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
-			p522: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
+			p516: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
+			p517: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
+			p518: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
+			p519: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
+			p520: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
+			p521: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
+			p522: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
+			p523: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
 	};
 
 Ply1_mid_slice_shallow_handler = pcase{
-			p523: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
-			p524: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
-			p525: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
-			p526: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
-			p527: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
-			p528: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
-			p529: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
-			p530: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
+			p524: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
+			p525: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
+			p526: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
+			p527: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
+			p528: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
+			p529: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
+			p530: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
+			p531: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
 	};
 
 Ply1_mid_regular_deep_handler = pcase{
-			p531: React_Regular_Shallow{ball=3} -> Ply1_mid_regular_shallow
-			p532: React_Smash_Shallow{ball=3} -> Ply1_mid_smash_shallow
-			p533: React_Lob_Shallow{ball=3} -> Ply1_mid_lob_shallow
-			p534: React_Slice_Shallow{ball=3} -> Ply1_mid_slice_shallow
-			p535: React_Regular_Deep{ball=3} -> Ply1_mid_regular_deep
-			p536: React_Smash_Deep{ball=3} -> Ply1_mid_smash_deep
-			p537: React_Lob_Deep{ball=3} -> Ply1_mid_lob_deep
-			p538: React_Slice_Deep{ball=3} -> Ply1_mid_slice_deep
+			p532: React_Regular_Shallow{ball=3} -> Ply1_mid_regular_shallow
+			p533: React_Smash_Shallow{ball=3} -> Ply1_mid_smash_shallow
+			p534: React_Lob_Shallow{ball=3} -> Ply1_mid_lob_shallow
+			p535: React_Slice_Shallow{ball=3} -> Ply1_mid_slice_shallow
+			p536: React_Regular_Deep{ball=3} -> Ply1_mid_regular_deep
+			p537: React_Smash_Deep{ball=3} -> Ply1_mid_smash_deep
+			p538: React_Lob_Deep{ball=3} -> Ply1_mid_lob_deep
+			p539: React_Slice_Deep{ball=3} -> Ply1_mid_slice_deep
 	};
 
 Ply1_mid_smash_deep_handler = pcase{
-			p539: React_Regular_Shallow{ball=3} -> Ply1_mid_regular_shallow
-			p540: React_Smash_Shallow{ball=3} -> Ply1_mid_smash_shallow
-			p541: React_Lob_Shallow{ball=3} -> Ply1_mid_lob_shallow
-			p542: React_Slice_Shallow{ball=3} -> Ply1_mid_slice_shallow
-			p543: React_Regular_Deep{ball=3} -> Ply1_mid_regular_deep
-			p544: React_Smash_Deep{ball=3} -> Ply1_mid_smash_deep
-			p545: React_Lob_Deep{ball=3} -> Ply1_mid_lob_deep
-			p546: React_Slice_Deep{ball=3} -> Ply1_mid_slice_deep
+			p540: React_Regular_Shallow{ball=3} -> Ply1_mid_regular_shallow
+			p541: React_Smash_Shallow{ball=3} -> Ply1_mid_smash_shallow
+			p542: React_Lob_Shallow{ball=3} -> Ply1_mid_lob_shallow
+			p543: React_Slice_Shallow{ball=3} -> Ply1_mid_slice_shallow
+			p544: React_Regular_Deep{ball=3} -> Ply1_mid_regular_deep
+			p545: React_Smash_Deep{ball=3} -> Ply1_mid_smash_deep
+			p546: React_Lob_Deep{ball=3} -> Ply1_mid_lob_deep
+			p547: React_Slice_Deep{ball=3} -> Ply1_mid_slice_deep
 	};
 
 Ply1_mid_lob_deep_handler = pcase{
-			p547: React_Regular_Shallow{ball=3} -> Ply1_mid_regular_shallow
-			p548: React_Smash_Shallow{ball=3} -> Ply1_mid_smash_shallow
-			p549: React_Lob_Shallow{ball=3} -> Ply1_mid_lob_shallow
-			p550: React_Slice_Shallow{ball=3} -> Ply1_mid_slice_shallow
-			p551: React_Regular_Deep{ball=3} -> Ply1_mid_regular_deep
-			p552: React_Smash_Deep{ball=3} -> Ply1_mid_smash_deep
-			p553: React_Lob_Deep{ball=3} -> Ply1_mid_lob_deep
-			p554: React_Slice_Deep{ball=3} -> Ply1_mid_slice_deep
+			p548: React_Regular_Shallow{ball=3} -> Ply1_mid_regular_shallow
+			p549: React_Smash_Shallow{ball=3} -> Ply1_mid_smash_shallow
+			p550: React_Lob_Shallow{ball=3} -> Ply1_mid_lob_shallow
+			p551: React_Slice_Shallow{ball=3} -> Ply1_mid_slice_shallow
+			p552: React_Regular_Deep{ball=3} -> Ply1_mid_regular_deep
+			p553: React_Smash_Deep{ball=3} -> Ply1_mid_smash_deep
+			p554: React_Lob_Deep{ball=3} -> Ply1_mid_lob_deep
+			p555: React_Slice_Deep{ball=3} -> Ply1_mid_slice_deep
 	};
 
 Ply1_mid_slice_deep_handler = pcase{
-			p555: React_Regular_Shallow{ball=3} -> Ply1_mid_regular_shallow
-			p556: React_Smash_Shallow{ball=3} -> Ply1_mid_smash_shallow
-			p557: React_Lob_Shallow{ball=3} -> Ply1_mid_lob_shallow
-			p558: React_Slice_Shallow{ball=3} -> Ply1_mid_slice_shallow
-			p559: React_Regular_Deep{ball=3} -> Ply1_mid_regular_deep
-			p560: React_Smash_Deep{ball=3} -> Ply1_mid_smash_deep
-			p561: React_Lob_Deep{ball=3} -> Ply1_mid_lob_deep
-			p562: React_Slice_Deep{ball=3} -> Ply1_mid_slice_deep
+			p556: React_Regular_Shallow{ball=3} -> Ply1_mid_regular_shallow
+			p557: React_Smash_Shallow{ball=3} -> Ply1_mid_smash_shallow
+			p558: React_Lob_Shallow{ball=3} -> Ply1_mid_lob_shallow
+			p559: React_Slice_Shallow{ball=3} -> Ply1_mid_slice_shallow
+			p560: React_Regular_Deep{ball=3} -> Ply1_mid_regular_deep
+			p561: React_Smash_Deep{ball=3} -> Ply1_mid_smash_deep
+			p562: React_Lob_Deep{ball=3} -> Ply1_mid_lob_deep
+			p563: React_Slice_Deep{ball=3} -> Ply1_mid_slice_deep
 	};
 
 
 // Deep Handlers
 Ply1_de_regular_deep_handler = pcase{
-			p563: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
-			p564: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
-			p565: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
-			p566: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
-			p567: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
-			p568: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
-			p569: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
-			p570: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
+			p564: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
+			p565: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
+			p566: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
+			p567: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
+			p568: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
+			p569: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
+			p570: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
+			p571: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
 	};
 
 Ply1_de_smash_deep_handler = pcase{
-			p571: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
-			p572: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
-			p573: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
-			p574: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
-			p575: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
-			p576: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
-			p577: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
-			p578: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
+			p572: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
+			p573: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
+			p574: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
+			p575: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
+			p576: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
+			p577: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
+			p578: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
+			p579: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
 	};
 
 Ply1_de_lob_deep_handler = pcase{
-			p579: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
-			p580: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
-			p581: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
-			p582: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
-			p583: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
-			p584: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
-			p585: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
-			p586: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
+			p580: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
+			p581: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
+			p582: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
+			p583: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
+			p584: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
+			p585: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
+			p586: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
+			p587: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
 	};
 
 Ply1_de_slice_deep_handler = pcase{
-			p587: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
-			p588: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
-			p589: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
-			p590: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
-			p591: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
-			p592: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
-			p593: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
-			p594: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
+			p588: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
+			p589: React_Smash_Shallow{ball=1} -> Ply1_de_smash_shallow
+			p590: React_Lob_Shallow{ball=1} -> Ply1_de_lob_shallow
+			p591: React_Slice_Shallow{ball=1} -> Ply1_de_slice_shallow
+			p592: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
+			p593: React_Smash_Deep{ball=1} -> Ply1_de_smash_deep
+			p594: React_Lob_Deep{ball=1} -> Ply1_de_lob_deep
+			p595: React_Slice_Deep{ball=1} -> Ply1_de_slice_deep
 	};
 
 Ply1_mid_regular_deep_handler = pcase{
-			p595: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
-			p596: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
-			p597: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
-			p598: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
-			p599: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
-			p600: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
-			p601: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
-			p602: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
+			p596: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
+			p597: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
+			p598: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
+			p599: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
+			p600: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
+			p601: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
+			p602: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
+			p603: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
 	};
 
 Ply1_mid_smash_deep_handler = pcase{
-			p603: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
-			p604: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
-			p605: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
-			p606: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
-			p607: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
-			p608: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
-			p609: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
-			p610: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
+			p604: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
+			p605: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
+			p606: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
+			p607: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
+			p608: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
+			p609: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
+			p610: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
+			p611: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
 	};
 
 Ply1_mid_lob_deep_handler = pcase{
-			p611: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
-			p612: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
-			p613: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
-			p614: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
-			p615: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
-			p616: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
-			p617: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
-			p618: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
+			p612: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
+			p613: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
+			p614: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
+			p615: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
+			p616: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
+			p617: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
+			p618: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
+			p619: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
 	};
 
 Ply1_mid_slice_deep_handler = pcase{
-			p619: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
-			p620: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
-			p621: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
-			p622: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
-			p623: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
-			p624: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
-			p625: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
-			p626: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
+			p620: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
+			p621: React_Smash_Shallow{ball=2} -> Ply1_mid_smash_shallow
+			p622: React_Lob_Shallow{ball=2} -> Ply1_mid_lob_shallow
+			p623: React_Slice_Shallow{ball=2} -> Ply1_mid_slice_shallow
+			p624: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
+			p625: React_Smash_Deep{ball=2} -> Ply1_mid_smash_deep
+			p626: React_Lob_Deep{ball=2} -> Ply1_mid_lob_deep
+			p627: React_Slice_Deep{ball=2} -> Ply1_mid_slice_deep
 	};
 
 Ply1_ad_regular_deep_handler = pcase{
-			p627: React_Regular_Shallow{ball=3} -> Ply1_ad_regular_shallow
-			p628: React_Smash_Shallow{ball=3} -> Ply1_ad_smash_shallow
-			p629: React_Lob_Shallow{ball=3} -> Ply1_ad_lob_shallow
-			p630: React_Slice_Shallow{ball=3} -> Ply1_ad_slice_shallow
-			p631: React_Regular_Deep{ball=3} -> Ply1_ad_regular_deep
-			p632: React_Smash_Deep{ball=3} -> Ply1_ad_smash_deep
-			p633: React_Lob_Deep{ball=3} -> Ply1_ad_lob_deep
-			p634: React_Slice_Deep{ball=3} -> Ply1_ad_slice_deep
+			p628: React_Regular_Shallow{ball=3} -> Ply1_ad_regular_shallow
+			p629: React_Smash_Shallow{ball=3} -> Ply1_ad_smash_shallow
+			p630: React_Lob_Shallow{ball=3} -> Ply1_ad_lob_shallow
+			p631: React_Slice_Shallow{ball=3} -> Ply1_ad_slice_shallow
+			p632: React_Regular_Deep{ball=3} -> Ply1_ad_regular_deep
+			p633: React_Smash_Deep{ball=3} -> Ply1_ad_smash_deep
+			p634: React_Lob_Deep{ball=3} -> Ply1_ad_lob_deep
+			p635: React_Slice_Deep{ball=3} -> Ply1_ad_slice_deep
 	};
 
 Ply1_ad_smash_deep_handler = pcase{
-			p635: React_Regular_Shallow{ball=3} -> Ply1_ad_regular_shallow
-			p636: React_Smash_Shallow{ball=3} -> Ply1_ad_smash_shallow
-			p637: React_Lob_Shallow{ball=3} -> Ply1_ad_lob_shallow
-			p638: React_Slice_Shallow{ball=3} -> Ply1_ad_slice_shallow
-			p639: React_Regular_Deep{ball=3} -> Ply1_ad_regular_deep
-			p640: React_Smash_Deep{ball=3} -> Ply1_ad_smash_deep
-			p641: React_Lob_Deep{ball=3} -> Ply1_ad_lob_deep
-			p642: React_Slice_Deep{ball=3} -> Ply1_ad_slice_deep
+			p636: React_Regular_Shallow{ball=3} -> Ply1_ad_regular_shallow
+			p637: React_Smash_Shallow{ball=3} -> Ply1_ad_smash_shallow
+			p638: React_Lob_Shallow{ball=3} -> Ply1_ad_lob_shallow
+			p639: React_Slice_Shallow{ball=3} -> Ply1_ad_slice_shallow
+			p640: React_Regular_Deep{ball=3} -> Ply1_ad_regular_deep
+			p641: React_Smash_Deep{ball=3} -> Ply1_ad_smash_deep
+			p642: React_Lob_Deep{ball=3} -> Ply1_ad_lob_deep
+			p643: React_Slice_Deep{ball=3} -> Ply1_ad_slice_deep
 	};
 
 Ply1_ad_lob_deep_handler = pcase{
-			p643: React_Regular_Shallow{ball=3} -> Ply1_ad_regular_shallow
-			p644: React_Smash_Shallow{ball=3} -> Ply1_ad_smash_shallow
-			p645: React_Lob_Shallow{ball=3} -> Ply1_ad_lob_shallow
-			p646: React_Slice_Shallow{ball=3} -> Ply1_ad_slice_shallow
-			p647: React_Regular_Deep{ball=3} -> Ply1_ad_regular_deep
-			p648: React_Smash_Deep{ball=3} -> Ply1_ad_smash_deep
-			p649: React_Lob_Deep{ball=3} -> Ply1_ad_lob_deep
-			p650: React_Slice_Deep{ball=3} -> Ply1_ad_slice_deep
+			p644: React_Regular_Shallow{ball=3} -> Ply1_ad_regular_shallow
+			p645: React_Smash_Shallow{ball=3} -> Ply1_ad_smash_shallow
+			p646: React_Lob_Shallow{ball=3} -> Ply1_ad_lob_shallow
+			p647: React_Slice_Shallow{ball=3} -> Ply1_ad_slice_shallow
+			p648: React_Regular_Deep{ball=3} -> Ply1_ad_regular_deep
+			p649: React_Smash_Deep{ball=3} -> Ply1_ad_smash_deep
+			p650: React_Lob_Deep{ball=3} -> Ply1_ad_lob_deep
+			p651: React_Slice_Deep{ball=3} -> Ply1_ad_slice_deep
 	};
 
 Ply1_ad_slice_deep_handler = pcase{
-			p651: React_Regular_Shallow{ball=3} -> Ply1_ad_regular_shallow
-			p652: React_Smash_Shallow{ball=3} -> Ply1_ad_smash_shallow
-			p653: React_Lob_Shallow{ball=3} -> Ply1_ad_lob_shallow
-			p654: React_Slice_Shallow{ball=3} -> Ply1_ad_slice_shallow
-			p655: React_Regular_Deep{ball=3} -> Ply1_ad_regular_deep
-			p656: React_Smash_Deep{ball=3} -> Ply1_ad_smash_deep
-			p657: React_Lob_Deep{ball=3} -> Ply1_ad_lob_deep
-			p658: React_Slice_Deep{ball=3} -> Ply1_ad_slice_deep
+			p652: React_Regular_Shallow{ball=3} -> Ply1_ad_regular_shallow
+			p653: React_Smash_Shallow{ball=3} -> Ply1_ad_smash_shallow
+			p654: React_Lob_Shallow{ball=3} -> Ply1_ad_lob_shallow
+			p655: React_Slice_Shallow{ball=3} -> Ply1_ad_slice_shallow
+			p656: React_Regular_Deep{ball=3} -> Ply1_ad_regular_deep
+			p657: React_Smash_Deep{ball=3} -> Ply1_ad_smash_deep
+			p658: React_Lob_Deep{ball=3} -> Ply1_ad_lob_deep
+			p659: React_Slice_Deep{ball=3} -> Ply1_ad_slice_deep
 	};
 
 
 // Shallow Actions
 // deuce stroke shallow is when player2 hit position is 6
 Ply2_de_stroke_shallow = pcase { // if already 
-			p659: FH_InsideOut {ball = 1} -> Ply1_de_stroke_shallow_handler
-			p660: FH_insideIn {ball = 3} -> Ply1_ad_stroke_shallow_handler
-			p661: FH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
-			p662: BH_Crosscourt {ball = 1} -> Ply1_de_stroke_shallow_handler
-			p663: BH_Downline {ball = 3} -> Ply1_ad_stroke_shallow_handler
-			p664: BH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
-			p665: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p660: FH_InsideOut {ball = 1} -> Ply1_de_stroke_shallow_handler
+			p661: FH_insideIn {ball = 3} -> Ply1_ad_stroke_shallow_handler
+			p662: FH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
+			p663: BH_Crosscourt {ball = 1} -> Ply1_de_stroke_shallow_handler
+			p664: BH_Downline {ball = 3} -> Ply1_ad_stroke_shallow_handler
+			p665: BH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
+			p666: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p666: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p667: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // mid stroke shallow is when player2 hit position is 5
 Ply2_mid_stroke_shallow = noMove -> pcase{
-			p667: FH_InsideOut {ball = 1} -> Ply1_de_stroke_shallow_handler
-			p668: FH_Crosscourt{ball = 3} -> Ply1_ad_stroke_shallow_handler
-			p669: FH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
-			p670: BH_InsideOut {ball = 3} -> Ply1_ad_stroke_shallow_handler
-			p671: BH_Crosscourt {ball = 1} -> Ply1_de_stroke_shallow_handler
-			p672: BH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
-			p673: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p668: FH_InsideOut {ball = 1} -> Ply1_de_stroke_shallow_handler
+			p669: FH_Crosscourt{ball = 3} -> Ply1_ad_stroke_shallow_handler
+			p670: FH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
+			p671: BH_InsideOut {ball = 3} -> Ply1_ad_stroke_shallow_handler
+			p672: BH_Crosscourt {ball = 1} -> Ply1_de_stroke_shallow_handler
+			p673: BH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
+			p674: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p674: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p675: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // ad stroke shallow is when player 2 hit position is 4
 Ply2_ad_stroke_shallow = pcase{
-			p675: FH_Crosscourt {ball = 3} -> Ply1_ad_stroke_shallow_handler
-			p676: FH_Downline {ball = 1} -> Ply1_de_stroke_shallow_handler
-			p677: FH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
-			p678: BH_InsideIn {ball = 1} -> Ply1_de_stroke_shallow_handler
-			p679: BH_InsideOut {ball = 3} -> Ply1_ad_stroke_shallow_handler
-			p680: BH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
-			p681: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p676: FH_Crosscourt {ball = 3} -> Ply1_ad_stroke_shallow_handler
+			p677: FH_Downline {ball = 1} -> Ply1_de_stroke_shallow_handler
+			p678: FH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
+			p679: BH_InsideIn {ball = 1} -> Ply1_de_stroke_shallow_handler
+			p680: BH_InsideOut {ball = 3} -> Ply1_ad_stroke_shallow_handler
+			p681: BH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
+			p682: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p682: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p683: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	}; 
 
 // deuce smash shallow is when player2 hit position is 6
 Ply2_de_smash_shallow = pcase { // if already 
-			p683: FH_InsideOut {ball = 1} -> Ply1_de_smash_shallow_handler
-			p684: FH_InsideIn {ball = 3} -> Ply1_ad_smash_shallow_handler
-			p685: FH_DownMid {ball = 2} -> Ply1_mid_smash_shallow_handler
-			p686: BH_Crosscourt {ball = 1} -> Ply1_de_smash_shallow_handler
-			p687: BH_Downline {ball = 3} -> Ply1_ad_smash_shallow_handler
-			p688: BH_DownMid {ball = 2} -> Ply1_mid_smash_shallow_handler
-			p689: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p684: FH_InsideOut {ball = 1} -> Ply1_de_smash_shallow_handler
+			p685: FH_InsideIn {ball = 3} -> Ply1_ad_smash_shallow_handler
+			p686: FH_DownMid {ball = 2} -> Ply1_mid_smash_shallow_handler
+			p687: BH_Crosscourt {ball = 1} -> Ply1_de_smash_shallow_handler
+			p688: BH_Downline {ball = 3} -> Ply1_ad_smash_shallow_handler
+			p689: BH_DownMid {ball = 2} -> Ply1_mid_smash_shallow_handler
+			p690: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p690: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p691: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // mid smash shallow is when player2 hit position is 5
 Ply2_mid_smash_shallow = noMove -> pcase{
-			p691: FH_InsideOut {ball = 1} -> Ply1_de_smash_shallow_handler
-			p692: FH_Crosscourt{ball = 3} -> Ply1_ad_smash_shallow_handler
-			p693: FH_DownMid {ball = 2} -> Ply1_mid_smash_shallow_handler
-			p694: BH_InsideOut {ball = 3} -> Ply1_ad_smash_shallow_handler
-			p695: BH_Crosscourt {ball = 1} -> Ply1_de_smash_shallow_handler
-			p696: BH_DownMid {ball = 2} -> Ply1_mid_smash_shallow_handler
-			p697: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p692: FH_InsideOut {ball = 1} -> Ply1_de_smash_shallow_handler
+			p693: FH_Crosscourt{ball = 3} -> Ply1_ad_smash_shallow_handler
+			p694: FH_DownMid {ball = 2} -> Ply1_mid_smash_shallow_handler
+			p695: BH_InsideOut {ball = 3} -> Ply1_ad_smash_shallow_handler
+			p696: BH_Crosscourt {ball = 1} -> Ply1_de_smash_shallow_handler
+			p697: BH_DownMid {ball = 2} -> Ply1_mid_smash_shallow_handler
+			p698: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p698: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p699: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // ad smash shallow is when player 2 hit position is 4
 Ply2_ad_smash_shallow = pcase{
-			p699: FH_Crosscourt {ball = 3} -> Ply1_ad_smash_shallow_handler
-			p700: FH_Downline {ball = 1} -> Ply1_de_smash_shallow_handler
-			p701: FH_DownMid {ball = 2} -> Ply1_mid_smash_shallow_handler
-			p702: BH_InsideIn {ball = 1} -> Ply1_de_smash_shallow_handler
-			p703: BH_InsideOut {ball = 3} -> Ply1_ad_smash_shallow_handler
-			p704: BH_DownMid {ball = 2} -> Ply1_mid_smash_shallow_handler
-			p705: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p700: FH_Crosscourt {ball = 3} -> Ply1_ad_smash_shallow_handler
+			p701: FH_Downline {ball = 1} -> Ply1_de_smash_shallow_handler
+			p702: FH_DownMid {ball = 2} -> Ply1_mid_smash_shallow_handler
+			p703: BH_InsideIn {ball = 1} -> Ply1_de_smash_shallow_handler
+			p704: BH_InsideOut {ball = 3} -> Ply1_ad_smash_shallow_handler
+			p705: BH_DownMid {ball = 2} -> Ply1_mid_smash_shallow_handler
+			p706: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p706: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p707: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};     
 
 // deuce lob shallow is when player2 hit position is 6
 Ply2_de_lob_shallow = pcase {
-			p707: FH_InsideOut {ball = 1} -> Ply1_de_lob_shallow_handler
-			p708: FH_insideIn {ball = 3} -> Ply1_ad_lob_shallow_handler
-			p709: FH_DownMid {ball = 2} -> Ply1_mid_lob_shallow_handler
-			p710: BH_Crosscourt {ball = 1} -> Ply1_de_lob_shallow_handler
-			p711: BH_Downline {ball = 3} -> Ply1_ad_lob_shallow_handler
-			p712: BH_DownMid {ball = 2} -> Ply1_mid_lob_shallow_handler
-			p713: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p708: FH_InsideOut {ball = 1} -> Ply1_de_lob_shallow_handler
+			p709: FH_insideIn {ball = 3} -> Ply1_ad_lob_shallow_handler
+			p710: FH_DownMid {ball = 2} -> Ply1_mid_lob_shallow_handler
+			p711: BH_Crosscourt {ball = 1} -> Ply1_de_lob_shallow_handler
+			p712: BH_Downline {ball = 3} -> Ply1_ad_lob_shallow_handler
+			p713: BH_DownMid {ball = 2} -> Ply1_mid_lob_shallow_handler
+			p714: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p714: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p715: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // mid lob shallow is when player2 hit position is 5
 Ply2_mid_lob_shallow = noMove -> pcase{
-			p715: FH_InsideOut {ball = 1} -> Ply1_de_lob_shallow_handler
-			p716: FH_Crosscourt{ball = 3} -> Ply1_ad_lob_shallow_handler
-			p717: FH_DownMid {ball = 2} -> Ply1_mid_lob_shallow_handler
-			p718: BH_InsideOut {ball = 3} -> Ply1_ad_lob_shallow_handler
-			p719: BH_Crosscourt {ball = 1} -> Ply1_de_lob_shallow_handler
-			p720: BH_DownMid {ball = 2} -> Ply1_mid_lob_shallow_handler
-			p721: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p716: FH_InsideOut {ball = 1} -> Ply1_de_lob_shallow_handler
+			p717: FH_Crosscourt{ball = 3} -> Ply1_ad_lob_shallow_handler
+			p718: FH_DownMid {ball = 2} -> Ply1_mid_lob_shallow_handler
+			p719: BH_InsideOut {ball = 3} -> Ply1_ad_lob_shallow_handler
+			p720: BH_Crosscourt {ball = 1} -> Ply1_de_lob_shallow_handler
+			p721: BH_DownMid {ball = 2} -> Ply1_mid_lob_shallow_handler
+			p722: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p722: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p723: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // ad lob shallow is when player 2 hit position is 4
 Ply2_ad_lob_shallow = pcase{
-			p723: FH_Crosscourt {ball = 3} -> Ply1_ad_lob_shallow_handler
-			p724: FH_Downline {ball = 1} -> Ply1_de_lob_shallow_handler
-			p725: FH_DownMid {ball = 2} -> Ply1_mid_lob_shallow_handler
-			p726: BH_InsideIn {ball = 1} -> Ply1_de_lob_shallow_handler
-			p727: BH_InsideOut {ball = 3} -> Ply1_ad_lob_shallow_handler
-			p728: BH_DownMid {ball = 2} -> Ply1_mid_lob_shallow_handler
-			p729: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p724: FH_Crosscourt {ball = 3} -> Ply1_ad_lob_shallow_handler
+			p725: FH_Downline {ball = 1} -> Ply1_de_lob_shallow_handler
+			p726: FH_DownMid {ball = 2} -> Ply1_mid_lob_shallow_handler
+			p727: BH_InsideIn {ball = 1} -> Ply1_de_lob_shallow_handler
+			p728: BH_InsideOut {ball = 3} -> Ply1_ad_lob_shallow_handler
+			p729: BH_DownMid {ball = 2} -> Ply1_mid_lob_shallow_handler
+			p730: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p730: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p731: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};    	
 
 // deuce slice shallow is when player2 hit position is 6
 Ply2_de_slice_shallow = pcase {
-			p731: FH_InsideOut {ball = 1} -> Ply1_de_slice_shallow_handler
-			p732: FH_insideIn {ball = 3} -> Ply1_ad_slice_shallow_handler
-			p733: FH_DownMid {ball = 2} -> Ply1_mid_slice_shallow_handler
-			p734: BH_Crosscourt {ball = 1} -> Ply1_de_slice_shallow_handler
-			p735: BH_Downline {ball = 3} -> Ply1_ad_slice_shallow_handler
-			p736: BH_DownMid {ball = 2} -> Ply1_mid_slice_shallow_handler
-			p737: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p732: FH_InsideOut {ball = 1} -> Ply1_de_slice_shallow_handler
+			p733: FH_insideIn {ball = 3} -> Ply1_ad_slice_shallow_handler
+			p734: FH_DownMid {ball = 2} -> Ply1_mid_slice_shallow_handler
+			p735: BH_Crosscourt {ball = 1} -> Ply1_de_slice_shallow_handler
+			p736: BH_Downline {ball = 3} -> Ply1_ad_slice_shallow_handler
+			p737: BH_DownMid {ball = 2} -> Ply1_mid_slice_shallow_handler
+			p738: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p738: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p739: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // mid slice shallow is when player2 hit position is 5
 Ply2_mid_slice_shallow = noMove -> pcase{
-			p739: FH_InsideOut {ball = 1} -> Ply1_de_slice_shallow_handler
-			p740: FH_Crosscourt{ball = 3} -> Ply1_ad_slice_shallow_handler
-			p741: FH_DownMid {ball = 2} -> Ply1_mid_slice_shallow_handler
-			p742: BH_InsideOut {ball = 3} -> Ply1_ad_slice_shallow_handler
-			p743: BH_Crosscourt {ball = 1} -> Ply1_de_slice_shallow_handler
-			p744: BH_DownMid {ball = 2} -> Ply1_mid_slice_shallow_handler
-			p745: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p740: FH_InsideOut {ball = 1} -> Ply1_de_slice_shallow_handler
+			p741: FH_Crosscourt{ball = 3} -> Ply1_ad_slice_shallow_handler
+			p742: FH_DownMid {ball = 2} -> Ply1_mid_slice_shallow_handler
+			p743: BH_InsideOut {ball = 3} -> Ply1_ad_slice_shallow_handler
+			p744: BH_Crosscourt {ball = 1} -> Ply1_de_slice_shallow_handler
+			p745: BH_DownMid {ball = 2} -> Ply1_mid_slice_shallow_handler
+			p746: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p746: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p747: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // ad slice shallow is when player 2 hit position is 4
 Ply2_ad_slice_shallow = pcase{
-			p747: FH_Crosscourt {ball = 3} -> Ply1_ad_slice_shallow_handler
-			p748: FH_Downline {ball = 1} -> Ply1_de_slice_shallow_handler
-			p749: FH_DownMid {ball = 2} -> Ply1_mid_slice_shallow_handler
-			p750: BH_InsideIn {ball = 1} -> Ply1_de_slice_shallow_handler
-			p751: BH_InsideOut {ball = 3} -> Ply1_ad_slice_shallow_handler
-			p752: BH_DownMid {ball = 2} -> Ply1_mid_slice_shallow_handler
-			p753: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p748: FH_Crosscourt {ball = 3} -> Ply1_ad_slice_shallow_handler
+			p749: FH_Downline {ball = 1} -> Ply1_de_slice_shallow_handler
+			p750: FH_DownMid {ball = 2} -> Ply1_mid_slice_shallow_handler
+			p751: BH_InsideIn {ball = 1} -> Ply1_de_slice_shallow_handler
+			p752: BH_InsideOut {ball = 3} -> Ply1_ad_slice_shallow_handler
+			p753: BH_DownMid {ball = 2} -> Ply1_mid_slice_shallow_handler
+			p754: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p754: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p755: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
@@ -1217,169 +1217,169 @@ Ply2_ad_slice_shallow = pcase{
 // Deep Actions
 // deuce stroke deep is when player2 hit position is 6
 Ply2_de_stroke_deep = pcase {
-			p755: FH_InsideOut {ball = 1} -> Ply1_de_stroke_deep_handler
-			p756: FH_insideIn {ball = 3} -> Ply1_ad_stroke_deep_handler
-			p757: FH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
-			p758: BH_Crosscourt {ball = 1} -> Ply1_de_stroke_deep_handler
-			p759: BH_Downline {ball = 3} -> Ply1_ad_stroke_deep_handler
-			p760: BH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
-			p761: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p756: FH_InsideOut {ball = 1} -> Ply1_de_stroke_deep_handler
+			p757: FH_insideIn {ball = 3} -> Ply1_ad_stroke_deep_handler
+			p758: FH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
+			p759: BH_Crosscourt {ball = 1} -> Ply1_de_stroke_deep_handler
+			p760: BH_Downline {ball = 3} -> Ply1_ad_stroke_deep_handler
+			p761: BH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
+			p762: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p762: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p763: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // mid stroke deep is when player2 hit position is 5
 Ply2_mid_stroke_deep = noMove -> pcase{
-			p763: FH_InsideOut {ball = 1} -> Ply1_de_stroke_deep_handler
-			p764: FH_Crosscourt{ball = 3} -> Ply1_ad_stroke_deep_handler
-			p765: FH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
-			p766: BH_InsideOut {ball = 3} -> Ply1_ad_stroke_deep_handler
-			p767: BH_Crosscourt {ball = 1} -> Ply1_de_stroke_deep_handler
-			p768: BH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
-			p769: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p764: FH_InsideOut {ball = 1} -> Ply1_de_stroke_deep_handler
+			p765: FH_Crosscourt{ball = 3} -> Ply1_ad_stroke_deep_handler
+			p766: FH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
+			p767: BH_InsideOut {ball = 3} -> Ply1_ad_stroke_deep_handler
+			p768: BH_Crosscourt {ball = 1} -> Ply1_de_stroke_deep_handler
+			p769: BH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
+			p770: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p770: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p771: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // ad stroke deep is when player 2 hit position is 4
 Ply2_ad_stroke_deep = pcase{
-			p771: FH_Crosscourt {ball = 3} -> Ply1_ad_stroke_deep_handler
-			p772: FH_Downline {ball = 1} -> Ply1_de_stroke_deep_handler
-			p773: FH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
-			p774: BH_InsideIn {ball = 1} -> Ply1_de_stroke_deep_handler
-			p775: BH_InsideOut {ball = 3} -> Ply1_ad_stroke_deep_handler
-			p776: BH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
-			p777: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p772: FH_Crosscourt {ball = 3} -> Ply1_ad_stroke_deep_handler
+			p773: FH_Downline {ball = 1} -> Ply1_de_stroke_deep_handler
+			p774: FH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
+			p775: BH_InsideIn {ball = 1} -> Ply1_de_stroke_deep_handler
+			p776: BH_InsideOut {ball = 3} -> Ply1_ad_stroke_deep_handler
+			p777: BH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
+			p778: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p778: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p779: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	}; 
 
 // deuce smash deep is when player2 hit position is 6
 Ply2_de_smash_deep = pcase { 
-			p779: FH_InsideOut {ball = 1} -> Ply1_de_smash_deep_handler
-			p780: FH_InsideIn {ball = 3} -> Ply1_ad_smash_deep_handler
-			p781: FH_DownMid {ball = 2} -> Ply1_mid_smash_deep_handler
-			p782: BH_Crosscourt {ball = 1} -> Ply1_de_smash_deep_handler
-			p783: BH_Downline {ball = 3} -> Ply1_ad_smash_deep_handler
-			p784: BH_DownMid {ball = 2} -> Ply1_mid_smash_deep_handler
-			p785: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p780: FH_InsideOut {ball = 1} -> Ply1_de_smash_deep_handler
+			p781: FH_InsideIn {ball = 3} -> Ply1_ad_smash_deep_handler
+			p782: FH_DownMid {ball = 2} -> Ply1_mid_smash_deep_handler
+			p783: BH_Crosscourt {ball = 1} -> Ply1_de_smash_deep_handler
+			p784: BH_Downline {ball = 3} -> Ply1_ad_smash_deep_handler
+			p785: BH_DownMid {ball = 2} -> Ply1_mid_smash_deep_handler
+			p786: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                               else { turn = (turn+1)%4} }-> NextPt
-			p786: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p787: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                               else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // mid smash deep is when player2 hit position is 5
 Ply2_mid_smash_deep = noMove -> pcase{
-			p787: FH_InsideOut {ball = 1} -> Ply1_de_smash_deep_handler
-			p788: FH_Crosscourt{ball = 3} -> Ply1_ad_smash_deep_handler
-			p789: FH_DownMid {ball = 2} -> Ply1_mid_smash_deep_handler
-			p790: BH_InsideOut {ball = 3} -> Ply1_ad_smash_deep_handler
-			p791: BH_Crosscourt {ball = 1} -> Ply1_de_smash_deep_handler
-			p792: BH_DownMid {ball = 2} -> Ply1_mid_smash_deep_handler
-			p793: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p788: FH_InsideOut {ball = 1} -> Ply1_de_smash_deep_handler
+			p789: FH_Crosscourt{ball = 3} -> Ply1_ad_smash_deep_handler
+			p790: FH_DownMid {ball = 2} -> Ply1_mid_smash_deep_handler
+			p791: BH_InsideOut {ball = 3} -> Ply1_ad_smash_deep_handler
+			p792: BH_Crosscourt {ball = 1} -> Ply1_de_smash_deep_handler
+			p793: BH_DownMid {ball = 2} -> Ply1_mid_smash_deep_handler
+			p794: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                               else { turn = (turn+1)%4} }-> NextPt
-			p794: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p795: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                               else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // ad smash deep is when player 2 hit position is 4
 Ply2_ad_smash_deep = pcase{
-			p795: FH_Crosscourt {ball = 3} -> Ply1_ad_smash_deep_handler
-			p796: FH_Downline {ball = 1} -> Ply1_de_smash_deep_handler
-			p797: FH_DownMid {ball = 2} -> Ply1_mid_smash_deep_handler
-			p798: BH_InsideIn {ball = 1} -> Ply1_de_smash_deep_handler
-			p799: BH_InsideOut {ball = 3} -> Ply1_ad_smash_deep_handler
-			p800: BH_DownMid {ball = 2} -> Ply1_mid_smash_deep_handler
-			p801: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p796: FH_Crosscourt {ball = 3} -> Ply1_ad_smash_deep_handler
+			p797: FH_Downline {ball = 1} -> Ply1_de_smash_deep_handler
+			p798: FH_DownMid {ball = 2} -> Ply1_mid_smash_deep_handler
+			p799: BH_InsideIn {ball = 1} -> Ply1_de_smash_deep_handler
+			p800: BH_InsideOut {ball = 3} -> Ply1_ad_smash_deep_handler
+			p801: BH_DownMid {ball = 2} -> Ply1_mid_smash_deep_handler
+			p802: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                               else { turn = (turn+1)%4} }-> NextPt
-			p802: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p803: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                               else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // deuce lob deep is when player2 hit position is 6
 Ply2_de_lob_deep = pcase { // if already 
-			p803: FH_InsideOut {ball = 1} -> Ply1_de_lob_deep_handler
-			p804: FH_insideIn {ball = 3} -> Ply1_ad_lob_deep_handler
-			p805: FH_DownMid {ball = 2} -> Ply1_mid_lob_deep_handler
-			p806: BH_Crosscourt {ball = 1} -> Ply1_de_lob_deep_handler
-			p807: BH_Downline {ball = 3} -> Ply1_ad_lob_deep_handler
-			p808: BH_DownMid {ball = 2} -> Ply1_mid_lob_deep_handler
-			p809: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p804: FH_InsideOut {ball = 1} -> Ply1_de_lob_deep_handler
+			p805: FH_insideIn {ball = 3} -> Ply1_ad_lob_deep_handler
+			p806: FH_DownMid {ball = 2} -> Ply1_mid_lob_deep_handler
+			p807: BH_Crosscourt {ball = 1} -> Ply1_de_lob_deep_handler
+			p808: BH_Downline {ball = 3} -> Ply1_ad_lob_deep_handler
+			p809: BH_DownMid {ball = 2} -> Ply1_mid_lob_deep_handler
+			p810: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p810: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p811: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // mid lob deep is when player2 hit position is 5
 Ply2_mid_lob_deep = noMove -> pcase{
-			p811: FH_InsideOut {ball = 1} -> Ply1_de_lob_deep_handler
-			p812: FH_Crosscourt{ball = 3} -> Ply1_ad_lob_deep_handler
-			p813: FH_DownMid {ball = 2} -> Ply1_mid_lob_deep_handler
-			p814: BH_InsideOut {ball = 3} -> Ply1_ad_lob_deep_handler
-			p815: BH_Crosscourt {ball = 1} -> Ply1_de_lob_deep_handler
-			p816: BH_DownMid {ball = 2} -> Ply1_mid_lob_deep_handler
-			p817: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p812: FH_InsideOut {ball = 1} -> Ply1_de_lob_deep_handler
+			p813: FH_Crosscourt{ball = 3} -> Ply1_ad_lob_deep_handler
+			p814: FH_DownMid {ball = 2} -> Ply1_mid_lob_deep_handler
+			p815: BH_InsideOut {ball = 3} -> Ply1_ad_lob_deep_handler
+			p816: BH_Crosscourt {ball = 1} -> Ply1_de_lob_deep_handler
+			p817: BH_DownMid {ball = 2} -> Ply1_mid_lob_deep_handler
+			p818: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p818: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p819: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // ad lob deep is when player 2 hit position is 4
 Ply2_ad_lob_deep = pcase{
-			p819: FH_Crosscourt {ball = 3} -> Ply1_ad_lob_deep_handler
-			p820: FH_Downline {ball = 1} -> Ply1_de_lob_deep_handler
-			p821: FH_DownMid {ball = 2} -> Ply1_mid_lob_deep_handler
-			p822: BH_InsideIn {ball = 1} -> Ply1_de_lob_deep_handler
-			p823: BH_InsideOut {ball = 3} -> Ply1_ad_lob_deep_handler
-			p824: BH_DownMid {ball = 2} -> Ply1_mid_lob_deep_handler
-			p825: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p820: FH_Crosscourt {ball = 3} -> Ply1_ad_lob_deep_handler
+			p821: FH_Downline {ball = 1} -> Ply1_de_lob_deep_handler
+			p822: FH_DownMid {ball = 2} -> Ply1_mid_lob_deep_handler
+			p823: BH_InsideIn {ball = 1} -> Ply1_de_lob_deep_handler
+			p824: BH_InsideOut {ball = 3} -> Ply1_ad_lob_deep_handler
+			p825: BH_DownMid {ball = 2} -> Ply1_mid_lob_deep_handler
+			p826: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p826: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p827: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // deuce slice deep is when player2 hit position is 6
 Ply2_de_slice_deep = pcase { // if already 
-			p827: FH_InsideOut {ball = 1} -> Ply1_de_slice_deep_handler
-			p828: FH_insideIn {ball = 3} -> Ply1_ad_slice_deep_handler
-			p829: FH_DownMid {ball = 2} -> Ply1_mid_slice_deep_handler
-			p830: BH_Crosscourt {ball = 1} -> Ply1_de_slice_deep_handler
-			p831: BH_Downline {ball = 3} -> Ply1_ad_slice_deep_handler
-			p832: BH_DownMid {ball = 2} -> Ply1_mid_slice_deep_handler
-			p833: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p828: FH_InsideOut {ball = 1} -> Ply1_de_slice_deep_handler
+			p829: FH_insideIn {ball = 3} -> Ply1_ad_slice_deep_handler
+			p830: FH_DownMid {ball = 2} -> Ply1_mid_slice_deep_handler
+			p831: BH_Crosscourt {ball = 1} -> Ply1_de_slice_deep_handler
+			p832: BH_Downline {ball = 3} -> Ply1_ad_slice_deep_handler
+			p833: BH_DownMid {ball = 2} -> Ply1_mid_slice_deep_handler
+			p834: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p834: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p835: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // mid slice deep is when player2 hit position is 5
 Ply2_mid_slice_deep = noMove -> pcase{
-			p835: FH_InsideOut {ball = 1} -> Ply1_de_slice_deep_handler
-			p836: FH_Crosscourt{ball = 3} -> Ply1_ad_slice_deep_handler
-			p837: FH_DownMid {ball = 2} -> Ply1_mid_slice_deep_handler
-			p838: BH_InsideOut {ball = 3} -> Ply1_ad_slice_deep_handler
-			p839: BH_Crosscourt {ball = 1} -> Ply1_de_slice_deep_handler
-			p840: BH_DownMid {ball = 2} -> Ply1_mid_slice_deep_handler
-			p841: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p836: FH_InsideOut {ball = 1} -> Ply1_de_slice_deep_handler
+			p837: FH_Crosscourt{ball = 3} -> Ply1_ad_slice_deep_handler
+			p838: FH_DownMid {ball = 2} -> Ply1_mid_slice_deep_handler
+			p839: BH_InsideOut {ball = 3} -> Ply1_ad_slice_deep_handler
+			p840: BH_Crosscourt {ball = 1} -> Ply1_de_slice_deep_handler
+			p841: BH_DownMid {ball = 2} -> Ply1_mid_slice_deep_handler
+			p842: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p842: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p843: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
 // ad slice deep is when player 2 hit position is 4
 Ply2_ad_slice_deep = pcase{
-			p843: FH_Crosscourt {ball = 3} -> Ply1_ad_slice_deep_handler
-			p844: FH_Downline {ball = 1} -> Ply1_de_slice_deep_handler
-			p845: FH_DownMid {ball = 2} -> Ply1_mid_slice_deep_handler
-			p846: BH_InsideIn {ball = 1} -> Ply1_de_slice_deep_handler
-			p847: BH_InsideOut {ball = 3} -> Ply1_ad_slice_deep_handler
-			p848: BH_DownMid {ball = 2} -> Ply1_mid_slice_deep_handler
-			p849: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
+			p844: FH_Crosscourt {ball = 3} -> Ply1_ad_slice_deep_handler
+			p845: FH_Downline {ball = 1} -> Ply1_de_slice_deep_handler
+			p846: FH_DownMid {ball = 2} -> Ply1_mid_slice_deep_handler
+			p847: BH_InsideIn {ball = 1} -> Ply1_de_slice_deep_handler
+			p848: BH_InsideOut {ball = 3} -> Ply1_ad_slice_deep_handler
+			p849: BH_DownMid {ball = 2} -> Ply1_mid_slice_deep_handler
+			p850: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
-			p850: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
+			p851: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
