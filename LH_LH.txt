@@ -86,61 +86,59 @@ Ply1_BackHandR = ifa (turn == n_de_ct) {    // Player2 backhand return to Player
 
 
 
-// handlers
-Ply2_de_regular_handler = pcase{
-			p42: React_Regular{ball=6} -> Ply2_de_regular
-			p43: React_Smash{ball=6} -> Ply2_de_smash
-			p44: React_Lob{ball=6} -> Ply2_de_lob 
+Ply1_de_regular_handler = pcase{
+			p42: React_Regular{ball=1} -> Ply1_de_regular
+			p43: React_Smash{ball=1} -> Ply1_de_smash
+			p44: React_Lob{ball=1} -> Ply1_de_lob
 	};
 
-Ply2_de_smash_handler = pcase{
-			p45: React_Regular{ball=6} -> Ply2_de_regular
-			p46: React_Smash{ball=6} -> Ply2_de_smash
-			p47: React_Lob{ball=6} -> Ply2_de_lob 
+Ply1_de_smash_handler = pcase{
+			p45: React_Regular{ball=1} -> Ply1_de_regular
+			p46: React_Smash{ball=1} -> Ply1_de_smash
+			p47: React_Lob{ball=1} -> Ply1_de_lob
 	};
 
-Ply2_de_lob_handler = pcase{
-			p48: React_Regular{ball=6} -> Ply2_de_regular
-			p49: React_Smash{ball=6} -> Ply2_de_smash
-			p50: React_Lob{ball=6} -> Ply2_de_lob 
+Ply1_de_lob_handler = pcase{
+			p48: React_Regular{ball=1} -> Ply1_de_regular
+			p49: React_Smash{ball=1} -> Ply1_de_smash
+			p50: React_Lob{ball=1} -> Ply1_de_lob
 	};
 
-Ply2_mid_regular_handler = pcase{
-			p51: React_Regular{ball=5} -> Ply2_mid_regular
-			p52: React_Smash{ball=5} -> Ply2_mid_smash
-			p53: React_Lob{ball=5} -> Ply2_mid_lob 
+Ply1_mid_regular_handler = pcase{
+			p51: React_Regular{ball=2} -> Ply1_mid_regular
+			p52: React_Smash{ball=2} -> Ply1_mid_smash
+			p53: React_Lob{ball=2} -> Ply1_mid_lob
 	};
 
-Ply2_mid_smash_handler = pcase{
-			p54: React_Regular{ball=5} -> Ply2_mid_regular
-			p55: React_Smash{ball=5} -> Ply2_mid_smash
-			p56: React_Lob{ball=5} -> Ply2_mid_lob 
+Ply1_mid_smash_handler = pcase{
+			p54: React_Regular{ball=2} -> Ply1_mid_regular
+			p55: React_Smash{ball=2} -> Ply1_mid_smash
+			p56: React_Lob{ball=2} -> Ply1_mid_lob
 	};
 
-Ply2_mid_lob_handler = pcase{
-			p57: React_Regular{ball=5} -> Ply2_mid_regular
-			p58: React_Smash{ball=5} -> Ply2_mid_smash
-			p59: React_Lob{ball=5} -> Ply2_mid_lob 
+Ply1_mid_lob_handler = pcase{
+			p57: React_Regular{ball=2} -> Ply1_mid_regular
+			p58: React_Smash{ball=2} -> Ply1_mid_smash
+			p59: React_Lob{ball=2} -> Ply1_mid_lob
 	};
 
-Ply2_ad_regular_handler = pcase{
-			p60: React_Regular{ball=4} -> Ply2_ad_regular
-			p61: React_Smash{ball=4} -> Ply2_ad_smash
-			p62: React_Lob{ball=4} -> Ply2_ad_lob 
+Ply1_ad_regular_handler = pcase{
+			p60: React_Regular{ball=3} -> Ply1_ad_regular
+			p61: React_Smash{ball=3} -> Ply1_ad_smash
+			p62: React_Lob{ball=3} -> Ply1_ad_lob
 	};
 
-Ply2_ad_smash_handler = pcase{
-			p63: React_Regular{ball=4} -> Ply2_ad_regular
-			p64: React_Smash{ball=4} -> Ply2_ad_smash
-			p65: React_Lob{ball=4} -> Ply2_ad_lob 
+Ply1_ad_smash_handler = pcase{
+			p63: React_Regular{ball=3} -> Ply1_ad_regular
+			p64: React_Smash{ball=3} -> Ply1_ad_smash
+			p65: React_Lob{ball=3} -> Ply1_ad_lob
 	};
 
-Ply2_ad_lob_handler = pcase{
-			p66: React_Regular{ball=4} -> Ply2_ad_regular
-			p67: React_Smash{ball=4} -> Ply2_ad_smash
-			p68: React_Lob{ball=4} -> Ply2_ad_lob 
+Ply1_ad_lob_handler = pcase{
+			p66: React_Regular{ball=3} -> Ply1_ad_regular
+			p67: React_Smash{ball=3} -> Ply1_ad_smash
+			p68: React_Lob{ball=3} -> Ply1_ad_lob
 	};
-
 
 
 // deuce regular stroke is when player1 hit position is 1
@@ -350,60 +348,59 @@ Ply2_BackHandR = ifa (turn == f_de_ct) {    // Player2 forehand return to Player
       		                                                     else { turn = (turn+1)%4} }-> NextPt			
       		 }};
 
-
-
-Ply1_de_regular_handler = pcase{
-			p183: React_Regular{ball=1} -> Ply1_de_regular
-			p184: React_Smash{ball=1} -> Ply1_de_smash
-			p185: React_Lob{ball=1} -> Ply1_de_lob
+// handlers
+Ply2_de_regular_handler = pcase{
+			p183: React_Regular{ball=6} -> Ply2_de_regular
+			p184: React_Smash{ball=6} -> Ply2_de_smash
+			p185: React_Lob{ball=6} -> Ply2_de_lob 
 	};
 
-Ply1_de_smash_handler = pcase{
-			p186: React_Regular{ball=1} -> Ply1_de_regular
-			p187: React_Smash{ball=1} -> Ply1_de_smash
-			p188: React_Lob{ball=1} -> Ply1_de_lob
+Ply2_de_smash_handler = pcase{
+			p186: React_Regular{ball=6} -> Ply2_de_regular
+			p187: React_Smash{ball=6} -> Ply2_de_smash
+			p188: React_Lob{ball=6} -> Ply2_de_lob 
 	};
 
-Ply1_de_lob_handler = pcase{
-			p189: React_Regular{ball=1} -> Ply1_de_regular
-			p190: React_Smash{ball=1} -> Ply1_de_smash
-			p191: React_Lob{ball=1} -> Ply1_de_lob
+Ply2_de_lob_handler = pcase{
+			p189: React_Regular{ball=6} -> Ply2_de_regular
+			p190: React_Smash{ball=6} -> Ply2_de_smash
+			p191: React_Lob{ball=6} -> Ply2_de_lob 
 	};
 
-Ply1_mid_regular_handler = pcase{
-			p192: React_Regular{ball=2} -> Ply1_mid_regular
-			p193: React_Smash{ball=2} -> Ply1_mid_smash
-			p194: React_Lob{ball=2} -> Ply1_mid_lob
+Ply2_mid_regular_handler = pcase{
+			p192: React_Regular{ball=5} -> Ply2_mid_regular
+			p193: React_Smash{ball=5} -> Ply2_mid_smash
+			p194: React_Lob{ball=5} -> Ply2_mid_lob 
 	};
 
-Ply1_mid_smash_handler = pcase{
-			p195: React_Regular{ball=2} -> Ply1_mid_regular
-			p196: React_Smash{ball=2} -> Ply1_mid_smash
-			p197: React_Lob{ball=2} -> Ply1_mid_lob
+Ply2_mid_smash_handler = pcase{
+			p195: React_Regular{ball=5} -> Ply2_mid_regular
+			p196: React_Smash{ball=5} -> Ply2_mid_smash
+			p197: React_Lob{ball=5} -> Ply2_mid_lob 
 	};
 
-Ply1_mid_lob_handler = pcase{
-			p198: React_Regular{ball=2} -> Ply1_mid_regular
-			p199: React_Smash{ball=2} -> Ply1_mid_smash
-			p200: React_Lob{ball=2} -> Ply1_mid_lob
+Ply2_mid_lob_handler = pcase{
+			p198: React_Regular{ball=5} -> Ply2_mid_regular
+			p199: React_Smash{ball=5} -> Ply2_mid_smash
+			p200: React_Lob{ball=5} -> Ply2_mid_lob 
 	};
 
-Ply1_ad_regular_handler = pcase{
-			p201: React_Regular{ball=3} -> Ply1_ad_regular
-			p202: React_Smash{ball=3} -> Ply1_ad_smash
-			p203: React_Lob{ball=3} -> Ply1_ad_lob
+Ply2_ad_regular_handler = pcase{
+			p201: React_Regular{ball=4} -> Ply2_ad_regular
+			p202: React_Smash{ball=4} -> Ply2_ad_smash
+			p203: React_Lob{ball=4} -> Ply2_ad_lob 
 	};
 
-Ply1_ad_smash_handler = pcase{
-			p204: React_Regular{ball=3} -> Ply1_ad_regular
-			p205: React_Smash{ball=3} -> Ply1_ad_smash
-			p206: React_Lob{ball=3} -> Ply1_ad_lob
+Ply2_ad_smash_handler = pcase{
+			p204: React_Regular{ball=4} -> Ply2_ad_regular
+			p205: React_Smash{ball=4} -> Ply2_ad_smash
+			p206: React_Lob{ball=4} -> Ply2_ad_lob 
 	};
 
-Ply1_ad_lob_handler = pcase{
-			p207: React_Regular{ball=3} -> Ply1_ad_regular
-			p208: React_Smash{ball=3} -> Ply1_ad_smash
-			p209: React_Lob{ball=3} -> Ply1_ad_lob
+Ply2_ad_lob_handler = pcase{
+			p207: React_Regular{ball=4} -> Ply2_ad_regular
+			p208: React_Smash{ball=4} -> Ply2_ad_smash
+			p209: React_Lob{ball=4} -> Ply2_ad_lob 
 	};
 
 
