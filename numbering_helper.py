@@ -8,8 +8,8 @@ def replace_with_incrementing_numbers(match):
     return replacement
 
 # Open the input and output files
-input_file = "LH_LH.txt"
-output_file = "LH_LH_new.txt"
+input_file = "LH_RH.txt"
+output_file = "LH_RH_new.txt"
 
 current_number = 0  # Initialize the current number
 
