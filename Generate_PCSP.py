@@ -26,7 +26,7 @@ def generate_pcsp(params, date, ply1_name, ply2_name, hand1, hand2):
     lines_2 = []
     for i, p in enumerate(params):
         lines_2.append('#define p%d %d;\n' % (i, p))
-    print(f"{len(params)} probabilities")
+    # print(f"{len(params)} probabilities")
     with open(HAND) as f:
         lines_3 = f.readlines()
     lines = lines_1 + lines_2 + lines_3
@@ -63,8 +63,8 @@ def get_params(df, hand):
         serve_win = [len(Serve.query('shot_outcome in [1, 5, 6]'))]
         serve_err = [len(Serve.query('shot_outcome in [2, 3, 4]'))]
         results.append(serve_in + serve_win + serve_err)
-    print("serve")
-    print(len(sum(results, [])))
+    # print("serve")
+    # print(len(sum(results, [])))
 
     # Return
     if hand == 'RH':  # RH
@@ -83,8 +83,8 @@ def get_params(df, hand):
         return_win = [len(Return.query('shot_outcome in [1, 5, 6]'))]
         return_err = [len(Return.query('shot_outcome in [2, 3, 4]'))]
         results.append(return_in + return_win + return_err)
-    print("return")
-    print(len(sum(results, [])))
+    # print("return")
+    # print(len(sum(results, [])))
 
     # Rally
     if hand == 'RH':  # RH
@@ -119,8 +119,8 @@ def get_params(df, hand):
             react_slice_deep = [len(curr.query('shot in [3, 24] and depth in [2,3,99]'))]
             results.append(react_regular_shallow + react_smash_shallow + react_lob_shallow + react_slice_shallow 
                            + react_regular_deep + react_smash_deep + react_lob_deep + react_slice_deep)
-    print("handlers")
-    print(len(sum(results, [])))
+    # print("handlers")
+    # print(len(sum(results, [])))
         
     # SHALLOW
     De_Stroke_Shallow = De_Stroke.query('depth==1 or depth==99')
@@ -184,8 +184,8 @@ def get_params(df, hand):
         stroke_err = [len(Stroke.query('shot_outcome in [2, 3, 4]'))]
         results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
     
-    print("shallow")
-    print(len(sum(results, [])))
+    # print("shallow")
+    # print(len(sum(results, [])))
     
 
     # DEEP
@@ -248,8 +248,8 @@ def get_params(df, hand):
         stroke_err = [len(Stroke.query('shot_outcome in [2, 3, 4]'))]
         results.append(FH_stroke_in + BH_stroke_in + stroke_win + stroke_err)
     
-    print("deep")
-    print(len(sum(results, [])))
+    # print("deep")
+    # print(len(sum(results, [])))
 
     return results
 
@@ -257,8 +257,8 @@ def get_params(df, hand):
 def generate_transition_probs(data, date, ply1_name, ply2_name, ply1_hand, ply2_hand):
     prev_date = (pd.to_datetime(date) - relativedelta(years=2)).strftime('%Y-%m-%d')
 
-    data_ply1 = data.query('date>=@prev_date and date<@date and ply1_name==@ply1_name and ply2_name==@ply2_name')
-    data_ply2 = data.query('date>=@prev_date and date<@date and ply1_name==@ply2_name and ply2_name==@ply1_name')
+    data_ply1 = data.query('date>=@prev_date and date<@date and ply1_name==@ply1_name')
+    data_ply2 = data.query('date>=@prev_date and date<@date and ply1_name==@ply2_name')
 
     # number of matches played
     num_ply1_prev_n = len(data_ply1.date.unique())
@@ -271,9 +271,10 @@ def generate_transition_probs(data, date, ply1_name, ply2_name, ply1_hand, ply2_
     # sample
     params = sum(ply1_params, []) + sum(ply2_params, [])
 
-    print('# P1 matches:', num_ply1_prev_n)
-    print('# P2 matches:', num_ply2_prev_n)
+    # print('# P1 matches:', num_ply1_prev_n)
+    # print('# P2 matches:', num_ply2_prev_n)
     if (num_ply1_prev_n + num_ply2_prev_n >= 5):
+        print("File generated")
         generate_pcsp(params, date, ply1_name, ply2_name, ply1_hand, ply2_hand)
    
 
@@ -314,7 +315,7 @@ for ind in data.index:
 p_df = pd.read_csv("MDP_pred.csv")
 
 for ind in p_df.index:
-    date = p_df['date'][ind]
+    date = p_df['date'][ind] # mm dd yyyy
     
     ply1_name = p_df['P1Name'][ind]
     if ply1_name in rhand:
@@ -326,4 +327,5 @@ for ind in p_df.index:
         ply2_hand = 'RH'
     else:
         ply2_hand = 'LH'
+    print(f"{date}, {ply1_name}, {ply2_name}")
     generate_transition_probs(data, date, ply1_name, ply2_name, ply1_hand, ply2_hand)
