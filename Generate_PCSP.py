@@ -170,8 +170,8 @@ def get_params(df, hand):
 def generate_transition_probs(data, date, ply1_name, ply2_name, ply1_hand, ply2_hand):
     prev_date = (pd.to_datetime(date) - relativedelta(years=2)).strftime('%Y-%m-%d')
 
-    data_ply1 = data.query('date>=@prev_date and date<@date and ply1_name==@ply1_name and ply2_name==@ply2_name')
-    data_ply2 = data.query('date>=@prev_date and date<@date and ply1_name==@ply2_name and ply2_name==@ply1_name')
+    data_ply1 = data.query('date>=@prev_date and date<@date and ply1_name==@ply1_name')
+    data_ply2 = data.query('date>=@prev_date and date<@date and ply1_name==@ply2_name')
 
     # number of matches played
     num_ply1_prev_n = len(data_ply1.date.unique())
@@ -184,9 +184,10 @@ def generate_transition_probs(data, date, ply1_name, ply2_name, ply1_hand, ply2_
     # sample
     params = sum(ply1_params, []) + sum(ply2_params, [])
 
-    print('# P1 matches:', num_ply1_prev_n)
-    print('# P2 matches:', num_ply2_prev_n)
+    # print('# P1 matches:', num_ply1_prev_n)
+    # print('# P2 matches:', num_ply2_prev_n)
     if (num_ply1_prev_n + num_ply2_prev_n >= 5):
+        print("File generated")
         generate_pcsp(params, date, ply1_name, ply2_name, ply1_hand, ply2_hand)
    
 
@@ -213,4 +214,31 @@ data = pd.read_csv(file, names=['ply1_name', 'ply2_name', 'ply1_hand', 'ply2_han
                                 'prev_prev_shot_touched_net', 'prev_prev_shot_hit_at_depth',
                                 'prev_prev_shot_approach_shot', 'prev_prev_shot_outcome',
                                 'prev_prev_shot_fault_type', 'url', 'description'])
-generate_transition_probs(data, date, ply1_name, ply2_name, ply1_hand, ply2_hand)
+rhand = set()
+lhand = set()
+for ind in data.index:
+    p1_hand = data['ply1_hand'][ind]
+    p1_name = data['ply1_name'][ind]
+    rhand.add(p1_name) if p1_hand == 'RH' else lhand.add(p1_name)
+
+    p2_hand = data['ply2_hand'][ind]
+    p2_name = data['ply2_name'][ind]
+    rhand.add(p2_name) if p2_hand == 'RH' else lhand.add(p2_name)
+
+p_df = pd.read_csv("MDP_pred.csv")
+
+for ind in p_df.index:
+    date = p_df['date'][ind] # mm dd yyyy
+    
+    ply1_name = p_df['P1Name'][ind]
+    if ply1_name in rhand:
+        ply1_hand = 'RH'
+    else:
+        ply1_hand = 'LH'
+    ply2_name = p_df['P2Name'][ind]
+    if ply2_name in rhand:
+        ply2_hand = 'RH'
+    else:
+        ply2_hand = 'LH'
+    print(f"{date}, {ply1_name}, {ply2_name}")
+    generate_transition_probs(data, date, ply1_name, ply2_name, ply1_hand, ply2_hand)

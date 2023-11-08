@@ -1,0 +1,2609 @@
+﻿*******************************************************
+*C:\Users\after\Desktop\tennis-project\LH_RH_2018-01-11_Angelique-Kerber_Dominika-Cibulkova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.53843, 0.57083];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:36317
+Total Transitions:80096
+MDP Iterations:20508084
+Time Used:6.1442928s
+Estimated Memory Used:100602.056KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\LH_RH_2018-06-10_Rafael-Nadal_Dominic-Thiem.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.63934, 0.69318];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:38400
+Total Transitions:90607
+MDP Iterations:17992554
+Time Used:5.4562193s
+Estimated Memory Used:128710.848KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\LH_RH_2018-09-05_Rafael-Nadal_Dominic-Thiem.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.64836, 0.70113];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:38204
+Total Transitions:89627
+MDP Iterations:18004469
+Time Used:5.6669072s
+Estimated Memory Used:216039.52KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_LH_2018-01-25_Simona-Halep_Angelique-Kerber.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.41565, 0.43853];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:39258
+Total Transitions:87741
+MDP Iterations:24445629
+Time Used:7.7772418s
+Estimated Memory Used:125282.32KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_LH_2018-05-25_Dominika-Cibulkova_Mihaela-Buzarnescu.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.5564, 0.60099];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32276
+Total Transitions:69955
+MDP Iterations:15317364
+Time Used:3.8487164s
+Estimated Memory Used:89749.704KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_LH_2018-06-06_Simona-Halep_Angelique-Kerber.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.4352, 0.45947];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:39012
+Total Transitions:87691
+MDP Iterations:24041770
+Time Used:7.0811067s
+Estimated Memory Used:94155.928KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_LH_2018-08-08_Elina-Svitolina_Mihaela-Buzarnescu.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.59291, 0.63948];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34211
+Total Transitions:80121
+MDP Iterations:16091297
+Time Used:4.3756096s
+Estimated Memory Used:72117.784KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_LH_2018-09-01_Juan-Martin-Del-Potro_Fernando-Verdasco.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.51185, 0.58975];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34896
+Total Transitions:77621
+MDP Iterations:14909496
+Time Used:4.1086541s
+Estimated Memory Used:89643.6KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2017-12-31_Alison-Riske-Amritraj_Qiang-Wang.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.48966, 0.55176];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:30291
+Total Transitions:66597
+MDP Iterations:20246152
+Time Used:4.5971591s
+Estimated Memory Used:58256.48KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2017-12-31_Aryna-Sabalenka_Monica-Niculescu.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.5541, 0.59026];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:36269
+Total Transitions:83551
+MDP Iterations:13022196
+Time Used:3.7014661s
+Estimated Memory Used:74610.872KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-01_Anett-Kontaveit_Heather-Watson.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50411, 0.55614];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:31298
+Total Transitions:69687
+MDP Iterations:16975265
+Time Used:4.1122918s
+Estimated Memory Used:86467.208KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-01_Elina-Svitolina_Carla-Suarez-Navarro.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.54854, 0.58721];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34678
+Total Transitions:79167
+MDP Iterations:19027706
+Time Used:5.3138173s
+Estimated Memory Used:147714.016KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-01_Simona-Halep_Nicole-Gibbs.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.61549, 0.64673];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:37152
+Total Transitions:84387
+MDP Iterations:22446562
+Time Used:6.6798489s
+Estimated Memory Used:169587.632KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-02_Anastasija-Sevastova_Sorana-Cirstea.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.43792, 0.47893];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32891
+Total Transitions:74025
+MDP Iterations:15805998
+Time Used:4.0436773s
+Estimated Memory Used:74143.536KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-02_Aryna-Sabalenka_Danka-Kovinic.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.56392, 0.60781];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34115
+Total Transitions:74929
+MDP Iterations:13750427
+Time Used:3.635109s
+Estimated Memory Used:120871.872KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-02_Borna-Coric_Pablo-Carreno-Busta.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.45606, 0.5241];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33527
+Total Transitions:77282
+MDP Iterations:20212321
+Time Used:5.3048041s
+Estimated Memory Used:123377.44KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-02_Karolina-Pliskova_Jelena-Ostapenko.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50151, 0.54527];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35044
+Total Transitions:79190
+MDP Iterations:16664525
+Time Used:4.494729s
+Estimated Memory Used:110198.504KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-02_Zarina-Diyas_Shuai-Zhang.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50255, 0.55098];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:31519
+Total Transitions:68709
+MDP Iterations:17185491
+Time Used:4.7814006s
+Estimated Memory Used:67700.2KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-03_Karolina-Pliskova_Catherine-Cartan-Bellis.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50224, 0.55037];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32326
+Total Transitions:70935
+MDP Iterations:17659049
+Time Used:5.9879999s
+Estimated Memory Used:82290.344KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-04_Aliaksandra-Sasnovich_Alize-Cornet.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.41269, 0.47004];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:30120
+Total Transitions:65912
+MDP Iterations:15777386
+Time Used:5.643286s
+Estimated Memory Used:92558.856KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-04_Elina-Svitolina_Johanna-Konta.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.54632, 0.59071];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34874
+Total Transitions:81764
+MDP Iterations:18422746
+Time Used:6.6598183s
+Estimated Memory Used:78406.776KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-04_Katerina-Siniakova_Karolina-Pliskova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.45528, 0.50374];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34114
+Total Transitions:77451
+MDP Iterations:16043750
+Time Used:5.3549598s
+Estimated Memory Used:108188.952KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-05_Elina-Svitolina_Karolina-Pliskova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50684, 0.55575];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35045
+Total Transitions:80930
+MDP Iterations:18579595
+Time Used:6.8543699s
+Estimated Memory Used:100880.152KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-06_Gael-Monfils_Andrey-Rublev.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.47458, 0.5231];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33256
+Total Transitions:73800
+MDP Iterations:17426148
+Time Used:5.6028662s
+Estimated Memory Used:209524.72KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-06_Nick-Kyrgios_Grigor-Dimitrov.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.61594, 0.68271];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35583
+Total Transitions:80122
+MDP Iterations:15937011
+Time Used:4.5213207s
+Estimated Memory Used:77313.32KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-06_Simona-Halep_Katerina-Siniakova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.51734, 0.55572];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35682
+Total Transitions:80808
+MDP Iterations:20306905
+Time Used:5.5402655s
+Estimated Memory Used:108816.016KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-08_Aryna-Sabalenka_Eugenie-Bouchard.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.4687, 0.53246];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33919
+Total Transitions:75738
+MDP Iterations:14128347
+Time Used:3.7370828s
+Estimated Memory Used:75259.912KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-08_Catherine-Cartan-Bellis_Magdalena-Rybarikova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.64387, 0.67507];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:29289
+Total Transitions:63048
+MDP Iterations:13402414
+Time Used:2.904281s
+Estimated Memory Used:84392.696KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-08_Dominika-Cibulkova_Anastasija-Sevastova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.56074, 0.60478];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34434
+Total Transitions:76180
+MDP Iterations:18291148
+Time Used:5.2275767s
+Estimated Memory Used:95957.064KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-08_Lesia-Tsurenko_Timea-Babos.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.4945, 0.54584];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33673
+Total Transitions:73263
+MDP Iterations:16086174
+Time Used:4.0930713s
+Estimated Memory Used:117112.912KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-09_Agnieszka-Radwanska_Johanna-Konta.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.58768, 0.62573];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:38573
+Total Transitions:89947
+MDP Iterations:19746869
+Time Used:6.305782s
+Estimated Memory Used:153088.768KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-09_Alison-Riske-Amritraj_Katerina-Siniakova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.4717, 0.53578];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:30340
+Total Transitions:66253
+MDP Iterations:16841677
+Time Used:4.1726659s
+Estimated Memory Used:250603.6KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-09_Robin-Haase_Casper-Ruud.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.52637, 0.59493];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33061
+Total Transitions:70225
+MDP Iterations:16029947
+Time Used:4.0084145s
+Estimated Memory Used:123094.296KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-10_Aryna-Sabalenka_Shuai-Zhang.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50772, 0.55921];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33871
+Total Transitions:76181
+MDP Iterations:14451760
+Time Used:3.7967192s
+Estimated Memory Used:160333.632KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-10_Garbine-Muguruza_Kiki-Bertens.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.49532, 0.54508];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35021
+Total Transitions:78678
+MDP Iterations:19518738
+Time Used:5.4875414s
+Estimated Memory Used:272947.68KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-10_Karen-Khachanov_Pablo-Cuevas.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50027, 0.57506];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34628
+Total Transitions:79141
+MDP Iterations:18798863
+Time Used:5.166707s
+Estimated Memory Used:71976.936KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-11_Elise-Mertens_Monica-Niculescu.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.59258, 0.61878];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35851
+Total Transitions:80510
+MDP Iterations:14186199
+Time Used:3.97302s
+Estimated Memory Used:115566.72KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-12_Juan-Martin-Del-Potro_David-Ferrer.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.43768, 0.53361];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:31665
+Total Transitions:67017
+MDP Iterations:14800816
+Time Used:3.6816048s
+Estimated Memory Used:124540.416KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-13_Roberto-Bautista-Agut_Juan-Martin-Del-Potro.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.46672, 0.54208];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34530
+Total Transitions:77599
+MDP Iterations:17635222
+Time Used:4.782669s
+Estimated Memory Used:127028.296KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-15_Damir-Dzumhur_Paolo-Lorenzi.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.38379, 0.42682];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33698
+Total Transitions:74684
+MDP Iterations:18627407
+Time Used:5.1663792s
+Estimated Memory Used:130391.616KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-15_Kiki-Bertens_Catherine-Cartan-Bellis.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.46772, 0.51048];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32155
+Total Transitions:68780
+MDP Iterations:17942126
+Time Used:4.319857s
+Estimated Memory Used:96912.096KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-15_Monica-Puig_Samantha-Stosur.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.60941, 0.64931];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:30120
+Total Transitions:64588
+MDP Iterations:13512064
+Time Used:3.1392026s
+Estimated Memory Used:62176.632KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-16_Agnieszka-Radwanska_Karolina-Pliskova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.53818, 0.58331];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:38940
+Total Transitions:89530
+MDP Iterations:20769387
+Time Used:6.3238459s
+Estimated Memory Used:100030.016KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-16_Lesia-Tsurenko_Natalia-Vikhlyantseva.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.41489, 0.47517];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:31590
+Total Transitions:68240
+MDP Iterations:18234641
+Time Used:4.5025211s
+Estimated Memory Used:61596.728KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-17_Carla-Suarez-Navarro_Timea-Babos.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.57549, 0.62015];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34628
+Total Transitions:76912
+MDP Iterations:15475780
+Time Used:4.3368696s
+Estimated Memory Used:63432.904KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-17_Elina-Svitolina_Katerina-Siniakova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.54045, 0.58048];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33722
+Total Transitions:77255
+MDP Iterations:17787656
+Time Used:5.2012889s
+Estimated Memory Used:89819.216KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-17_Pablo-Carreno-Busta_Gilles-Simon.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.41533, 0.47134];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33527
+Total Transitions:76057
+MDP Iterations:24726837
+Time Used:6.5397196s
+Estimated Memory Used:85499.416KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-18_Agnieszka-Radwanska_Lesia-Tsurenko.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.66172, 0.6962];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:38377
+Total Transitions:85219
+MDP Iterations:22358668
+Time Used:6.5238891s
+Estimated Memory Used:61302.16KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-19_Caroline-Wozniacki_Kiki-Bertens.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.56854, 0.60692];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35829
+Total Transitions:81323
+MDP Iterations:20323964
+Time Used:5.7576476s
+Estimated Memory Used:85816.24KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-19_Grigor-Dimitrov_Andrey-Rublev.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.36566, 0.41456];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33477
+Total Transitions:73629
+MDP Iterations:15617473
+Time Used:4.2333104s
+Estimated Memory Used:148556.8KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-20_Tomas-Berdych_Juan-Martin-Del-Potro.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.39742, 0.47765];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33673
+Total Transitions:73115
+MDP Iterations:14522945
+Time Used:3.782479s
+Estimated Memory Used:74663.848KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-21_Grigor-Dimitrov_Nick-Kyrgios.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.31101, 0.37658];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35241
+Total Transitions:79412
+MDP Iterations:15891086
+Time Used:4.3271897s
+Estimated Memory Used:94269.728KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-21_Marin-Cilic_Pablo-Carreno-Busta.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.43574, 0.51058];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35438
+Total Transitions:80517
+MDP Iterations:19392244
+Time Used:5.3144965s
+Estimated Memory Used:90477.848KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-22_Hyeon-Chung_Novak-Djokovic.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.36345, 0.40883];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34286
+Total Transitions:78996
+MDP Iterations:23524223
+Time Used:5.993129s
+Estimated Memory Used:75733.616KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-22_Karolina-Pliskova_Barbora-Strycova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50934, 0.55362];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34482
+Total Transitions:77477
+MDP Iterations:16651822
+Time Used:4.434508s
+Estimated Memory Used:86510.032KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-22_Madison-Keys_Caroline-Garcia.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.41154, 0.46582];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:29803
+Total Transitions:66918
+MDP Iterations:13063055
+Time Used:3.2227458s
+Estimated Memory Used:56066.304KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-22_Simona-Halep_Naomi-Osaka.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.56306, 0.60484];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33870
+Total Transitions:74637
+MDP Iterations:18871139
+Time Used:5.0945729s
+Estimated Memory Used:100665.648KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-22_Tomas-Berdych_Fabio-Fognini.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.52231, 0.58044];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33061
+Total Transitions:69515
+MDP Iterations:14744954
+Time Used:3.6759236s
+Estimated Memory Used:85500.424KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-23_Kyle-Edmund_Grigor-Dimitrov.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.58858, 0.65882];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33429
+Total Transitions:74366
+MDP Iterations:15176710
+Time Used:4.1188582s
+Estimated Memory Used:76721.288KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-24_Roger-Federer_Tomas-Berdych.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.57073, 0.64109];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35608
+Total Transitions:77990
+MDP Iterations:14548130
+Time Used:4.162552s
+Estimated Memory Used:248751.2KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-24_Simona-Halep_Karolina-Pliskova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.49483, 0.54087];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:37201
+Total Transitions:84508
+MDP Iterations:19953108
+Time Used:5.7867557s
+Estimated Memory Used:97309.736KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-26_Roger-Federer_Hyeon-Chung.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.57166, 0.63032];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34432
+Total Transitions:78554
+MDP Iterations:15875281
+Time Used:4.114016s
+Estimated Memory Used:123172.288KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-27_Caroline-Wozniacki_Simona-Halep.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50232, 0.52958];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:37568
+Total Transitions:86051
+MDP Iterations:23808694
+Time Used:7.1453514s
+Estimated Memory Used:221177.92KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-30_Dominika-Cibulkova_Sorana-Cirstea.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.54937, 0.60322];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32155
+Total Transitions:71010
+MDP Iterations:15969928
+Time Used:3.9692287s
+Estimated Memory Used:104324.672KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-01-30_Nao-Hibino_Samantha-Stosur.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.53174, 0.57407];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:29459
+Total Transitions:62825
+MDP Iterations:12635747
+Time Used:2.9552746s
+Estimated Memory Used:272235.264KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-01_Kristina-Mladenovic_Dominika-Cibulkova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.42898, 0.47604];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32155
+Total Transitions:71010
+MDP Iterations:15457815
+Time Used:4.0032791s
+Estimated Memory Used:273991.968KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-02_Daria-Kasatkina_Caroline-Wozniacki.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.40744, 0.42915];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34482
+Total Transitions:77453
+MDP Iterations:21796744
+Time Used:5.6682398s
+Estimated Memory Used:111311.136KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-03_Kristina-Mladenovic_Daria-Kasatkina.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.48371, 0.51197];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:31371
+Total Transitions:69614
+MDP Iterations:14524201
+Time Used:3.5269451s
+Estimated Memory Used:84254.376KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-07_David-Goffin_Gilles-Simon.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.47061, 0.51999];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:31713
+Total Transitions:69563
+MDP Iterations:22570527
+Time Used:5.4455539s
+Estimated Memory Used:90324.376KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-09_Jo-Wilfried-Tsonga_Andrey-Rublev.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.45902, 0.52287];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33085
+Total Transitions:74388
+MDP Iterations:14828244
+Time Used:3.9369015s
+Estimated Memory Used:55248.016KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-10_Lucas-Pouille_Jo-Wilfried-Tsonga.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.4359, 0.50666];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34703
+Total Transitions:81005
+MDP Iterations:15476249
+Time Used:4.1995266s
+Estimated Memory Used:104416.464KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-10_Richard-Gasquet_David-Goffin.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50352, 0.5483];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33916
+Total Transitions:73040
+MDP Iterations:20197821
+Time Used:5.2489224s
+Estimated Memory Used:78325.64KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-12_Catherine-Cartan-Bellis_Daria-Kasatkina.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.49482, 0.52471];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:29999
+Total Transitions:64101
+MDP Iterations:16712732
+Time Used:3.9106103s
+Estimated Memory Used:57783.008KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-13_Carla-Suarez-Navarro_Kateryna-Bondarenko.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.52731, 0.56496];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32325
+Total Transitions:72624
+MDP Iterations:16064445
+Time Used:4.2157921s
+Estimated Memory Used:87813.624KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-13_Samantha-Stosur_Irina-Camelia-Begu.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.343, 0.37346];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:28969
+Total Transitions:62998
+MDP Iterations:13614005
+Time Used:3.1605831s
+Estimated Memory Used:55262.224KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-14_Catherine-Cartan-Bellis_Madison-Keys.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.55109, 0.59496];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:30783
+Total Transitions:66477
+MDP Iterations:15569057
+Time Used:3.7779052s
+Estimated Memory Used:90693.464KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-14_Sorana-Cirstea_Elise-Mertens.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.40212, 0.45054];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32743
+Total Transitions:74709
+MDP Iterations:17159695
+Time Used:4.2412619s
+Estimated Memory Used:110269.568KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-15_Catherine-Cartan-Bellis_Karolina-Pliskova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.44247, 0.49027];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32522
+Total Transitions:70960
+MDP Iterations:16413770
+Time Used:4.0598997s
+Estimated Memory Used:100343.44KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-15_Garbine-Muguruza_Sorana-Cirstea.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.51006, 0.5648];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33061
+Total Transitions:74783
+MDP Iterations:17743854
+Time Used:4.7331144s
+Estimated Memory Used:234932.352KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-15_Roger-Federer_Philipp-Kohlschreiber.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.53873, 0.61029];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35387
+Total Transitions:79534
+MDP Iterations:15584924
+Time Used:4.3816397s
+Estimated Memory Used:108404.52KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-15_Simona-Halep_Anastasija-Sevastova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.58859, 0.62284];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:36932
+Total Transitions:82794
+MDP Iterations:20188334
+Time Used:5.6529594s
+Estimated Memory Used:100710.152KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-16_Garbine-Muguruza_Caroline-Garcia.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.49785, 0.54989];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:30121
+Total Transitions:66967
+MDP Iterations:14869208
+Time Used:3.4794824s
+Estimated Memory Used:77510.304KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-16_Grigor-Dimitrov_Andrey-Rublev.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.382, 0.43104];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33869
+Total Transitions:75393
+MDP Iterations:15330042
+Time Used:4.0265563s
+Estimated Memory Used:94738.392KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-17_Grigor-Dimitrov_David-Goffin.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.36993, 0.42531];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34653
+Total Transitions:78432
+MDP Iterations:17228339
+Time Used:4.9515775s
+Estimated Memory Used:61371.088KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-19_Daria-Kasatkina_Agnieszka-Radwanska.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.36906, 0.39307];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:36442
+Total Transitions:81324
+MDP Iterations:20545340
+Time Used:5.7475909s
+Estimated Memory Used:229560.64KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-19_Elena-Vesnina_Shuai-Peng.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.42598, 0.46377];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34653
+Total Transitions:77870
+MDP Iterations:18782392
+Time Used:4.8539045s
+Estimated Memory Used:90890.68KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-20_Anett-Kontaveit_Samantha-Stosur.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.63459, 0.67354];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:30120
+Total Transitions:66352
+MDP Iterations:13255154
+Time Used:3.2010817s
+Estimated Memory Used:257922.72KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-20_Catherine-Cartan-Bellis_Elise-Mertens.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.41553, 0.45561];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:31763
+Total Transitions:69000
+MDP Iterations:17708088
+Time Used:4.5539787s
+Estimated Memory Used:160075.808KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-21_Daria-Kasatkina_Johanna-Konta.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.45462, 0.48777];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32939
+Total Transitions:72970
+MDP Iterations:16454666
+Time Used:4.1578882s
+Estimated Memory Used:82263.368KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-21_Elena-Vesnina_Jelena-Ostapenko.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.5267, 0.5607];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34113
+Total Transitions:77475
+MDP Iterations:16042645
+Time Used:4.2253162s
+Estimated Memory Used:113586.792KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-21_Garbine-Muguruza_Catherine-Cartan-Bellis.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50109, 0.54447];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32081
+Total Transitions:70250
+MDP Iterations:19857988
+Time Used:4.8407314s
+Estimated Memory Used:60506.336KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-21_Naomi-Osaka_Anett-Kontaveit.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.42757, 0.47666];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:29975
+Total Transitions:65033
+MDP Iterations:14590018
+Time Used:3.5753263s
+Estimated Memory Used:110205.896KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-22_Aljaz-Bedene_Pablo-Carreno-Busta.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.44023, 0.50514];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:30316
+Total Transitions:65298
+MDP Iterations:18099213
+Time Used:4.2071553s
+Estimated Memory Used:64366.36KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-22_Daria-Kasatkina_Elena-Vesnina.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.43075, 0.45796];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32767
+Total Transitions:72185
+MDP Iterations:17297404
+Time Used:4.4384242s
+Estimated Memory Used:85126.68KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-22_Elina-Svitolina_Naomi-Osaka.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.57224, 0.62075];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:31910
+Total Transitions:71084
+MDP Iterations:16771734
+Time Used:4.3534125s
+Estimated Memory Used:145788.448KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-22_Garbine-Muguruza_Caroline-Garcia.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.49353, 0.54572];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:30121
+Total Transitions:66967
+MDP Iterations:14870038
+Time Used:3.4743092s
+Estimated Memory Used:96996.688KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-23_Daria-Kasatkina_Garbine-Muguruza.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.44903, 0.483];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32890
+Total Transitions:72456
+MDP Iterations:18318179
+Time Used:4.6340442s
+Estimated Memory Used:85359.656KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-23_Lucas-Pouille_Filip-Krajinovic.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.413, 0.48873];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32546
+Total Transitions:71792
+MDP Iterations:14998473
+Time Used:3.6667329s
+Estimated Memory Used:104025.32KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-23_Tomas-Berdych_Damir-Dzumhur.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.52939, 0.57529];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32620
+Total Transitions:71327
+MDP Iterations:16037591
+Time Used:3.9043031s
+Estimated Memory Used:93964.624KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-24_Elina-Svitolina_Daria-Kasatkina.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.5747, 0.60383];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33281
+Total Transitions:74267
+MDP Iterations:18697905
+Time Used:4.7105144s
+Estimated Memory Used:70251.304KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-27_Ryan-Harrison_John-Isner.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.38924, 0.47622];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32841
+Total Transitions:73338
+MDP Iterations:11642507
+Time Used:3.0612735s
+Estimated Memory Used:68337.488KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-02-28_Ryan-Harrison_Diego-Schwartzman.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.39266, 0.44498];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34433
+Total Transitions:78114
+MDP Iterations:17650827
+Time Used:4.6596846s
+Estimated Memory Used:90563.024KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-01_Juan-Martin-Del-Potro_David-Ferrer.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50478, 0.59085];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32253
+Total Transitions:68389
+MDP Iterations:15243927
+Time Used:3.7690564s
+Estimated Memory Used:133542.528KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-02_Juan-Martin-Del-Potro_Dominic-Thiem.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.54109, 0.60433];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:36784
+Total Transitions:85267
+MDP Iterations:15087031
+Time Used:4.5684529s
+Estimated Memory Used:258071.696KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-02_Lesia-Tsurenko_Kristina-Mladenovic.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.44945, 0.4948];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32522
+Total Transitions:71353
+MDP Iterations:15790114
+Time Used:3.9490351s
+Estimated Memory Used:100639.848KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-02_Roberto-Bautista-Agut_Malek-Jaziri.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.62732, 0.68319];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32839
+Total Transitions:73212
+MDP Iterations:15685654
+Time Used:4.5396621s
+Estimated Memory Used:72728.856KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-04_Juan-Martin-Del-Potro_Kevin-Anderson.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.45885, 0.54668];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33698
+Total Transitions:75125
+MDP Iterations:13255611
+Time Used:4.105907s
+Estimated Memory Used:140855.488KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-07_Qiang-Wang_Timea-Bacsinszky.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.57356, 0.59784];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34848
+Total Transitions:79558
+MDP Iterations:19051914
+Time Used:5.8019962s
+Estimated Memory Used:63631.696KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-08_Sorana-Cirstea_Monica-Niculescu.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.59866, 0.62889];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34284
+Total Transitions:77572
+MDP Iterations:14084141
+Time Used:4.860565s
+Estimated Memory Used:200596.384KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-09_Aryna-Sabalenka_Svetlana-Kuznetsova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.43553, 0.48489];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35291
+Total Transitions:81030
+MDP Iterations:14904442
+Time Used:4.7728297s
+Estimated Memory Used:87987.92KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-09_Qiang-Wang_Elise-Mertens.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.43373, 0.47631];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33502
+Total Transitions:77036
+MDP Iterations:19856726
+Time Used:5.431564s
+Estimated Memory Used:300275.328KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-09_Serena-Williams_Zarina-Diyas.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.53416, 0.5915];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:30391
+Total Transitions:65301
+MDP Iterations:15617263
+Time Used:3.8125723s
+Estimated Memory Used:218615.408KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-09_Simona-Halep_Karolina-Pliskova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50739, 0.55209];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:37543
+Total Transitions:84458
+MDP Iterations:19904965
+Time Used:5.8874045s
+Estimated Memory Used:65205.52KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-10_Daria-Kasatkina_Katerina-Siniakova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.46405, 0.49393];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32350
+Total Transitions:70984
+MDP Iterations:16778389
+Time Used:4.283624s
+Estimated Memory Used:90793.024KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-10_Elena-Vesnina_Catherine-Cartan-Bellis.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.52354, 0.56176];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:31983
+Total Transitions:68436
+MDP Iterations:18668859
+Time Used:5.6759438s
+Estimated Memory Used:157373.136KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-12_Anastasija-Sevastova_Julia-Goerges.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.43425, 0.48055];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:33283
+Total Transitions:73853
+MDP Iterations:14092113
+Time Used:4.4193954s
+Estimated Memory Used:77482.808KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-12_Borna-Coric_Roberto-Bautista-Agut.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.40081, 0.46248];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32350
+Total Transitions:71548
+MDP Iterations:19042239
+Time Used:4.8418846s
+Estimated Memory Used:81654.12KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-12_Juan-Martin-Del-Potro_Alex-De-Minaur.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.57577, 0.64864];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34286
+Total Transitions:75860
+MDP Iterations:15460749
+Time Used:4.088565s
+Estimated Memory Used:102538.104KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-12_Pablo-Carreno-Busta_Daniil-Medvedev.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.48351, 0.53945];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35804
+Total Transitions:81223
+MDP Iterations:22867604
+Time Used:6.3188596s
+Estimated Memory Used:83673.776KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-12_Roger-Federer_Filip-Krajinovic.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.50089, 0.58188];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34235
+Total Transitions:75441
+MDP Iterations:14788740
+Time Used:3.8595934s
+Estimated Memory Used:72353.176KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-13_Carla-Suarez-Navarro_Elina-Svitolina.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.43141, 0.47224];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:35437
+Total Transitions:80464
+MDP Iterations:20176028
+Time Used:5.5235192s
+Estimated Memory Used:109164.096KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-13_Juan-Martin-Del-Potro_David-Ferrer.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.49871, 0.58697];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:32253
+Total Transitions:68389
+MDP Iterations:15042992
+Time Used:3.650841s
+Estimated Memory Used:109683.112KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-13_Venus-Williams_Anastasija-Sevastova.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.53886, 0.58601];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:30735
+Total Transitions:67556
+MDP Iterations:15587647
+Time Used:3.5490212s
+Estimated Memory Used:133918.68KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-14_Daria-Kasatkina_Caroline-Wozniacki.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
+********Verification Result********
+The Assertion (TieBreakGame() reaches player1Win with prob) is Valid with Probability [0.38537, 0.41023];
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Graph-based Probability Computation Based on Value Iteration
+System Abstraction: False
+Maximum difference threshold : 1E-06
+
+********Verification Statistics********
+Visited States:34261
+Total Transitions:75664
+MDP Iterations:21123701
+Time Used:5.4577318s
+Estimated Memory Used:70322.328KB
+
+*******************************************************
+*C:\Users\after\Desktop\tennis-project\RH_RH_2018-03-14_Kevin-Anderson_Pablo-Carreno-Busta.pcsp
+**************************START************************
+=======================================================
+Assertion: TieBreakGame() reaches player1Win with prob
