@@ -173,8 +173,8 @@ def get_params(df, hand):
     # Slice played by current player
     for i, Stroke in enumerate([De_Stroke_Shallow, Mid_Stroke_Shallow, Ad_Stroke_Shallow]):
         # (0, DE), (1, MID), (2, AD)
-        FH_Stroke = Stroke.query('shot==11')
-        BH_Stroke = Stroke.query('shot==32')
+        FH_Stroke = Stroke.query('shot==3')
+        BH_Stroke = Stroke.query('shot==24')
         FH_shots = [FH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][0]]
         BH_shots = [BH_Stroke.query('to_which_court==@to_dir') for to_dir in directions[i][1]]
         shots = FH_shots + BH_shots
