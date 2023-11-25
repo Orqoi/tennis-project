@@ -96,10 +96,10 @@ def get_params(df, hand):
     # Handlers
     for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
         # Regular, Smash, Lob
-        Regular = Stroke.query('prev_shot not in [3, 7, 11, 24, 28, 32]') # receive a regular at DE/MID/AD
+        Regular = Stroke.query('prev_shot not in [3,24]') # receive a regular at DE/MID/AD
         Slice = Stroke.query('prev_shot in [3, 24]')
         for curr in [Regular, Slice]:
-            react_regular = [len(curr.query('shot not in [3, 7, 11, 24, 28, 32]'))]
+            react_regular = [len(curr.query('shot not in [3, 24]'))]
             react_slice = [len(curr.query('shot in [3, 24]'))]
             results.append(react_regular + react_slice)
     
