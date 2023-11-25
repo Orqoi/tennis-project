@@ -91,14 +91,14 @@ Ply1_de_regular_shallow_handler = pcase{
 			p43: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
 	};
 
-Ply1_de_smash_shallow_handler = pcase{
-			p44: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
-			p45: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
+Ply1_mid_regular_shallow_handler = pcase{
+			p44: React_Regular_Shallow{ball=2} -> Ply1_mid_regular_shallow
+			p45: React_Regular_Deep{ball=2} -> Ply1_mid_regular_deep
 	};
 
-Ply1_de_lob_shallow_handler = pcase{
-			p46: React_Regular_Shallow{ball=1} -> Ply1_de_regular_shallow
-			p47: React_Regular_Deep{ball=1} -> Ply1_de_regular_deep
+Ply1_ad_regular_shallow_handler = pcase{
+			p46: React_Regular_Shallow{ball=3} -> Ply1_ad_regular_shallow
+			p47: React_Regular_Deep{ball=3} -> Ply1_ad_regular_deep
 	};
 
 
