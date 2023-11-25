@@ -100,10 +100,10 @@ def get_params(df, hand):
     # Handlers
     for i, Stroke in enumerate([De_Stroke, Mid_Stroke, Ad_Stroke]):
         # Regular, Smash, Lob
-        Regular_Shallow = Stroke.query('prev_shot not in [3, 7, 11, 24, 28, 32] and hit_at_depth in [1,99]')
+        Regular_Shallow = Stroke.query('prev_shot not in [7, 11, 28, 32] and hit_at_depth in [1,99]')
         Smash_Shallow = Stroke.query('prev_shot in [7, 28] and hit_at_depth in [1,99]')
         Lob_Shallow = Stroke.query('prev_shot in [11, 32] and hit_at_depth in [1,99]')
-        Regular_Deep = Stroke.query('prev_shot not in [3, 7, 11, 24, 28, 32] and hit_at_depth in [2,99]')
+        Regular_Deep = Stroke.query('prev_shot not in [7, 11, 28, 32] and hit_at_depth in [2,99]')
         Smash_Deep = Stroke.query('prev_shot in [7, 28] and hit_at_depth in [2,99]') # overlap here due to over 90% of data being of unknown depth
         Lob_Deep = Stroke.query('prev_shot in [11, 32] and hit_at_depth in [2,99]')
         for curr in [Regular_Shallow, Smash_Shallow, Lob_Shallow, Regular_Deep, Smash_Deep, Lob_Deep]:
