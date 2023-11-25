@@ -107,7 +107,7 @@ def get_params(df, hand):
         Regular_Deep = Stroke.query('prev_shot not in [3, 7, 11, 24, 28, 32] and hit_at_depth in [2,99]')
         Smash_Deep = Stroke.query('prev_shot in [7, 28] and hit_at_depth in [2,99]') # overlap here due to over 90% of data being of unknown depth
         Lob_Deep = Stroke.query('prev_shot in [11, 32] and hit_at_depth in [2,99]')
-        Slice_Deep = Stroke.query('prev_shot in [3, 24] and hit_at_depth in [3,99]')
+        Slice_Deep = Stroke.query('prev_shot in [3, 24] and hit_at_depth in [2,99]')
         for curr in [Regular_Shallow, Smash_Shallow, Lob_Shallow, Slice_Shallow, Regular_Deep, Smash_Deep, Lob_Deep, Slice_Deep]:
             react_regular_shallow = [len(curr.query('shot not in [3, 7, 11, 24, 28, 32] and depth in [1,99]'))]
             react_smash_shallow = [len(curr.query('shot in [7, 28] and depth in [1,99]'))]
