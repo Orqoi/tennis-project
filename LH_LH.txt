@@ -263,7 +263,7 @@ Ply1_de_regular_shallow = pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 };
 	
-// mid regular shallow stroke is when player1 hit position is 2
+// mid regular shallow regular is when player1 hit position is 2
 Ply1_mid_regular_shallow = pcase{
 			p158: FH_InsideOut{ball=6} -> Ply2_de_regular_shallow_handler
 			p159: FH_Crosscourt{ball=4} -> Ply2_ad_regular_shallow_handler
@@ -277,7 +277,7 @@ Ply1_mid_regular_shallow = pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt    
 };
 
-// ad regular shallow stroke is when player1 hit position is 3
+// ad regular shallow regular is when player1 hit position is 3
 Ply1_ad_regular_shallow = pcase{
 			p166: FH_Crosscourt{ball=4} -> Ply2_ad_regular_shallow_handler
 			p167: FH_Downline{ball=6} -> Ply2_de_regular_shallow_handler
@@ -376,7 +376,7 @@ Ply1_ad_lob_shallow = pcase{
 	};
 
 // Deep Actions
-// deuce regular deep stroke is when player1 hit position is 1
+// deuce regular deep regular is when player1 hit position is 1
 Ply1_de_regular_deep = pcase{
 			p222: FH_InsideOut{ball=6} -> Ply2_de_regular_deep_handler
 			p223: FH_InsideIn{ball=4} -> Ply2_ad_regular_deep_handler
@@ -390,7 +390,7 @@ Ply1_de_regular_deep = pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 	};
 	
-// mid regular deep stroke is when player1 hit position is 2
+// mid regular deep regular is when player1 hit position is 2
 Ply1_mid_regular_deep = pcase{
 			p230: FH_InsideOut{ball=6} -> Ply2_de_regular_deep_handler
 			p231: FH_Crosscourt{ball=4} -> Ply2_ad_regular_deep_handler
@@ -404,7 +404,7 @@ Ply1_mid_regular_deep = pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt    
 	};
 
-// ad regular deep stroke is when player1 hit position is 3
+// ad regular deep regular is when player1 hit position is 3
 Ply1_ad_regular_deep = pcase{
 			p238: FH_Crosscourt{ball=4} -> Ply2_ad_regular_deep_handler
 			p239: FH_Downline{ball=6} -> Ply2_de_regular_deep_handler
@@ -750,42 +750,42 @@ Ply2_ad_lob_deep_handler = pcase{
 };
 
 // Shallow Actions
-// deuce stroke shallow is when player2 hit position is 6
-Ply2_de_stroke_shallow = pcase { // if already 
-			p444: FH_InsideOut {ball = 1} -> Ply1_de_stroke_shallow_handler
-			p445: FH_insideIn {ball = 3} -> Ply1_ad_stroke_shallow_handler
-			p446: FH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
-			p447: BH_Crosscourt {ball = 1} -> Ply1_de_stroke_shallow_handler
-			p448: BH_Downline {ball = 3} -> Ply1_ad_stroke_shallow_handler
-			p449: BH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
+// deuce regular shallow is when player2 hit position is 6
+Ply2_de_regular_shallow = pcase { // if already 
+			p444: FH_InsideOut {ball = 1} -> Ply1_de_regular_shallow_handler
+			p445: FH_insideIn {ball = 3} -> Ply1_ad_regular_shallow_handler
+			p446: FH_DownMid {ball = 2} -> Ply1_mid_regular_shallow_handler
+			p447: BH_Crosscourt {ball = 1} -> Ply1_de_regular_shallow_handler
+			p448: BH_Downline {ball = 3} -> Ply1_ad_regular_shallow_handler
+			p449: BH_DownMid {ball = 2} -> Ply1_mid_regular_shallow_handler
 			p450: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p451: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
-// mid stroke shallow is when player2 hit position is 5
-Ply2_mid_stroke_shallow = noMove -> pcase{
-			p452: FH_InsideOut {ball = 1} -> Ply1_de_stroke_shallow_handler
-			p453: FH_Crosscourt{ball = 3} -> Ply1_ad_stroke_shallow_handler
-			p454: FH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
-			p455: BH_InsideOut {ball = 3} -> Ply1_ad_stroke_shallow_handler
-			p456: BH_Crosscourt {ball = 1} -> Ply1_de_stroke_shallow_handler
-			p457: BH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
+// mid regular shallow is when player2 hit position is 5
+Ply2_mid_regular_shallow = noMove -> pcase{
+			p452: FH_InsideOut {ball = 1} -> Ply1_de_regular_shallow_handler
+			p453: FH_Crosscourt{ball = 3} -> Ply1_ad_regular_shallow_handler
+			p454: FH_DownMid {ball = 2} -> Ply1_mid_regular_shallow_handler
+			p455: BH_InsideOut {ball = 3} -> Ply1_ad_regular_shallow_handler
+			p456: BH_Crosscourt {ball = 1} -> Ply1_de_regular_shallow_handler
+			p457: BH_DownMid {ball = 2} -> Ply1_mid_regular_shallow_handler
 			p458: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p459: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
-// ad stroke shallow is when player 2 hit position is 4
-Ply2_ad_stroke_shallow = pcase{
-			p460: FH_Crosscourt {ball = 3} -> Ply1_ad_stroke_shallow_handler
-			p461: FH_Downline {ball = 1} -> Ply1_de_stroke_shallow_handler
-			p462: FH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
-			p463: BH_InsideIn {ball = 1} -> Ply1_de_stroke_shallow_handler
-			p464: BH_InsideOut {ball = 3} -> Ply1_ad_stroke_shallow_handler
-			p465: BH_DownMid {ball = 2} -> Ply1_mid_stroke_shallow_handler
+// ad regular shallow is when player 2 hit position is 4
+Ply2_ad_regular_shallow = pcase{
+			p460: FH_Crosscourt {ball = 3} -> Ply1_ad_regular_shallow_handler
+			p461: FH_Downline {ball = 1} -> Ply1_de_regular_shallow_handler
+			p462: FH_DownMid {ball = 2} -> Ply1_mid_regular_shallow_handler
+			p463: BH_InsideIn {ball = 1} -> Ply1_de_regular_shallow_handler
+			p464: BH_InsideOut {ball = 3} -> Ply1_ad_regular_shallow_handler
+			p465: BH_DownMid {ball = 2} -> Ply1_mid_regular_shallow_handler
 			p466: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p467: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
@@ -877,42 +877,42 @@ Ply2_ad_lob_shallow = pcase{
 	};    	
 
 // Deep Actions
-// deuce stroke deep is when player2 hit position is 6
-Ply2_de_stroke_deep = pcase {
-			p516: FH_InsideOut {ball = 1} -> Ply1_de_stroke_deep_handler
-			p517: FH_insideIn {ball = 3} -> Ply1_ad_stroke_deep_handler
-			p518: FH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
-			p519: BH_Crosscourt {ball = 1} -> Ply1_de_stroke_deep_handler
-			p520: BH_Downline {ball = 3} -> Ply1_ad_stroke_deep_handler
-			p521: BH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
+// deuce regular deep is when player2 hit position is 6
+Ply2_de_regular_deep = pcase {
+			p516: FH_InsideOut {ball = 1} -> Ply1_de_regular_deep_handler
+			p517: FH_insideIn {ball = 3} -> Ply1_ad_regular_deep_handler
+			p518: FH_DownMid {ball = 2} -> Ply1_mid_regular_deep_handler
+			p519: BH_Crosscourt {ball = 1} -> Ply1_de_regular_deep_handler
+			p520: BH_Downline {ball = 3} -> Ply1_ad_regular_deep_handler
+			p521: BH_DownMid {ball = 2} -> Ply1_mid_regular_deep_handler
 			p522: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p523: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
-// mid stroke deep is when player2 hit position is 5
-Ply2_mid_stroke_deep = noMove -> pcase{
-			p524: FH_InsideOut {ball = 1} -> Ply1_de_stroke_deep_handler
-			p525: FH_Crosscourt{ball = 3} -> Ply1_ad_stroke_deep_handler
-			p526: FH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
-			p527: BH_InsideOut {ball = 3} -> Ply1_ad_stroke_deep_handler
-			p528: BH_Crosscourt {ball = 1} -> Ply1_de_stroke_deep_handler
-			p529: BH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
+// mid regular deep is when player2 hit position is 5
+Ply2_mid_regular_deep = noMove -> pcase{
+			p524: FH_InsideOut {ball = 1} -> Ply1_de_regular_deep_handler
+			p525: FH_Crosscourt{ball = 3} -> Ply1_ad_regular_deep_handler
+			p526: FH_DownMid {ball = 2} -> Ply1_mid_regular_deep_handler
+			p527: BH_InsideOut {ball = 3} -> Ply1_ad_regular_deep_handler
+			p528: BH_Crosscourt {ball = 1} -> Ply1_de_regular_deep_handler
+			p529: BH_DownMid {ball = 2} -> Ply1_mid_regular_deep_handler
 			p530: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p531: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
-// ad stroke deep is when player 2 hit position is 4
-Ply2_ad_stroke_deep = pcase{
-			p532: FH_Crosscourt {ball = 3} -> Ply1_ad_stroke_deep_handler
-			p533: FH_Downline {ball = 1} -> Ply1_de_stroke_deep_handler
-			p534: FH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
-			p535: BH_InsideIn {ball = 1} -> Ply1_de_stroke_deep_handler
-			p536: BH_InsideOut {ball = 3} -> Ply1_ad_stroke_deep_handler
-			p537: BH_DownMid {ball = 2} -> Ply1_mid_stroke_deep_handler
+// ad regular deep is when player 2 hit position is 4
+Ply2_ad_regular_deep = pcase{
+			p532: FH_Crosscourt {ball = 3} -> Ply1_ad_regular_deep_handler
+			p533: FH_Downline {ball = 1} -> Ply1_de_regular_deep_handler
+			p534: FH_DownMid {ball = 2} -> Ply1_mid_regular_deep_handler
+			p535: BH_InsideIn {ball = 1} -> Ply1_de_regular_deep_handler
+			p536: BH_InsideOut {ball = 3} -> Ply1_ad_regular_deep_handler
+			p537: BH_DownMid {ball = 2} -> Ply1_mid_regular_deep_handler
 			p538: Winner{ball = 9} -> {nscore++; if (nscore == points) {won = player2} 
       		                                                     else { turn = (turn+1)%4} }-> NextPt
 			p539: Error {ball = 9} -> {fscore++; if (fscore == points) {won = player1} 
