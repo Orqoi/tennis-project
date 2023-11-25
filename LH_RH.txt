@@ -168,7 +168,7 @@ Ply1_ad_slice_handler = pcase{
 			p89: React_Slice{ball=3} -> Ply1_ad_slice
 	};
 
-// deuce stroke is when player1 hit position is 1
+// deuce regular is when player1 hit position is 1
 Ply1_de_regular = pcase{
 			p90: FH_InsideOut{ball=6} -> Ply2_de_regular_handler
 			p91: FH_InsideIn{ball=4} -> Ply2_ad_regular_handler
@@ -182,7 +182,7 @@ Ply1_de_regular = pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 	
-// mid stroke is when player1 hit position is 2
+// mid regular is when player1 hit position is 2
 Ply1_mid_regular = pcase{
 			p98: FH_InsideOut{ball=6} -> Ply2_de_regular_handler
 			p99: FH_Crosscourt{ball=4} -> Ply2_ad_regular_handler
@@ -197,7 +197,7 @@ Ply1_mid_regular = pcase{
 	};
 
 
-// ad stroke is when player1 hit position is 3
+// ad regular is when player1 hit position is 3
 Ply1_ad_regular = pcase{
 			p106: FH_Crosscourt{ball=4} -> Ply2_ad_regular_handler
 			p107: FH_Downline{ball=6} -> Ply2_de_regular_handler
@@ -226,7 +226,7 @@ Ply1_de_smash = pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 	
-// mid stroke is when player1 hit position is 2
+// mid regular is when player1 hit position is 2
 Ply1_mid_smash = pcase{
 			p122: FH_InsideOut{ball=6} -> Ply2_de_smash_handler
 			p123: FH_Crosscourt{ball=4} -> Ply2_ad_smash_handler
@@ -241,7 +241,7 @@ Ply1_mid_smash = pcase{
 	};
 
 
-// ad stroke is when player1 hit position is 3
+// ad regular is when player1 hit position is 3
 Ply1_ad_smash = pcase{
 			p130: FH_Crosscourt{ball=4} -> Ply2_ad_smash_handler
 			p131: FH_Downline{ball=6} -> Ply2_de_smash_handler
@@ -270,7 +270,7 @@ Ply1_de_lob = pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 	
-// mid stroke is when player1 hit position is 2
+// mid regular is when player1 hit position is 2
 Ply1_mid_lob = pcase{
 			p146: FH_InsideOut{ball=6} -> Ply2_de_lob_handler
 			p147: FH_Crosscourt{ball=4} -> Ply2_ad_lob_handler
@@ -285,7 +285,7 @@ Ply1_mid_lob = pcase{
 	};
 
 
-// ad stroke is when player1 hit position is 3
+// ad regular is when player1 hit position is 3
 Ply1_ad_lob = pcase{
 			p154: FH_Crosscourt{ball=4} -> Ply2_ad_lob_handler
 			p155: FH_Downline{ball=6} -> Ply2_de_lob_handler
@@ -314,7 +314,7 @@ Ply1_de_slice = pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt  
 	};
 	
-// mid stroke is when player1 hit position is 2
+// mid regular is when player1 hit position is 2
 Ply1_mid_slice = pcase{
 			p170: FH_InsideOut{ball=6} -> Ply2_de_slice_handler
 			p171: FH_Crosscourt{ball=4} -> Ply2_ad_slice_handler
@@ -329,7 +329,7 @@ Ply1_mid_slice = pcase{
 	};
 
 
-// ad stroke is when player1 hit position is 3
+// ad regular is when player1 hit position is 3
 Ply1_ad_slice = pcase{
 			p178: FH_Crosscourt{ball=4} -> Ply2_ad_slice_handler
 			p179: FH_Downline{ball=6} -> Ply2_de_slice_handler
@@ -510,7 +510,7 @@ Ply2_ad_slice_handler = pcase{
 	};
 
 
-// deuce stroke is when player2 hit position is 6
+// deuce regular is when player2 hit position is 6
 Ply2_de_regular = pcase { // if already 
 			p276: FH_Crosscourt { ball = 1;} -> Ply1_de_regular_handler
 			p277: FH_Downline { ball = 3} -> Ply1_ad_regular_handler
@@ -524,7 +524,7 @@ Ply2_de_regular = pcase { // if already
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
-// mid stroke is when player2 hit position is 5
+// mid regular is when player2 hit position is 5
 Ply2_mid_regular = noMove -> pcase{
 			p284: FH_InsideOut { ball = 3} -> Ply1_ad_regular_handler
 			p285: FH_Crosscourt{ball = 1} -> Ply1_de_regular_handler
@@ -538,7 +538,7 @@ Ply2_mid_regular = noMove -> pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
-// ad stroke is when player 2 hit position is 4
+// ad regular is when player 2 hit position is 4
 Ply2_ad_regular = pcase{
 			p292: FH_InsideOut { ball = 3} -> Ply1_ad_regular_handler
 			p293: FH_InsideIn { ball = 1} -> Ply1_de_regular_handler
@@ -554,7 +554,7 @@ Ply2_ad_regular = pcase{
 
 // smashes
 
-// deuce stroke is when player2 hit position is 6
+// deuce regular is when player2 hit position is 6
 Ply2_de_smash = pcase { // if already 
 			p300: FH_Crosscourt { ball = 1;} -> Ply1_de_smash_handler
 			p301: FH_Downline { ball = 3} -> Ply1_ad_smash_handler
@@ -568,7 +568,7 @@ Ply2_de_smash = pcase { // if already
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
-// mid stroke is when player2 hit position is 5
+// mid regular is when player2 hit position is 5
 Ply2_mid_smash = noMove -> pcase{
 			p308: FH_InsideOut { ball = 3} -> Ply1_ad_smash_handler
 			p309: FH_Crosscourt{ball = 1} -> Ply1_de_smash_handler
@@ -582,7 +582,7 @@ Ply2_mid_smash = noMove -> pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
-// ad stroke is when player 2 hit position is 4
+// ad regular is when player 2 hit position is 4
 Ply2_ad_smash = pcase{
 			p316: FH_InsideOut { ball = 3} -> Ply1_ad_smash_handler
 			p317: FH_InsideIn { ball = 1} -> Ply1_de_smash_handler
@@ -598,7 +598,7 @@ Ply2_ad_smash = pcase{
 
 // lobs
 
-// deuce stroke is when player2 hit position is 6
+// deuce regular is when player2 hit position is 6
 Ply2_de_lob = pcase { // if already 
 			p324: FH_Crosscourt { ball = 1;} -> Ply1_de_lob_handler
 			p325: FH_Downline { ball = 3} -> Ply1_ad_lob_handler
@@ -612,7 +612,7 @@ Ply2_de_lob = pcase { // if already
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
-// mid stroke is when player2 hit position is 5
+// mid regular is when player2 hit position is 5
 Ply2_mid_lob = noMove -> pcase{
 			p332: FH_InsideOut { ball = 3} -> Ply1_ad_lob_handler
 			p333: FH_Crosscourt{ball = 1} -> Ply1_de_lob_handler
@@ -626,7 +626,7 @@ Ply2_mid_lob = noMove -> pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
-// ad stroke is when player 2 hit position is 4
+// ad regular is when player 2 hit position is 4
 Ply2_ad_lob = pcase{
 			p340: FH_InsideOut { ball = 3} -> Ply1_ad_lob_handler
 			p341: FH_InsideIn { ball = 1} -> Ply1_de_lob_handler
@@ -655,7 +655,7 @@ Ply2_de_slice = pcase { // if already
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
-// mid stroke is when player2 hit position is 5
+// mid regular is when player2 hit position is 5
 Ply2_mid_slice = noMove -> pcase{
 			p356: FH_InsideOut { ball = 3} -> Ply1_ad_slice_handler
 			p357: FH_Crosscourt{ball = 1} -> Ply1_de_slice_handler
@@ -669,7 +669,7 @@ Ply2_mid_slice = noMove -> pcase{
       		                                                     else { turn = (turn+1)%4} }-> NextPt 
 	};
 
-// ad stroke is when player 2 hit position is 4
+// ad regular is when player 2 hit position is 4
 Ply2_ad_slice = pcase{
 			p364: FH_InsideOut { ball = 3} -> Ply1_ad_slice_handler
 			p365: FH_InsideIn { ball = 1} -> Ply1_de_slice_handler
