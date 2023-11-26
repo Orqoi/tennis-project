@@ -26,7 +26,7 @@ def generate_pcsp(params, date, ply1_name, ply2_name, hand1, hand2):
     lines_2 = []
     for i, p in enumerate(params):
         lines_2.append('#define p%d %d;\n' % (i, p))
-    # print(f"{len(params)} probabilities")
+    print(f"{len(params)} probabilities")
     with open(HAND) as f:
         lines_3 = f.readlines()
     lines = lines_1 + lines_2 + lines_3
