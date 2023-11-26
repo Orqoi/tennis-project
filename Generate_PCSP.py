@@ -26,7 +26,7 @@ def generate_pcsp(params, date, ply1_name, ply2_name, hand1, hand2):
     lines_2 = []
     for i, p in enumerate(params):
         lines_2.append('#define p%d %d;\n' % (i, p))
-    # print(f"{len(params)} probabilities")
+    print(f"{len(params)} probabilities")
     with open(HAND) as f:
         lines_3 = f.readlines()
     lines = lines_1 + lines_2 + lines_3
@@ -107,10 +107,10 @@ def get_params(df, hand):
         Smash_Deep = Stroke.query('prev_shot in [7, 28] and hit_at_depth in [2,99]') # overlap here due to over 90% of data being of unknown depth
         Lob_Deep = Stroke.query('prev_shot in [11, 32] and hit_at_depth in [2,99]')
         for curr in [Regular_Shallow, Smash_Shallow, Lob_Shallow, Regular_Deep, Smash_Deep, Lob_Deep]:
-            react_regular_shallow = [len(curr.query('shot not in [3, 7, 11, 24, 28, 32] and depth in [1,99]'))]
+            react_regular_shallow = [len(curr.query('shot not in [7, 11, 28, 32] and depth in [1,99]'))]
             react_smash_shallow = [len(curr.query('shot in [7, 28] and depth in [1,99]'))]
             react_lob_shallow = [len(curr.query('shot in [11, 32] and depth in [1,99]'))]
-            react_regular_deep = [len(curr.query('shot not in [3, 7, 11, 24, 28, 32] and depth in [2,3,99]'))]
+            react_regular_deep = [len(curr.query('shot not in [7, 11, 28, 32] and depth in [2,3,99]'))]
             react_smash_deep = [len(curr.query('shot in [7, 28] and depth in [2,3,99]'))]
             react_lob_deep = [len(curr.query('shot in [11, 32] and depth in [2,3,99]'))]
             results.append(react_regular_shallow + react_smash_shallow + react_lob_shallow
